@@ -1,0 +1,15 @@
+{
+  "file": "invoice.pdf",
+  "status": "not_checked",
+  "reason": "Not checked: the KoSIT validator 1.6.3, XRechnung configuration 2026-08-31 has no rules for profile BASIC (urn:cen.eu:en16931:2017#compliant#urn:factur-x.eu:1p0:basic).",
+  "container": "pdf",
+  "syntax": "UN/CEFACT CII",
+  "profile": "BASIC",
+  "profile_id": "urn:cen.eu:en16931:2017#compliant#urn:factur-x.eu:1p0:basic",
+  "embedded_filename": "factur-x.xml",
+  "scenario": null,
+  "validator": "KoSIT validator 1.6.3, XRechnung configuration 2026-08-31",
+  "findings": [],
+  "warnings": [],
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "file": "invoice.xml",
+  "status": "invalid",
+  "reason": "Rejected by the KoSIT validator: 2 errors.",
+  "container": "xml",
+  "syntax": "UBL Invoice",
+  "profile": "XRECHNUNG",
+  "profile_id": "urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0",
+  "embedded_filename": null,
+  "scenario": "EN16931 XRechnung (UBL Invoice)",
+  "validator": "KoSIT validator 1.6.3, XRechnung configuration 2026-08-31",
+  "findings": [
+    {
+      "rule_id": "BR-CO-15",
+      "severity": "error",
+      "location": "/ubl:Invoice[1]/cac:LegalMonetaryTotal[1]",
+      "message": "[BR-CO-15]-Invoice total amount with VAT (BT-112) = Invoice total amount without VAT (BT-109) + Invoice total VAT amount (BT-110)."
+    },
+    {
+      "rule_id": "BR-DE-15",
+      "severity": "error",
+      "location": "/ubl:Invoice[1]",
+      "message": "[BR-DE-15] Das Element \"Buyer reference\" (BT-10) muss übermittelt werden."
+    },
+    {
+      "rule_id": "BR-DE-21",
+      "severity": "warning",
+      "location": "/ubl:Invoice[1]/cbc:CustomizationID[1]",
+      "message": "[BR-DE-21] Das Element \"Specification identifier\" (BT-24) soll syntaktisch der Kennung des Standards XRechnung entsprechen."
+    }
+  ],
+  "warnings": [],
+  "notes": []
+}

@@ -1,0 +1,15 @@
+{
+  "file": "invoice.xml",
+  "status": "error",
+  "reason": "Validation could not run: Docker is installed but not running.",
+  "container": "xml",
+  "syntax": "UBL Invoice",
+  "profile": "XRECHNUNG",
+  "profile_id": "urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0",
+  "embedded_filename": null,
+  "scenario": null,
+  "validator": null,
+  "findings": [],
+  "warnings": [],
+  "notes": []
+}

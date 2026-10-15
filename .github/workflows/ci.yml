@@ -41,3 +41,30 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e ".[dev]"
       - run: pytest -m "not docker and not live_llm"
+
+  kosit:
+    # End-to-end R7 against the official KoSIT validator in Docker, like e-rechnung-inbox's
+    # own kosit job. The image is built from e-rechnung-inbox at the pinned commit.
+    runs-on: ubuntu-24.04
+    env:
+      INTAKE_REQUIRE_DOCKER: "1" # a missing validator is a failure here, not a skip
+      ERECHNUNG_INBOX_SHA: 2e34c1405e82b67d42272188ad2e0eb5e72de150
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: RohithkumarReddipogula/e-rechnung-inbox
+          ref: ${{ env.ERECHNUNG_INBOX_SHA }}
+          path: .kosit-src
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - name: Build validator image (pinned versions, SHA-256 verified by its Dockerfile)
+        run: |
+          IMAGE=$(python -c "from erechnung_inbox.validator import DEFAULT_IMAGE; print(DEFAULT_IMAGE)")
+          docker build -t "$IMAGE" .kosit-src/docker/kosit-validator
+      - run: pytest -m docker
