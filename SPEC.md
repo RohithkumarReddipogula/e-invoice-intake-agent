@@ -133,7 +133,7 @@ received -> extracted -> auto_approved ----------------> exported
 ```
 
 Every status change is written to an `events` table: who (system, `web:<name>`,
-`mcp:<client>`), when, old status, new status, note. This is the audit trail.
+`api:<name>`, `mcp:<client>`), when, old status, new status, note. This is the audit trail.
 
 ## 8. Components
 
@@ -159,6 +159,9 @@ Server-rendered HTML (FastAPI + Jinja2, no JavaScript build step).
   rules are highlighted, each with its reason. The reviewer can correct fields, then
   approve or reject.
 - No login in v1. The server binds to `127.0.0.1` by default. This is stated in the README.
+- Because there is no login, POST/PATCH/DELETE requests whose `Origin` or `Referer` is another
+  site are refused (403), so a web page cannot approve invoices through the reviewer's
+  browser (CSRF).
 
 ### 8.3 Mock ERP
 
@@ -257,6 +260,8 @@ are wide; the report says so instead of hiding it.
 
 - XML parsing with entity resolution and network access off (no XXE).
 - Upload: size limit, file type checked by content, not by file name.
+- Original files are served with `Content-Security-Policy: sandbox` and `nosniff`; XML is
+  served as `text/plain`, because XML with embedded XHTML could run scripts.
 - Files are stored under their hash, never under the uploaded file name.
 - PDF text goes into the LLM prompt: a PDF could contain prompt-injection text. The LLM
   only fills a schema and has no tools, and all values go through rules and grounding,

@@ -33,6 +33,9 @@ class Settings(BaseSettings):
 
     erp_base_url: str = "http://127.0.0.1:8001"
 
+    # Times are stored in UTC and shown in this zone on the review page.
+    display_timezone: str = "Europe/Berlin"
+
     @field_validator("anthropic_api_key", mode="before")
     @classmethod
     def _empty_key_is_no_key(cls, value: object) -> object:

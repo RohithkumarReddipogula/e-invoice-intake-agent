@@ -12,6 +12,7 @@ from pydantic import BaseModel, Field
 class Source(StrEnum):
     XML = "xml"
     LLM = "llm"
+    MANUAL = "manual"  # extraction failed and a person typed the values in
 
 
 class LineItem(BaseModel):

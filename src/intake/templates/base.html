@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Invoice review{% endblock %} · e-invoice-intake-agent</title>
+  <style>
+    :root { --fg:#1d2433; --muted:#5b6475; --line:#d9dde5; --bg:#f6f7f9; --card:#fff;
+            --bad:#b42318; --bad-bg:#fef3f2; --ok:#067647; --ok-bg:#ecfdf3; --warn:#b54708;
+            --warn-bg:#fffaeb; --accent:#2e5aac; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:15px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif;
+           color:var(--fg); background:var(--bg); }
+    header { background:var(--card); border-bottom:1px solid var(--line); padding:12px 24px; }
+    header a { color:var(--fg); font-weight:600; text-decoration:none; }
+    main { padding:24px; max-width:1400px; margin:0 auto; }
+    h1 { font-size:22px; margin:0 0 16px; } h2 { font-size:17px; margin:24px 0 8px; }
+    a { color:var(--accent); }
+    table { border-collapse:collapse; width:100%; background:var(--card); }
+    th, td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line);
+             vertical-align:top; }
+    th { font-size:13px; color:var(--muted); font-weight:600; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:8px;
+            padding:16px; margin-bottom:16px; }
+    .badge { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px;
+             font-weight:600; white-space:nowrap; }
+    .pass, .auto_approved, .approved, .exported { background:var(--ok-bg); color:var(--ok); }
+    .fail, .rejected, .export_failed { background:var(--bad-bg); color:var(--bad); }
+    .skip, .received, .extracted { background:var(--bg); color:var(--muted); }
+    .needs_review { background:var(--warn-bg); color:var(--warn); }
+    .low { background:var(--bad-bg); }
+    .low .why { color:var(--bad); }
+    .why, .muted { color:var(--muted); font-size:13px; }
+    .message { background:var(--ok-bg); color:var(--ok); }
+    .error { background:var(--bad-bg); color:var(--bad); }
+    .message, .error { padding:10px 14px; border-radius:6px; margin-bottom:16px; }
+    input[type=text], input[type=date], textarea { width:100%; padding:5px 7px;
+             border:1px solid var(--line); border-radius:4px; font:inherit; }
+    input:disabled { background:var(--bg); color:var(--fg); }
+    button { padding:7px 14px; border-radius:5px; border:1px solid var(--line);
+             background:var(--card); font:inherit; cursor:pointer; }
+    button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+    button.danger { color:var(--bad); }
+    .split { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:16px; }
+    @media (max-width: 900px) { .split { grid-template-columns:1fr; } }
+    iframe { width:100%; height:80vh; border:1px solid var(--line); border-radius:6px;
+             background:#fff; }
+    pre.xml { max-height:80vh; overflow:auto; background:var(--card); padding:12px;
+              border:1px solid var(--line); border-radius:6px; font-size:12px; }
+    ul.reasons { margin:0; padding-left:20px; }
+    .actions { display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+    .actions form { flex:1; min-width:220px; }
+    .num { text-align:right; font-variant-numeric:tabular-nums; }
+  </style>
+</head>
+<body>
+  <header><a href="/review">Invoice review</a>
+    <span class="muted">· local only, no login</span></header>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>

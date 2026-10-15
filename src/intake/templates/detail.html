@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}{{ record.data.invoice_number if record.data and record.data.invoice_number else "Invoice" }}{% endblock %}
+{% block content %}
+<p><a href="/review">← Review queue</a></p>
+<h1>{{ record.data.invoice_number if record.data and record.data.invoice_number else "(no invoice number)" }}
+  <span class="badge {{ record.status.value }}">{{ record.status.value.replace("_", " ") }}</span></h1>
+<p class="muted">{{ record.filename }} · {{ record.input_kind.replace("_", " ") }}
+  {% if record.source %}· read from {{ record.source }}{% endif %} · received {{ record.created_at|local_time }}</p>
+
+{% if message %}<div class="message">{{ message }}</div>{% endif %}
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+
+{% if record.reasons %}
+<div class="card">
+  <h2 style="margin-top:0">Why this invoice needs a person</h2>
+  <ul class="reasons">{% for reason in record.reasons %}<li>{{ reason }}</li>{% endfor %}</ul>
+</div>
+{% endif %}
+
+<div class="split">
+  <section>
+    {% if xml_text is not none %}
+    <pre class="xml">{{ xml_text }}</pre>
+    {% else %}
+    <iframe src="/invoices/{{ record.id }}/file" title="Original invoice"></iframe>
+    {% endif %}
+  </section>
+
+  <section>
+    <form method="post" action="/review/{{ record.id }}/fields" class="card">
+      <h2 style="margin-top:0">Fields <span class="muted">(threshold {{ "%.2f"|format(threshold) }})</span></h2>
+      <table>
+        {% for name in scalar_fields %}
+        <tr class="{{ 'low' if name in low }}">
+          <th style="width:30%"><label for="f-{{ name }}">{{ labels[name] }}</label></th>
+          <td>
+            <input id="f-{{ name }}" name="{{ name }}" type="{{ 'date' if name in date_fields else 'text' }}"
+                   value="{{ field_values[name] }}" {{ '' if editable else 'disabled' }}>
+            <div class="why">
+              confidence {{ "%.2f"|format(record.confidence.get(name, 0.0)) }}
+              {%- if record.notes.get(name) %} · {{ record.notes[name] }}{% endif %}
+              {%- if record.corrected_by.get(name) %} · corrected by {{ record.corrected_by[name] }}{% endif %}
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+
+      <h2 class="{{ 'low' if 'line_items' in low }}">Line items
+        <span class="why">confidence {{ "%.2f"|format(record.confidence.get("line_items", 0.0)) }}
+        {%- if record.notes.get("line_items") %} · {{ record.notes["line_items"] }}{% endif %}</span></h2>
+      <input type="hidden" name="line_count" value="{{ line_rows|length }}">
+      <table>
+        <tr><th>Description</th><th>Qty</th><th>Unit price</th><th>Net</th><th>VAT %</th></tr>
+        {% for row in line_rows %}{% set i = loop.index0 %}
+        <tr>{% for key in line_keys %}
+          <td><input type="text" name="line-{{ i }}-{{ key }}" aria-label="{{ key }}, line {{ i + 1 }}"
+                     value="{{ row[key] }}" {{ '' if editable else 'disabled' }}></td>
+        {% endfor %}</tr>
+        {% endfor %}
+      </table>
+
+      {% if editable %}
+      <p><label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label></p>
+      <button type="submit">Save corrections and re-check</button>
+      {% endif %}
+    </form>
+
+    <div class="card">
+      <h2 style="margin-top:0">Checks</h2>
+      <table>
+        {% for rule in record.rules %}
+        <tr><td style="width:2em">{{ rule.rule_id }}</td>
+            <td><span class="badge {{ rule.status.value }}">{{ rule.status.value }}</span></td>
+            <td>{{ rule.name }}</td><td>{{ rule.reason }}</td></tr>
+        {% else %}
+        <tr><td class="muted">No checks ran (no data was extracted).</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+
+    {% if editable %}
+    <div class="card actions">
+      <form method="post" action="/review/{{ record.id }}/approve">
+        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
+        <label>Note {% if record.failed_rules or record.blocking %}(required: checks failed){% endif %}
+          <textarea name="note" rows="2" maxlength="2000"></textarea></label>
+        <p><button class="primary" type="submit">Approve</button></p>
+      </form>
+      <form method="post" action="/review/{{ record.id }}/reject">
+        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
+        <label>Reason (required) <textarea name="reason" rows="2" required maxlength="2000"></textarea></label>
+        <p><button class="danger" type="submit">Reject</button></p>
+      </form>
+    </div>
+    {% endif %}
+
+    <div class="card">
+      <h2 style="margin-top:0">History</h2>
+      <table>
+        {% for e in record.events %}
+        <tr><td class="muted">{{ e.at|local_time }}</td><td>{{ e.actor }}</td>
+            <td>{{ e.old_status or "" }} → {{ e.new_status }}</td><td>{{ e.note or "" }}</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+  </section>
+</div>
+{% endblock %}

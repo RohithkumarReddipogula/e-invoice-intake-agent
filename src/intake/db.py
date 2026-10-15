@@ -78,8 +78,13 @@ def insert_invoice(
 
 
 def save_extraction(
-    conn: sqlite3.Connection, invoice_id: str, extraction: Extraction | None
+    conn: sqlite3.Connection,
+    invoice_id: str,
+    extraction: Extraction | None,
+    corrected_by: dict[str, str] | None = None,
 ) -> None:
+    """Replace the stored data and field confidences. `corrected_by`: field -> actor."""
+    corrected_by = corrected_by or {}
     conn.execute("DELETE FROM fields WHERE invoice_id = ?", (invoice_id,))
     if extraction is None:
         conn.execute(
@@ -92,9 +97,10 @@ def save_extraction(
         (extraction.source, extraction.data.model_dump_json(), now(), invoice_id),
     )
     conn.executemany(
-        "INSERT INTO fields (invoice_id, name, confidence, note) VALUES (?, ?, ?, ?)",
+        "INSERT INTO fields (invoice_id, name, confidence, note, corrected_by)"
+        " VALUES (?, ?, ?, ?, ?)",
         [
-            (invoice_id, name, conf, extraction.notes.get(name))
+            (invoice_id, name, conf, extraction.notes.get(name), corrected_by.get(name))
             for name, conf in extraction.confidence.items()
         ],
     )
