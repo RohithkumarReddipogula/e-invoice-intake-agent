@@ -25,6 +25,10 @@ class ApproveRequest(BaseModel):
     note: str | None = Field(default=None, max_length=2000)
 
 
+class ExportRequest(BaseModel):
+    reviewer: Reviewer
+
+
 class RejectRequest(BaseModel):
     reviewer: Reviewer
     reason: str = Field(min_length=1, max_length=2000)
@@ -34,6 +38,7 @@ def invoice_json(record: InvoiceRecord) -> dict[str, Any]:
     return {
         **record.model_dump(mode="json"),
         "held_for_confidence_only": record.held_for_confidence_only,
+        "erp_id": record.erp_id,
     }
 
 
@@ -89,6 +94,12 @@ def build_router(service: IntakeService) -> APIRouter:
     def reject(invoice_id: str, body: RejectRequest) -> dict[str, Any]:
         actor = f"api:{body.reviewer.strip()}"
         return invoice_json(call(service.reject, invoice_id, actor, body.reason))
+
+    @router.post("/{invoice_id}/export")
+    def export(invoice_id: str, body: ExportRequest) -> dict[str, Any]:
+        """Send an approved invoice to the ERP again, e.g. after export_failed."""
+        actor = f"api:{body.reviewer.strip()}"
+        return invoice_json(call(service.export, invoice_id, actor))
 
     @router.get("/{invoice_id}/file")
     def original_file(invoice_id: str) -> Response:

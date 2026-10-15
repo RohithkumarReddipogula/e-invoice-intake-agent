@@ -41,7 +41,7 @@ dev = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/intake"]
+packages = ["src/intake", "src/mock_erp"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -60,4 +60,4 @@ src = ["src", "tests"]
 select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
 
 [tool.ruff.lint.isort]
-known-first-party = ["intake"]
+known-first-party = ["intake", "mock_erp"]

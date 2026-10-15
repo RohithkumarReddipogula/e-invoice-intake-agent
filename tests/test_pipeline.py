@@ -202,6 +202,8 @@ def test_get_unknown_invoice(service):
 
 def test_migrations_run_once(tmp_path):
     database = db.Database(tmp_path / "x.db")
-    db.Database(tmp_path / "x.db")  # second open must not re-run 001
+    db.Database(tmp_path / "x.db")  # a second open must not re-run any migration
+    latest = max(version for version, _ in db._migrations())
+    assert latest >= 2
     with database.connect() as conn:
-        assert conn.execute("PRAGMA user_version").fetchone()[0] == 1
+        assert conn.execute("PRAGMA user_version").fetchone()[0] == latest

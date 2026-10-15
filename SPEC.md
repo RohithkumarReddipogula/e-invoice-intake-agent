@@ -174,6 +174,9 @@ A separate small FastAPI app (`mock_erp/`), its own port and its own SQLite file
 
 The intake app sends to the ERP right after approval (HTTP client with timeout and 3
 retries). On failure the status is `export_failed`, and the export can be retried.
+Every request carries `Idempotency-Key: <invoice id>`; the payload is built only from data that
+no longer changes after approval, so a retry sends the same body. With `INTAKE_ERP_BASE_URL`
+empty there is no export and approved invoices stay `approved`.
 
 ### 8.4 MCP server
 

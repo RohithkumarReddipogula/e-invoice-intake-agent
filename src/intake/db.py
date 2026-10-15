@@ -11,7 +11,7 @@ from importlib import resources
 from pathlib import Path
 
 from .models import Extraction, InvoiceData
-from .records import Event, InvoiceRecord, InvoiceSummary
+from .records import Event, ExportAttempt, InvoiceRecord, InvoiceSummary
 from .rules import DuplicateKey, RuleResult, RuleStatus
 from .status import InvoiceStatus
 
@@ -162,6 +162,23 @@ def add_event(
     )
 
 
+def add_export(
+    conn: sqlite3.Connection,
+    invoice_id: str,
+    *,
+    actor: str,
+    ok: bool,
+    attempts: int,
+    erp_id: str | None = None,
+    error: str | None = None,
+) -> None:
+    conn.execute(
+        "INSERT INTO exports (invoice_id, at, actor, ok, attempts, erp_id, error)"
+        " VALUES (?, ?, ?, ?, ?, ?, ?)",
+        (invoice_id, now(), actor, int(ok), attempts, erp_id, error),
+    )
+
+
 # --- reads -----------------------------------------------------------------------------
 
 
@@ -194,6 +211,11 @@ def get_invoice(conn: sqlite3.Connection, invoice_id: str) -> InvoiceRecord | No
         " ORDER BY id",
         (invoice_id,),
     ).fetchall()
+    exports = conn.execute(
+        "SELECT at, actor, ok, attempts, erp_id, error FROM exports WHERE invoice_id = ?"
+        " ORDER BY id",
+        (invoice_id,),
+    ).fetchall()
     return InvoiceRecord(
         id=row["id"],
         created_at=row["created_at"],
@@ -219,6 +241,7 @@ def get_invoice(conn: sqlite3.Connection, invoice_id: str) -> InvoiceRecord | No
         blocking=json.loads(row["blocking_json"]),
         reasons=json.loads(row["reasons_json"]),
         events=[Event(**dict(e)) for e in events],
+        exports=[ExportAttempt(**{**dict(x), "ok": bool(x["ok"])}) for x in exports],
     )
 
 

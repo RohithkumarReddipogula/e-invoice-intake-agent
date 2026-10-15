@@ -31,7 +31,8 @@ class Settings(BaseSettings):
     files_dir: Path = Path("data/files")
     max_upload_bytes: int = 20 * 1024 * 1024
 
-    erp_base_url: str = "http://127.0.0.1:8001"
+    # Mock ERP from `python -m mock_erp`. Empty: no export, approved invoices stay approved.
+    erp_base_url: str | None = "http://127.0.0.1:8001"
 
     # Times are stored in UTC and shown in this zone on the review page.
     display_timezone: str = "Europe/Berlin"

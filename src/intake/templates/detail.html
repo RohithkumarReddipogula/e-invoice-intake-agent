@@ -95,6 +95,28 @@
     </div>
     {% endif %}
 
+    {% if record.exports or can_export %}
+    <div class="card">
+      <h2 style="margin-top:0">ERP {% if record.erp_id %}<span class="badge exported">{{ record.erp_id }}</span>{% endif %}</h2>
+      {% if record.exports %}
+      <table>
+        <tr><th>When</th><th>By</th><th>Result</th><th>Requests</th><th>Details</th></tr>
+        {% for x in record.exports %}
+        <tr><td class="muted">{{ x.at|local_time }}</td><td>{{ x.actor }}</td>
+            <td><span class="badge {{ 'pass' if x.ok else 'fail' }}">{{ 'sent' if x.ok else 'failed' }}</span></td>
+            <td>{{ x.attempts }}</td><td>{{ x.erp_id or x.error or "" }}</td></tr>
+        {% endfor %}
+      </table>
+      {% endif %}
+      {% if can_export %}
+      <form method="post" action="/review/{{ record.id }}/export" class="actions" style="margin-top:12px">
+        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
+        <p><button type="submit">{{ 'Retry export' if record.status.value == 'export_failed' else 'Export to ERP' }}</button></p>
+      </form>
+      {% endif %}
+    </div>
+    {% endif %}
+
     <div class="card">
       <h2 style="margin-top:0">History</h2>
       <table>

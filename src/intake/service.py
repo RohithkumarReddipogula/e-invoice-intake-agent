@@ -10,6 +10,7 @@ from pydantic import ValidationError
 from . import db
 from .config import Settings
 from .decision import decide
+from .erp_client import ErpClient, ErpError
 from .llm import LlmExtractor
 from .models import FIELD_NAMES, Extraction, InvoiceData, Source
 from .pipeline import Pipeline
@@ -18,6 +19,8 @@ from .rules import duplicate_keys, run_rules
 from .status import InvoiceStatus
 
 MAX_LIST_LIMIT = 100
+EXPORTABLE = {InvoiceStatus.AUTO_APPROVED, InvoiceStatus.APPROVED, InvoiceStatus.EXPORT_FAILED}
+APPROVED_STATUSES = {InvoiceStatus.AUTO_APPROVED, InvoiceStatus.APPROVED}
 
 
 class NotFound(Exception):
@@ -35,11 +38,13 @@ class ValidationProblem(Exception):
 @dataclass
 class IntakeService:
     pipeline: Pipeline
+    erp: ErpClient | None = None  # None: no export, approved invoices stay approved
 
     @classmethod
     def from_settings(cls, settings: Settings) -> IntakeService:
         database = db.Database(settings.database_path)
-        return cls(Pipeline(settings, database, LlmExtractor(settings)))
+        erp = ErpClient(settings.erp_base_url) if settings.erp_base_url else None
+        return cls(Pipeline(settings, database, LlmExtractor(settings)), erp)
 
     @property
     def database(self) -> db.Database:
@@ -52,7 +57,10 @@ class IntakeService:
     # --- reads ---------------------------------------------------------------------------
 
     def ingest(self, content: bytes, filename: str, actor: str = "system") -> InvoiceRecord:
-        return self.pipeline.ingest(content, filename, actor)
+        record = self.pipeline.ingest(content, filename, actor)
+        if record.status is InvoiceStatus.AUTO_APPROVED and self.erp is not None:
+            record = self.export(record.id, actor="system")
+        return record
 
     def get(self, invoice_id: str) -> InvoiceRecord:
         with self.database.connect() as conn:
@@ -136,6 +144,51 @@ class IntakeService:
                     f"({', '.join(problems)})."
                 )
             db.set_status(conn, invoice_id, InvoiceStatus.APPROVED, actor=actor, note=note)
+            record = _get(conn, invoice_id)
+        if self.erp is not None:
+            record = self.export(invoice_id, actor=actor)
+        return record
+
+    def export(self, invoice_id: str, actor: str) -> InvoiceRecord:
+        """Send an approved invoice to the ERP. An ERP failure is not an exception: the
+        invoice goes to export_failed with the error and can be exported again later."""
+        if self.erp is None:
+            raise ValidationProblem("No ERP is configured (INTAKE_ERP_BASE_URL is empty).")
+        record = self.get(invoice_id)
+        if record.status not in EXPORTABLE:
+            allowed = ", ".join(sorted(s.value for s in EXPORTABLE))
+            raise InvalidTransition(
+                f"Invoice is {record.status.value}; only {allowed} invoices can be exported."
+            )
+
+        # The HTTP calls (with retries and backoff) run outside the database transaction.
+        try:
+            result = self.erp.send(invoice_id, erp_payload(record))
+        except ErpError as exc:
+            result, error = None, exc
+
+        with self.database.connect() as conn:
+            current = _get(conn, invoice_id)
+            if result is not None:
+                db.add_export(
+                    conn, invoice_id, actor=actor, ok=True, attempts=result.attempts,
+                    erp_id=result.erp_id,
+                )  # fmt: skip
+                if current.status is not InvoiceStatus.EXPORTED:
+                    note = f"ERP id {result.erp_id}"
+                    if not result.created:
+                        note += " (the ERP already had it)"
+                    db.set_status(conn, invoice_id, InvoiceStatus.EXPORTED, actor=actor, note=note)
+            else:
+                db.add_export(
+                    conn, invoice_id, actor=actor, ok=False, attempts=error.attempts,
+                    error=str(error),
+                )  # fmt: skip
+                # Another export may have succeeded in the meantime; never undo that.
+                if current.status is not InvoiceStatus.EXPORTED:
+                    db.set_status(
+                        conn, invoice_id, InvoiceStatus.EXPORT_FAILED, actor=actor, note=str(error)
+                    )
             return _get(conn, invoice_id)
 
     def reject(self, invoice_id: str, actor: str, reason: str) -> InvoiceRecord:
@@ -147,6 +200,24 @@ class IntakeService:
             _require_status(record, InvoiceStatus.NEEDS_REVIEW, "rejected")
             db.set_status(conn, invoice_id, InvoiceStatus.REJECTED, actor=actor, note=reason)
             return _get(conn, invoice_id)
+
+
+def erp_payload(record: InvoiceRecord) -> dict[str, Any]:
+    """What the ERP receives. Built only from data that no longer changes after approval,
+    so a retry sends exactly the same body (the mock ERP checks that)."""
+    approval = next(e for e in reversed(record.events) if e.new_status in APPROVED_STATUSES)
+    assert record.data is not None
+    return {
+        "invoice_id": record.id,
+        "source": record.source,
+        "approval": {
+            "status": approval.new_status,
+            "by": approval.actor,
+            "at": approval.at,
+            "note": approval.note,
+        },
+        "invoice": record.data.model_dump(mode="json"),
+    }
 
 
 def _get(conn, invoice_id: str) -> InvoiceRecord:

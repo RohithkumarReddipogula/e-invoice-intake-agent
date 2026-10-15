@@ -16,7 +16,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 
 from .models import FIELD_NAMES
-from .service import IntakeService, InvalidTransition, NotFound, ValidationProblem
+from .service import EXPORTABLE, IntakeService, InvalidTransition, NotFound, ValidationProblem
 from .status import InvoiceStatus
 
 TEMPLATES = Jinja2Templates(directory=Path(__file__).parent / "templates")
@@ -48,6 +48,7 @@ DONE_MESSAGES = {
     "unchanged": "Nothing changed.",
     "approved": "Invoice approved.",
     "rejected": "Invoice rejected.",
+    "export": "Export to the ERP ran; see the status and the ERP section below.",
 }
 
 
@@ -99,6 +100,7 @@ def build_web_router(service: IntakeService) -> APIRouter:
             "line_rows": line_rows,
             "line_keys": LINE_KEYS,
             "editable": editable,
+            "can_export": service.erp is not None and record.status in EXPORTABLE,
             "message": DONE_MESSAGES.get(request.query_params.get("done", "")),
             "error": error,
         }
@@ -161,6 +163,20 @@ def build_web_router(service: IntakeService) -> APIRouter:
         except (ValidationProblem, InvalidTransition) as exc:
             return detail(request, invoice_id, str(exc), 400)
         return done(invoice_id, "approved", reviewer)
+
+    @router.post("/review/{invoice_id}/export", response_class=HTMLResponse)
+    async def export(request: Request, invoice_id: str):
+        form = await request.form()
+        reviewer = _reviewer(form)
+        if reviewer is None:
+            return detail(request, invoice_id, "Enter your name before exporting.", 400)
+        try:
+            service.export(invoice_id, f"web:{reviewer}")
+        except NotFound:
+            return detail(request, invoice_id)
+        except (ValidationProblem, InvalidTransition) as exc:
+            return detail(request, invoice_id, str(exc), 400)
+        return done(invoice_id, "export", reviewer)
 
     @router.post("/review/{invoice_id}/reject", response_class=HTMLResponse)
     async def reject(request: Request, invoice_id: str):

@@ -19,7 +19,10 @@ UBL_VAT_BLOCK = (
 )
 
 
-def make_service(tmp_path, *, check="valid", llm_output=None, offline=False) -> IntakeService:
+def make_service(
+    tmp_path, *, check="valid", llm_output=None, offline=False, erp=None
+) -> IntakeService:
+    """`erp`: an ErpClient, or None for no export (approved invoices stay approved)."""
     settings = Settings(
         _env_file=None,
         database_path=tmp_path / "intake.db",
@@ -35,4 +38,4 @@ def make_service(tmp_path, *, check="valid", llm_output=None, offline=False) -> 
         validator=lambda path: load_check_result(check),
         today=lambda: TODAY,
     )
-    return IntakeService(pipeline)
+    return IntakeService(pipeline, erp)

@@ -19,6 +19,15 @@ class Event(BaseModel):
     note: str | None
 
 
+class ExportAttempt(BaseModel):
+    at: str
+    actor: str
+    ok: bool
+    attempts: int  # HTTP requests made in this attempt
+    erp_id: str | None
+    error: str | None
+
+
 class InvoiceRecord(BaseModel):
     id: str
     created_at: str
@@ -36,6 +45,11 @@ class InvoiceRecord(BaseModel):
     blocking: list[str]  # always need a person: extraction failed, credit note, ...
     reasons: list[str]  # review reasons from the last decision
     events: list[Event]
+    exports: list[ExportAttempt] = []
+
+    @property
+    def erp_id(self) -> str | None:
+        return next((e.erp_id for e in reversed(self.exports) if e.ok), None)
 
     @property
     def failed_rules(self) -> list[RuleResult]:
