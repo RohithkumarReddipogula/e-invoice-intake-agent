@@ -5,7 +5,7 @@ import pytest
 
 from intake.detect import detect
 from intake.models import InvoiceData, LineItem
-from intake.rules import RuleStatus, duplicate_key, run_rules
+from intake.rules import RuleStatus, duplicate_keys, run_rules
 from intake.rules.amounts import check_lines_sum, check_net_vat_gross
 from intake.rules.dates import check_dates
 from intake.rules.duplicate import check_duplicate
@@ -245,31 +245,70 @@ def test_r6_no_earlier_invoice():
     assert check_duplicate(invoice(), existing=set()).status is RuleStatus.PASS
 
 
+def test_r6_keys_from_vat_id_and_name():
+    assert duplicate_keys(invoice(invoice_number="re-1 ")) == {
+        ("vat:DE123456789", "RE-1"),
+        ("name:mustersoftwaregmbh", "RE-1"),
+    }
+
+
 def test_r6_same_seller_same_number_fails():
-    earlier = duplicate_key(invoice())
-    result = check_duplicate(invoice(invoice_number="re-1 "), existing={earlier})
+    earlier = duplicate_keys(invoice())
+    result = check_duplicate(invoice(invoice_number="re-1 "), existing=earlier)
     assert result.status is RuleStatus.FAIL
     assert "already received" in result.reason
+    assert "(same seller name and VAT ID)" in result.reason
 
 
 def test_r6_vat_id_is_normalised():
-    earlier = duplicate_key(invoice(seller_vat_id="DE 123 456 789"))
-    assert check_duplicate(invoice(), existing={earlier}).status is RuleStatus.FAIL
+    earlier = duplicate_keys(invoice(seller_vat_id="DE 123 456 789", seller_name="Old Name"))
+    result = check_duplicate(invoice(), existing=earlier)
+    assert result.status is RuleStatus.FAIL
+    assert "(same VAT ID)" in result.reason
+
+
+def test_r6_first_with_vat_id_duplicate_without():
+    earlier = duplicate_keys(invoice())
+    duplicate = invoice(seller_vat_id=None)
+    result = check_duplicate(duplicate, existing=earlier)
+    assert result.status is RuleStatus.FAIL
+    assert "(same seller name)" in result.reason
+
+
+def test_r6_first_without_vat_id_duplicate_with():
+    earlier = duplicate_keys(invoice(seller_vat_id=None))
+    assert check_duplicate(invoice(), existing=earlier).status is RuleStatus.FAIL
+
+
+def test_r6_seller_name_is_normalised():
+    earlier = duplicate_keys(invoice(seller_vat_id=None, seller_name="Muster  Software GmbH."))
+    data = invoice(seller_vat_id=None, seller_name="muster software gmbh")
+    assert check_duplicate(data, existing=earlier).status is RuleStatus.FAIL
 
 
 def test_r6_other_seller_same_number_passes():
-    earlier = duplicate_key(invoice(seller_vat_id="DE987654321"))
-    assert check_duplicate(invoice(), existing={earlier}).status is RuleStatus.PASS
+    earlier = duplicate_keys(invoice(seller_vat_id="DE987654321", seller_name="Nordlicht Druck"))
+    assert check_duplicate(invoice(), existing=earlier).status is RuleStatus.PASS
 
 
-def test_r6_seller_name_when_no_vat_id():
-    earlier = duplicate_key(invoice(seller_vat_id=None, seller_name="Muster  Software GmbH."))
-    data = invoice(seller_vat_id=None, seller_name="muster software gmbh")
-    assert check_duplicate(data, existing={earlier}).status is RuleStatus.FAIL
+def test_r6_same_name_other_vat_id_is_flagged():
+    # Documented side effect of the name key: goes to review, the safe direction.
+    earlier = duplicate_keys(invoice(seller_vat_id="DE987654321"))
+    assert check_duplicate(invoice(), existing=earlier).status is RuleStatus.FAIL
+
+
+def test_r6_same_seller_other_number_passes():
+    earlier = duplicate_keys(invoice(invoice_number="RE-2"))
+    assert check_duplicate(invoice(), existing=earlier).status is RuleStatus.PASS
 
 
 def test_r6_missing_number_fails():
     result = check_duplicate(invoice(invoice_number=None), existing=set())
+    assert result.status is RuleStatus.FAIL
+
+
+def test_r6_missing_seller_fails():
+    result = check_duplicate(invoice(seller_vat_id=None, seller_name=None), existing=set())
     assert result.status is RuleStatus.FAIL
 
 

@@ -9,14 +9,14 @@ from ..models import InvoiceData
 from .amounts import check_lines_sum, check_net_vat_gross
 from .base import RuleResult, RuleStatus
 from .dates import check_dates
-from .duplicate import DuplicateKey, check_duplicate, duplicate_key
+from .duplicate import DuplicateKey, check_duplicate, duplicate_keys
 from .identifiers import check_iban, check_vat_id_format
 
 __all__ = [
     "DuplicateKey",
     "RuleResult",
     "RuleStatus",
-    "duplicate_key",
+    "duplicate_keys",
     "run_rules",
 ]
 

@@ -1,36 +1,13 @@
 """R7 mapping, with sample e-rechnung-inbox results instead of the real validator."""
 
-import json
-from pathlib import Path
-
 import pytest
-from erechnung_inbox import CheckResult, Finding, Profile, Severity, Status, Syntax
-from erechnung_inbox.models import Container
+from erechnung_inbox import Finding, Severity
 
 from intake.detect import InputKind
 from intake.rules import RuleStatus
 from intake.structured import MAX_FINDINGS_IN_REASON, check_structured, rule_from_check_result
 
-RESULTS = Path(__file__).parent / "fixtures" / "check_results"
-
-
-def load_check_result(name: str) -> CheckResult:
-    """Rebuild a CheckResult from e-rechnung-inbox's --json output."""
-    data = json.loads((RESULTS / f"{name}.json").read_text())
-    findings = [
-        Finding(
-            rule_id=f["rule_id"],
-            severity=Severity(f["severity"]),
-            location=f["location"],
-            message=f["message"],
-        )
-        for f in data.pop("findings")
-    ]
-    enums = {"status": Status, "container": Container, "syntax": Syntax, "profile": Profile}
-    for key, enum in enums.items():
-        if data[key] is not None:
-            data[key] = enum(data[key])
-    return CheckResult(findings=findings, **data)
+from .check_results import load_check_result
 
 
 def test_valid_passes():

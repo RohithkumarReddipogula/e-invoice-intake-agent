@@ -74,7 +74,8 @@ Build in small milestones. Each milestone ends with: `ruff check`, `ruff format 
   dev/test split.
 - **Live LLM step (asks you first):** fill the LLM cache once for the dataset. This is the
   only step that uses your API key and costs money. I will tell you the number of calls
-  and estimated cost before running it.
+  and estimated cost before running it. **Budget: 10 USD in total** for filling the cache
+  and the Sonnet vs. Haiku comparison. You put the key into `.env` yourself.
 - `eval/run.py`, `eval/metrics.py` (bootstrap CIs, tested on known small examples).
 - Compare `claude-sonnet-5-5` and `claude-haiku-5-5` on `dev` (cost estimate first); pick the
   cheaper one if accuracy is similar.
