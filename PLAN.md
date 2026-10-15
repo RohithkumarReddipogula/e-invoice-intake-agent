@@ -45,7 +45,11 @@ Build in small milestones. Each milestone ends with: `ruff check`, `ruff format 
 ## M5: Pipeline, storage, decision
 - `intake/db.py` (SQLite + SQL migrations), `intake/pipeline.py`,
   `intake/decision.py`, `intake/service.py` (used by REST, web and MCP).
-- Duplicate check (R6) against the database.
+- Duplicate check (R6) against the database. Store both keys per invoice (normalised VAT ID
+  and normalised seller name); R6 fails if either key plus the invoice number matches. This
+  replaces M2's single key (VAT ID, else name).
+- Tests: same seller, first invoice with VAT ID, duplicate without VAT ID, flagged. Also the
+  reverse order, and rejected invoices are ignored.
 - Tests: end-to-end on fixtures: XML auto-approved, broken sum goes to review with the
   correct reason, duplicate goes to review, events are written.
 

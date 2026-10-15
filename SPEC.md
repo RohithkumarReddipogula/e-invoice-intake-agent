@@ -82,9 +82,13 @@ of 0.01 in the invoice currency.
 | R6 `duplicate` | no other invoice with the same (seller key, normalised invoice number) | duplicate found |
 | R7 `structured_validation` | for XML and ZUGFeRD only: e-rechnung-inbox status is `valid` | status `invalid`, `not_checked` or `error` |
 
-- Seller key for R6: normalised VAT ID if present, else normalised seller name.
-  Normalised invoice number: upper case, no spaces. R6 compares against all earlier
-  invoices in the database, in any status except `rejected`.
+- Seller keys for R6: every invoice stores up to two keys, the normalised VAT ID and the
+  normalised seller name (case-folded, punctuation and spaces removed). R6 fails if
+  **either** key plus the normalised invoice number (upper case, no spaces) matches an
+  earlier invoice in the database, in any status except `rejected`. This catches a duplicate
+  sent once with and once without a VAT ID. A side effect: two different sellers with the
+  same name and the same invoice number are flagged too; they go to review, which is the safe
+  direction.
 - R7 is skipped for plain PDFs (no XML to validate).
 - R3 checks format only. No online VIES lookup in v1 (no network calls in rules).
 
