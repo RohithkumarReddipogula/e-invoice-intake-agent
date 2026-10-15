@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from pydantic import Field, SecretStr
+from pydantic import Field, SecretStr, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -32,3 +32,9 @@ class Settings(BaseSettings):
     max_upload_bytes: int = 20 * 1024 * 1024
 
     erp_base_url: str = "http://127.0.0.1:8001"
+
+    @field_validator("anthropic_api_key", mode="before")
+    @classmethod
+    def _empty_key_is_no_key(cls, value: object) -> object:
+        # `ANTHROPIC_API_KEY=` copied unchanged from .env.example means "no key".
+        return None if isinstance(value, str) and not value.strip() else value

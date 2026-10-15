@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import io
+import os
 from pathlib import Path
 
 import pytest
@@ -10,6 +11,16 @@ from facturx import generate_from_binary
 from reportlab.pdfgen import canvas
 
 FIXTURES = Path(__file__).parent / "fixtures"
+
+
+def pytest_collection_modifyitems(config, items):
+    # live_llm tests cost money; they run only when explicitly switched on.
+    if os.environ.get("INTAKE_LIVE_LLM") == "1":
+        return
+    skip = pytest.mark.skip(reason="live LLM call; set INTAKE_LIVE_LLM=1 to run")
+    for item in items:
+        if "live_llm" in item.keywords:
+            item.add_marker(skip)
 
 
 def render_pdf(lines: list[str]) -> bytes:
