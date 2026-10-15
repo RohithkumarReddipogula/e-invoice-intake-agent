@@ -1,0 +1,34 @@
+"""Settings from environment variables and the git-ignored .env file."""
+
+from __future__ import annotations
+
+from pathlib import Path
+
+from pydantic import Field, SecretStr
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_prefix="INTAKE_",
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
+    # The key keeps its standard name (no INTAKE_ prefix) so the Anthropic tooling finds it too.
+    # SecretStr keeps it out of repr(), logs and tracebacks.
+    anthropic_api_key: SecretStr | None = Field(default=None, alias="ANTHROPIC_API_KEY")
+
+    llm_model: str = "claude-sonnet-5-5"
+    # In offline mode an LLM cache miss is an error and no API client is created. CI sets this.
+    llm_offline: bool = False
+    llm_cache_dir: Path = Path("llm_cache")
+
+    confidence_threshold: float = Field(default=0.9, ge=0.0, le=1.0)
+
+    database_path: Path = Path("data/intake.db")
+    files_dir: Path = Path("data/files")
+    max_upload_bytes: int = 20 * 1024 * 1024
+
+    erp_base_url: str = "http://127.0.0.1:8001"
