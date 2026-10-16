@@ -135,8 +135,13 @@ def test_choose_threshold():
     rows = [row(), row(wrong=["net_total"], net_total=0.92), row(seller_name=0.75)]
     sweep = threshold_sweep(rows, [0.7, 0.8, 0.9, 0.95])
     assert [s["escaped"] for s in sweep] == [1, 1, 1, 0]
-    assert choose_threshold(sweep) == 0.95
-    assert (
-        choose_threshold([{"threshold": 0.5, "escaped": 1}, {"threshold": 0.9, "escaped": 2}])
-        == 0.9
-    )
+    assert choose_threshold(sweep, floor=0.7) == 0.95  # raised above the escape at 0.92
+    everything_escapes = [{"threshold": 0.9, "escaped": 1}, {"threshold": 0.95, "escaped": 2}]
+    assert choose_threshold(everything_escapes, floor=0.9) == 0.95
+
+
+def test_dev_without_errors_never_lowers_the_threshold():
+    """Zero errors on dev make every threshold look safe; the default must stay."""
+    sweep = threshold_sweep([row(), row(seller_name=0.6)], [0.5, 0.7, 0.9, 0.95])
+    assert all(s["escaped"] == 0 for s in sweep)
+    assert choose_threshold(sweep, floor=0.9) == 0.9

@@ -195,11 +195,16 @@ def threshold_sweep(rows: Sequence[Row], thresholds: Sequence[float]) -> list[di
     return out
 
 
-def choose_threshold(sweep: list[dict[str, Any]]) -> float:
-    """The lowest threshold with no escaped error on dev (most automation, no known escape).
-    Falls back to the highest threshold if every threshold lets something escape."""
-    safe = [s["threshold"] for s in sweep if s["escaped"] == 0]
-    return min(safe) if safe else max(s["threshold"] for s in sweep)
+def choose_threshold(sweep: list[dict[str, Any]], floor: float) -> float:
+    """The lowest threshold >= `floor` with no escaped error on dev.
+
+    `floor` is the configured default (0.9), fixed before any data was seen. Dev may only
+    raise the threshold: with zero errors on dev every threshold looks safe, but that says
+    nothing about how confident a wrong answer can be, so dev alone never lowers it.
+    Falls back to the highest threshold if every candidate lets something escape."""
+    candidates = [s for s in sweep if s["threshold"] >= floor]
+    safe = [s["threshold"] for s in candidates if s["escaped"] == 0]
+    return min(safe) if safe else max(s["threshold"] for s in candidates or sweep)
 
 
 def by(rows: Sequence[Row], key: Callable[[Row], str]) -> dict[str, list[Row]]:

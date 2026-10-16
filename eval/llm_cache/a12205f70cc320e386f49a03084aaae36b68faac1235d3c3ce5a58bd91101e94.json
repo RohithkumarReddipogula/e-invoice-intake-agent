@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-04-29"
+    },
+    "gross_total": {
+      "confidence": 0.45,
+      "value": "951.32"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "2026/INV/2073"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-02-28"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "154.70",
+          "quantity": "2",
+          "unit_price": "77.35",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "659.49",
+          "quantity": "3",
+          "unit_price": "219.83",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "814.19"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE02 1203 0000 0000 2020 51"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Nordlicht Druck GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE987654321"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "136.13"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141794-5Wnp0rdC0XXFdn4YkNVY",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008473,
+    "input_tokens": 3243,
+    "output_tokens": 1046,
+    "reasoning_tokens": 569
+  }
+}

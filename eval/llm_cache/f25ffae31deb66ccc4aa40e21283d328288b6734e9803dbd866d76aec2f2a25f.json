@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-06-23"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "2176.27"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "AB-01853"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-05-24"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1828.80",
+          "quantity": "8",
+          "unit_price": "228.60",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "1828.80"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE52 7015 0000 0001 0234 56"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Alpenblick IT-Service KG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE246813579"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "347.47"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141923-2UyMN60sK4dPOwPcMg30",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010388,
+    "input_tokens": 3089,
+    "output_tokens": 421,
+    "reasoning_tokens": 0
+  }
+}

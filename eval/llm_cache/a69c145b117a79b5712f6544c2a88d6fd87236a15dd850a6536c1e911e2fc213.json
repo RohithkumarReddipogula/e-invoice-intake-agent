@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-07-17"
+    },
+    "gross_total": {
+      "confidence": 0.98,
+      "value": "455.91"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "OC-1056"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-06-17"
+    },
+    "line_items": {
+      "confidence": 0.96,
+      "value": [
+        {
+          "description": "Catering per person",
+          "net_amount": "342.36",
+          "quantity": "9",
+          "unit_price": "38.04",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "83.72",
+          "quantity": "2",
+          "unit_price": "41.86",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.98,
+      "value": "426.08"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.98,
+      "value": "29.83"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141303-VOZ5zZPSZiStbuhfQqud",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010904,
+    "input_tokens": 3137,
+    "output_tokens": 463,
+    "reasoning_tokens": 0
+  }
+}

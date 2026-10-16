@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-07-02"
+    },
+    "gross_total": {
+      "confidence": 0.98,
+      "value": "7513.92"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1938"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-06-18"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "6314.22",
+          "quantity": "11",
+          "unit_price": "574.02",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.98,
+      "value": "6314.22"
+    },
+    "seller_iban": {
+      "confidence": 0.96,
+      "value": "DE55370501980009988777"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.98,
+      "value": "1199.70"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141398-kPnzGIBml0Kr4IOaMFVg",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010282,
+    "input_tokens": 3056,
+    "output_tokens": 417,
+    "reasoning_tokens": 0
+  }
+}

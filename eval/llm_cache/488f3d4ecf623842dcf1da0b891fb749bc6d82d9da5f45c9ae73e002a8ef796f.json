@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-07-01"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "8683.29"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "OC-1569"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-05-02"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "673.29",
+          "quantity": "9",
+          "unit_price": "74.81",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "408.73",
+          "quantity": "7",
+          "unit_price": "58.39",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "6255.24",
+          "quantity": "12",
+          "unit_price": "521.27",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "7337.26"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1345.03"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141358-Ye0sMwkhMWbxGLA2oGoy",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.011692,
+    "input_tokens": 3221,
+    "output_tokens": 525,
+    "reasoning_tokens": 0
+  }
+}

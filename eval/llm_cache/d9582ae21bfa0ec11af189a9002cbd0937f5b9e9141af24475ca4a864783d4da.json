@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.92,
+      "value": "41.84"
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.93,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-05-23"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "4442.16"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RL2026-2061"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-05-09"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "692.64",
+          "quantity": "9",
+          "unit_price": "76.96",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "14.10",
+          "quantity": "1",
+          "unit_price": "14.10",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "3137.86",
+          "quantity": "11",
+          "unit_price": "285.26",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "3802.76"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55370501980009988776"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "639.40"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141411-cHEAuIpFlir85WvmAure",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.014214,
+    "input_tokens": 3137,
+    "output_tokens": 794,
+    "reasoning_tokens": 283
+  }
+}

@@ -24,6 +24,7 @@ from intake.config import Settings
 from intake.llm import LlmExtractor
 from intake.llm.client import default_client_factory
 from intake.llm.extract import pdf_text
+from intake.llm.prompt import PROMPT_VERSION
 from intake.models import InvoiceData
 from intake.pipeline import Pipeline
 from intake.service import IntakeService
@@ -289,10 +290,18 @@ def main() -> None:
 
     threshold = args.threshold
     if threshold is None:
-        threshold = choose_threshold(threshold_sweep(rows, THRESHOLDS))
-    result = {"split": args.split, "model": args.model, **report(rows, threshold, args.resamples)}
+        floor = settings.confidence_threshold  # the default fixed before seeing data
+        threshold = choose_threshold(threshold_sweep(rows, THRESHOLDS), floor)
+    result = {
+        "split": args.split,
+        "provider": args.provider,
+        "model": args.model,
+        "prompt_version": PROMPT_VERSION,
+        **report(rows, threshold, args.resamples),
+    }
     args.out.mkdir(parents=True, exist_ok=True)
-    stem = f"{args.split}-{args.model.replace('/', '_')}"
+    # One file per split, model and prompt version: earlier prompt versions are kept.
+    stem = f"{args.split}-{args.model.replace('/', '_')}-{PROMPT_VERSION}"
     (args.out / f"{stem}.json").write_text(json.dumps(result, indent=2, default=str) + "\n")
     (args.out / f"{stem}.md").write_text(markdown(result, args.split, args.model))
     total, calls = spent(Path("eval/llm_cache"))

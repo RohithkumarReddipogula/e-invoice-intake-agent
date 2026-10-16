@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.93,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.93,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-07-11"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "1293.82"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-001091"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-06-11"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Catering per person",
+          "net_amount": "215.45",
+          "quantity": "5",
+          "unit_price": "43.09",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "94.64",
+          "quantity": "7",
+          "unit_price": "13.52",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "798.88",
+          "quantity": "4",
+          "unit_price": "199.72",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "1108.97"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE34200505501234567890"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "184.85"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141307-NFhJTRw0zPvfldwXLzk5",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.011348,
+    "input_tokens": 3119,
+    "output_tokens": 511,
+    "reasoning_tokens": 0
+  }
+}

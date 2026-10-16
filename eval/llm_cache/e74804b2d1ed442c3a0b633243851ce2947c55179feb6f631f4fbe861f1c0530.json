@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-06-12"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "8899.17"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RE-2026-2212"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-05-13"
+    },
+    "line_items": {
+      "confidence": 0.9,
+      "value": [
+        {
+          "description": "HUR Support hours",
+          "net_amount": "602.10",
+          "quantity": "5",
+          "unit_price": "120.42",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "6792.16",
+          "quantity": "8",
+          "unit_price": "849.02",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "7494.26"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE89 3704 0044 0532 0130 00"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Muster Software GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE123456789"
+    },
+    "vat_total": {
+      "confidence": 0.6,
+      "value": "1404.91"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141215-FHonDMGpGMjdIAq9SBsN",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008279,
+    "input_tokens": 3069,
+    "output_tokens": 1042,
+    "reasoning_tokens": 575
+  }
+}

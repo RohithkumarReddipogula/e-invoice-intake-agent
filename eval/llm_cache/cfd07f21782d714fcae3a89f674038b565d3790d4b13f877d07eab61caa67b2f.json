@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.6,
+      "value": "2026-09-15"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "15108.10"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RL2026-1654"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-09-25"
+    },
+    "line_items": {
+      "confidence": 0.85,
+      "value": [
+        {
+          "description": "Office chair",
+          "net_amount": "1964.40",
+          "quantity": "10",
+          "unit_price": "196.44",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "30.03",
+          "quantity": "1",
+          "unit_price": "30.03",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "6453.48",
+          "quantity": "11",
+          "unit_price": "586.68",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1100.44",
+          "quantity": "11",
+          "unit_price": "100.04",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "3150.56",
+          "quantity": "4",
+          "unit_price": "787.64",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "12698.91"
+    },
+    "seller_iban": {
+      "confidence": 0.92,
+      "value": "DE55 3705 0198 0009 9887 76"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.93,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.93,
+      "value": "2409.19"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141137-8v59Xb5L1QXupTv4ZqTT",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009454,
+    "input_tokens": 3199,
+    "output_tokens": 1251,
+    "reasoning_tokens": 629
+  }
+}

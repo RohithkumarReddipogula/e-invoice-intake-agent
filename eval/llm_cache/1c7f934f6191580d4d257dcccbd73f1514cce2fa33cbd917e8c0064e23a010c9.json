@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-10-23"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "2701.06"
+    },
+    "invoice_number": {
+      "confidence": 0.95,
+      "value": "AB-01328"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-09-23"
+    },
+    "line_items": {
+      "confidence": 0.85,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "2269.80",
+          "quantity": "5",
+          "unit_price": "453.96",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "2269.80"
+    },
+    "seller_iban": {
+      "confidence": 0.9,
+      "value": "DE52701500000001023457"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Alpenblick IT-Service KG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE246813579"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "431.26"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141702-qSiLmTANI8ishe2eY7jG",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007496,
+    "input_tokens": 3111,
+    "output_tokens": 877,
+    "reasoning_tokens": 457
+  }
+}

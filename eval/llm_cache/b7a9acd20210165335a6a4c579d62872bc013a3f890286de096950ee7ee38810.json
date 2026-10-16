@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "8460.71"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "EB-20261179"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-06-26"
+    },
+    "line_items": {
+      "confidence": 0.96,
+      "value": [
+        {
+          "description": "Software license, annual",
+          "net_amount": "7109.84",
+          "quantity": "8",
+          "unit_price": "888.73",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "7109.84"
+    },
+    "seller_iban": {
+      "confidence": 0.97,
+      "value": "DE20850503003120045678"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Elbtal Büroservice e.K."
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE864209753"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1350.87"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141844-5k4lnbHQ1EL51KB8vKdX",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010296,
+    "input_tokens": 3098,
+    "output_tokens": 410,
+    "reasoning_tokens": 0
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-06-26"
+    },
+    "gross_total": {
+      "confidence": 0.98,
+      "value": "2088.09"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "2026/INV/1459"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-05-27"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1754.70",
+          "quantity": "10",
+          "unit_price": "175.47",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.98,
+      "value": "1754.70"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE02120300000000202051"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Nordlicht Druck GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE987654321"
+    },
+    "vat_total": {
+      "confidence": 0.98,
+      "value": "333.39"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141344-esn4bXsK3bi2IdZy5hez",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010504,
+    "input_tokens": 3137,
+    "output_tokens": 423,
+    "reasoning_tokens": 0
+  }
+}

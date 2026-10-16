@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-04-01"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "8528.10"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "SW/2026/01159"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-01-31"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "537.80",
+          "quantity": "10",
+          "unit_price": "53.78",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "4117.15",
+          "quantity": "5",
+          "unit_price": "823.43",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "123.61",
+          "quantity": "1",
+          "unit_price": "123.61",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "1001.87",
+          "quantity": "9.5",
+          "unit_price": "105.46",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1440.27",
+          "quantity": "9",
+          "unit_price": "160.03",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "7220.70"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE67 6805 0101 0012 3456 78"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1307.40"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141069-8bRdDt0icple77hk7pCf",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008874,
+    "input_tokens": 3304,
+    "output_tokens": 1114,
+    "reasoning_tokens": 483
+  }
+}

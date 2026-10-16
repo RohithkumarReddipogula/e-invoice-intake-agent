@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-04-26"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "16716.09"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1255"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-03-27"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "51.45",
+          "quantity": "1",
+          "unit_price": "51.45",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "153.01",
+          "quantity": "1",
+          "unit_price": "153.01",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "12661.11",
+          "quantity": "11",
+          "unit_price": "1151.01",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "1186.75",
+          "quantity": "5",
+          "unit_price": "237.35",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "14052.32"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55 3705 0198 0009 9887 76"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE13579246"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "2663.77"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141851-iDEvp6c7Gmum6uaFDgRl",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.01239,
+    "input_tokens": 3325,
+    "output_tokens": 574,
+    "reasoning_tokens": 0
+  }
+}

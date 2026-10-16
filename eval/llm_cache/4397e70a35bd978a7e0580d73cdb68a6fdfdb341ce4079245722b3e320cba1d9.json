@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-04-19"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "10273.96"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "OC-1823"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-04-05"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "6747.48",
+          "quantity": "12",
+          "unit_price": "562.29",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "347.10",
+          "quantity": "1",
+          "unit_price": "347.10",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "781.44",
+          "quantity": "12",
+          "unit_price": "65.12",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "611.16",
+          "quantity": "11",
+          "unit_price": "55.56",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "231.36",
+          "quantity": "12",
+          "unit_price": "19.28",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "8718.54"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "1555.42"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141383-uwhYXsS6CfIjmoBZooZB",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.012784,
+    "input_tokens": 3292,
+    "output_tokens": 620,
+    "reasoning_tokens": 0
+  }
+}

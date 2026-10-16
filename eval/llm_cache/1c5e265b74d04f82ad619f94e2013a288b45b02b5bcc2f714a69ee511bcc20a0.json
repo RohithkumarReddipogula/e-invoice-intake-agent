@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-03-08"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "3953.20"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1665"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-02-06"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Software license, annual",
+          "net_amount": "3321.18",
+          "quantity": "9",
+          "unit_price": "369.02",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "3321.18"
+    },
+    "seller_iban": {
+      "confidence": 0.96,
+      "value": "DE55 3705 0198 0009 9887 76"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "631.02"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141143-wSutRqoL7ys4tpZDkvD0",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007157,
+    "input_tokens": 3127,
+    "output_tokens": 806,
+    "reasoning_tokens": 383
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.9,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.9,
+      "value": "2026-06-10"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "13171.35"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-2113"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-06-20"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Software license, annual",
+          "net_amount": "5878.51",
+          "quantity": "11",
+          "unit_price": "534.41",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "242.01",
+          "quantity": "9",
+          "unit_price": "26.89",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "4087.38",
+          "quantity": "11",
+          "unit_price": "371.58",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "884.87",
+          "quantity": "7",
+          "unit_price": "126.41",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "11092.77"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.93,
+      "value": "2078.58"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141421-NLDfm0BCopnUaqqkWSz8",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.011916,
+    "input_tokens": 3153,
+    "output_tokens": 561,
+    "reasoning_tokens": 0
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.8,
+      "value": "29.37"
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-05-24"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "19874.23"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "EB-20261513"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-03-25"
+    },
+    "line_items": {
+      "confidence": 0.92,
+      "value": [
+        {
+          "description": "Consulting day",
+          "net_amount": "16730.40",
+          "quantity": "12",
+          "unit_price": "1394.20",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "16701.03"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE20 8505 0300 3120 0456 78"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Elbtal Büroservice e.K."
+    },
+    "seller_vat_id": {
+      "confidence": 0.93,
+      "value": "DE864209753"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "3173.20"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141117-3jyEh5WVccvUTiBHWR6r",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007313,
+    "input_tokens": 3133,
+    "output_tokens": 836,
+    "reasoning_tokens": 412
+  }
+}

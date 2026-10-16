@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "22345.59"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1527"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-05-01"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "100.60",
+          "quantity": "2",
+          "unit_price": "50.30",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "7505.50",
+          "quantity": "10",
+          "unit_price": "750.55",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "117.60",
+          "quantity": "4",
+          "unit_price": "29.40",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "10913.88",
+          "quantity": "12",
+          "unit_price": "909.49",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "167.23",
+          "quantity": "7",
+          "unit_price": "23.89",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "18804.81"
+    },
+    "seller_iban": {
+      "confidence": 0.97,
+      "value": "DE55370501980009988776"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "3540.78"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141354-K56wD8O2ZlWz0fwr6l9a",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.01243,
+    "input_tokens": 3165,
+    "output_tokens": 610,
+    "reasoning_tokens": 0
+  }
+}

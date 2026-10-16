@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.85,
+      "value": "29.22"
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-07-07"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "1222.51"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "SW/2026/01772"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-06-07"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "51.24",
+          "quantity": "1",
+          "unit_price": "51.24",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "1010.46",
+          "quantity": "3",
+          "unit_price": "336.82",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "1032.48"
+    },
+    "seller_iban": {
+      "confidence": 0.97,
+      "value": "DE67680501010012345678"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "190.03"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141388-9qjop2bysSvJkqo9J3nT",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010914,
+    "input_tokens": 3102,
+    "output_tokens": 471,
+    "reasoning_tokens": 0
+  }
+}

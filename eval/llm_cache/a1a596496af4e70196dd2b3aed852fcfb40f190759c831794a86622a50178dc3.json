@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.9,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-08-11"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "9101.79"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-2259"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-07-12"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Software license, annual",
+          "net_amount": "7648.56",
+          "quantity": "9",
+          "unit_price": "849.84",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "7648.56"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1453.23"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141968-ox3VLFlTiutXh3e52hid",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010364,
+    "input_tokens": 3092,
+    "output_tokens": 418,
+    "reasoning_tokens": 0
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-08-11"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "19397.48"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "SW/2026/02198"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-06-12"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Support hours",
+          "net_amount": "1233.20",
+          "quantity": "10",
+          "unit_price": "123.32",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "4363.59",
+          "quantity": "11",
+          "unit_price": "396.69",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "2253.95",
+          "quantity": "5",
+          "unit_price": "450.79",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "402.40",
+          "quantity": "8",
+          "unit_price": "50.30",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "8087.84",
+          "quantity": "8",
+          "unit_price": "1010.98",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "16340.98"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE67680501010012345678"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "3056.50"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141210-k0HL4NTIfyxkG2XkmIXm",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008438,
+    "input_tokens": 3178,
+    "output_tokens": 1052,
+    "reasoning_tokens": 431
+  }
+}

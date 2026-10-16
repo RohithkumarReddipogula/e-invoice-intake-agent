@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-04-13"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "15453.91"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "OC-1311"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-03-30"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Consulting day",
+          "net_amount": "9144.38",
+          "quantity": "7",
+          "unit_price": "1306.34",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "1953.77",
+          "quantity": "7",
+          "unit_price": "279.11",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1238.60",
+          "quantity": "11",
+          "unit_price": "112.60",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "722.60",
+          "quantity": "10",
+          "unit_price": "72.26",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "13059.35"
+    },
+    "seller_iban": {
+      "confidence": 0.97,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "2394.56"
+    }
+  },
+  "prompt_version": "v1",
+  "provider": "openrouter",
+  "request_id": "gen-1792141336-O56Wm3hc7PfUlTdSGP2H",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.012268,
+    "input_tokens": 3264,
+    "output_tokens": 574,
+    "reasoning_tokens": 0
+  }
+}

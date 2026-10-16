@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.92,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.8,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-02-22"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "5341.43"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RE-2026-1953"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-01-23"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Support hours",
+          "net_amount": "316.62",
+          "quantity": "4.5",
+          "unit_price": "70.36",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "3626.94",
+          "quantity": "6",
+          "unit_price": "604.49",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "545.04",
+          "quantity": "1",
+          "unit_price": "545.04",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "4488.60"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE89 3704 0044 0532 0130 00"
+    },
+    "seller_name": {
+      "confidence": 0.9,
+      "value": "Muster Software GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE123456789"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "852.83"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141934-2BKkAdaYIZ9VRZw6UVGe",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.011578,
+    "input_tokens": 3164,
+    "output_tokens": 525,
+    "reasoning_tokens": 0
+  }
+}

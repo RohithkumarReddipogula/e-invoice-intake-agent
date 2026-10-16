@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-08-05"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "1157.86"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RE-2026-1289"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-07-22"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Catering per person",
+          "net_amount": "325.20",
+          "quantity": "12",
+          "unit_price": "27.10",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "756.91",
+          "quantity": "11",
+          "unit_price": "68.81",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "1082.11"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE89370400440532013000"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Muster Software GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE123456789"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "75.75"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792141861-LZPwjRVr0sk6CdmLR5VF",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.010756,
+    "input_tokens": 3113,
+    "output_tokens": 453,
+    "reasoning_tokens": 0
+  }
+}
