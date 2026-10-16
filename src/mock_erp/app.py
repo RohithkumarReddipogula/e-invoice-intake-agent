@@ -5,6 +5,8 @@ GET  /api/invoices      list what arrived
 GET  /api/invoices/{id} one invoice
 
 Flaky mode (`fail_every=n`) answers every n-th POST with 503, to test retries.
+Demo mode (`demo=True`) adds POST /api/reset for the hourly demo reset. The mock ERP only
+listens on 127.0.0.1, so the endpoint is not reachable from outside the container.
 """
 
 from __future__ import annotations
@@ -39,7 +41,7 @@ def _payload_sha(payload: dict[str, Any]) -> str:
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode()).hexdigest()
 
 
-def create_app(db_path: Path, fail_every: int = 0) -> FastAPI:
+def create_app(db_path: Path, fail_every: int = 0, demo: bool = False) -> FastAPI:
     app = FastAPI(title="mock ERP", version="0.1.0")
     db_path.parent.mkdir(parents=True, exist_ok=True)
     lock = threading.Lock()
@@ -107,6 +109,15 @@ def create_app(db_path: Path, fail_every: int = 0) -> FastAPI:
                 ).fetchone()
         response.status_code = 201
         return {**to_json(row), "created": True}
+
+    if demo:
+
+        @app.post("/api/reset")
+        def reset() -> dict[str, int]:
+            with lock, connect() as conn:
+                deleted = conn.execute("DELETE FROM erp_invoices").rowcount
+                conn.execute("DELETE FROM sqlite_sequence WHERE name = 'erp_invoices'")
+            return {"deleted": deleted}
 
     @app.get("/api/invoices")
     def list_invoices() -> list[dict[str, Any]]:

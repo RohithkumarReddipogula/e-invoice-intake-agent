@@ -70,6 +70,25 @@ Upload with `curl -F "file=@invoice.xml" http://127.0.0.1:8000/invoices`. Option
 - **Eval without a key or Docker**, from the committed caches:
   `python -m eval.run --split test --provider openrouter --model anthropic/claude-haiku-5.5 --threshold 0.9`
 
+## Demo mode
+
+`INTAKE_DEMO_MODE=1` turns the app into a public demo: visitors pick from 11 sample invoices
+of the test split (clean XRechnung, ZUGFeRD and plain PDFs, wrong totals, a bad IBAN, a
+duplicate, a low-confidence case, an impossible date) and follow them through review,
+approval and the mock ERP.
+
+- **No API key on the server:** the demo refuses to start if one is set. LLM answers and
+  KoSIT results come only from the committed caches, the same ones CI uses; a startup
+  self-check refuses to start if any sample would miss them.
+- **No free text from visitors:** no uploads, the reviewer is "Demo visitor", notes and
+  reject reasons are preset options, only amounts and dates can be corrected, and REST
+  changes are disabled.
+- **Resets every full hour** (invoices, files, ERP), with a banner on every page. Dates are
+  checked as of 15 Oct 2026, the eval's reference day, so the samples behave as in the eval.
+- Binds to `0.0.0.0:$PORT` in demo mode only; the default stays `127.0.0.1`.
+
+Run it locally in Docker: `docker build -t intake-demo . && docker run --rm -p 8000:8000 intake-demo`.
+
 ## Guardrails for production (off by default)
 
 Two settings for real use, both **off by default**. Turn them on in the pilot

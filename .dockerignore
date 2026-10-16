@@ -1,0 +1,15 @@
+# Never send secrets or local state to the Docker build.
+.env
+.env.*
+.venv/
+data/
+.git/
+.github/
+.claude/
+.kosit-src/
+**/__pycache__/
+.pytest_cache/
+.ruff_cache/
+tests/
+eval/results/
+eval/data/dev/

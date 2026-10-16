@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Sample invoices{% endblock %}
+{% block content %}
+<h1>Try the invoice intake agent</h1>
+<p>Pick a synthetic invoice. It runs through the real pipeline: XML is read directly and checked
+  by the official KoSIT validator, plain PDFs go through the LLM with grounding, then the
+  business rules decide. Results come from the committed caches of the
+  <a href="https://github.com/RohithkumarReddipogula/e-invoice-intake-agent#evaluation">evaluation</a>,
+  so nothing is sent to an API. Afterwards you can review, approve or reject in the
+  <a href="/review">review queue</a> and see exports in the <a href="/demo/erp">ERP inbox</a>.</p>
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<div class="cards">
+  {% for s in samples %}
+  <form class="card" method="post" action="/demo/process/{{ s.invoice_id }}">
+    <h2 style="margin:0">{{ s.title }}</h2>
+    <p>{{ s.story }}</p>
+    <div class="muted">{{ s.invoice_id }}{% if kinds.get(s.invoice_id) %} · {{ kinds[s.invoice_id] }}{% endif %}
+      · expected: <span class="badge {{ s.expected }}">{{ s.expected.replace("_", " ") }}</span></div>
+    <button class="primary" type="submit">Process this invoice</button>
+  </form>
+  {% endfor %}
+</div>
+<p class="muted" style="margin-top:16px">Processing a card twice is caught as a duplicate (rule R6): that is the
+  agent working as intended. One invoice (test-026) is already in the system at every reset, so the
+  "Duplicate" card has something to collide with.</p>
+{% endblock %}

@@ -1,4 +1,9 @@
 {% extends "base.html" %}
+{# Demo mode: fixed reviewer name, preset notes, only amounts and dates editable. #}
+{% macro who(demo, reviewer) -%}
+  {% if demo %}<p class="muted">Acting as <strong>Demo visitor</strong></p>
+  {% else %}<label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>{% endif %}
+{%- endmacro %}
 {% block title %}{{ record.data.invoice_number if record.data and record.data.invoice_number else "Invoice" }}{% endblock %}
 {% block content %}
 <p><a href="/review">← Review queue</a></p>
@@ -35,7 +40,7 @@
           <th style="width:30%"><label for="f-{{ name }}">{{ labels[name] }}</label></th>
           <td>
             <input id="f-{{ name }}" name="{{ name }}" type="{{ 'date' if name in date_fields else 'text' }}"
-                   value="{{ field_values[name] }}" {{ '' if editable else 'disabled' }}>
+                   value="{{ field_values[name] }}" {{ '' if editable and (editable_fields is none or name in editable_fields) else 'disabled' }}>
             <div class="why">
               confidence {{ "%.2f"|format(record.confidence.get(name, 0.0)) }}
               {%- if record.notes.get(name) %} · {{ record.notes[name] }}{% endif %}
@@ -55,13 +60,14 @@
         {% for row in line_rows %}{% set i = loop.index0 %}
         <tr>{% for key in line_keys %}
           <td><input type="text" name="line-{{ i }}-{{ key }}" aria-label="{{ key }}, line {{ i + 1 }}"
-                     value="{{ row[key] }}" {{ '' if editable else 'disabled' }}></td>
+                     value="{{ row[key] }}" {{ '' if editable and (editable_line_keys is none or key in editable_line_keys) else 'disabled' }}></td>
         {% endfor %}</tr>
         {% endfor %}
       </table>
 
       {% if editable %}
-      <p><label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label></p>
+      {% if demo %}<p class="muted">Demo: amounts and dates can be corrected; names and texts are read-only.</p>{% endif %}
+      <p>{{ who(demo, reviewer) }}</p>
       <button type="submit">Save corrections and re-check</button>
       {% endif %}
     </form>
@@ -82,14 +88,18 @@
     {% if editable %}
     <div class="card actions">
       <form method="post" action="/review/{{ record.id }}/approve">
-        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
+        {{ who(demo, reviewer) }}
         <label>Note {% if record.failed_rules or record.blocking %}(required: checks failed){% endif %}
-          <textarea name="note" rows="2" maxlength="2000"></textarea></label>
+          {% if demo %}<select name="note"><option value="">(no note)</option>
+            {% for n in approve_notes %}<option>{{ n }}</option>{% endfor %}</select>
+          {% else %}<textarea name="note" rows="2" maxlength="2000"></textarea>{% endif %}</label>
         <p><button class="primary" type="submit">Approve</button></p>
       </form>
       <form method="post" action="/review/{{ record.id }}/reject">
-        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
-        <label>Reason (required) <textarea name="reason" rows="2" required maxlength="2000"></textarea></label>
+        {{ who(demo, reviewer) }}
+        <label>Reason (required)
+          {% if demo %}<select name="reason" required>{% for r in reject_reasons %}<option>{{ r }}</option>{% endfor %}</select>
+          {% else %}<textarea name="reason" rows="2" required maxlength="2000"></textarea>{% endif %}</label>
         <p><button class="danger" type="submit">Reject</button></p>
       </form>
     </div>
@@ -110,7 +120,7 @@
       {% endif %}
       {% if can_export %}
       <form method="post" action="/review/{{ record.id }}/export" class="actions" style="margin-top:12px">
-        <label>Your name <input type="text" name="reviewer" value="{{ reviewer }}" required maxlength="100"></label>
+        {{ who(demo, reviewer) }}
         <p><button type="submit">{{ 'Retry export' if record.status.value == 'export_failed' else 'Export to ERP' }}</button></p>
       </form>
       {% endif %}

@@ -44,6 +44,19 @@ class IntakeService:
     def from_settings(cls, settings: Settings) -> IntakeService:
         database = db.Database(settings.database_path)
         erp = ErpClient(settings.erp_base_url) if settings.erp_base_url else None
+        if settings.demo_mode:
+            from .demo import DEMO_TODAY
+            from .kosit_cache import KositCache
+
+            # Cached KoSIT results (no Docker in the demo) and the eval's fixed "today".
+            pipeline = Pipeline(
+                settings,
+                database,
+                LlmExtractor(settings),
+                validator=KositCache(settings.kosit_cache_dir),
+                today=lambda: DEMO_TODAY,
+            )
+            return cls(pipeline, erp)
         return cls(Pipeline(settings, database, LlmExtractor(settings)), erp)
 
     @property

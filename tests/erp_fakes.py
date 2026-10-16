@@ -12,8 +12,8 @@ from mock_erp.app import create_app
 
 
 class Erp:
-    def __init__(self, tmp_path, fail_every: int = 0):
-        self.app = create_app(tmp_path / "erp.db", fail_every)
+    def __init__(self, tmp_path, fail_every: int = 0, demo: bool = False):
+        self.app = create_app(tmp_path / "erp.db", fail_every, demo=demo)
         self.http = TestClient(self.app)
         self.sleeps: list[float] = []
 

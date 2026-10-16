@@ -194,6 +194,10 @@ def existing_duplicate_keys(conn: sqlite3.Connection, exclude_id: str) -> set[Du
     return {(r["seller_key"], r["invoice_number"]) for r in rows}
 
 
+def count_invoices(conn: sqlite3.Connection) -> int:
+    return conn.execute("SELECT COUNT(*) FROM invoices").fetchone()[0]
+
+
 ACCEPTED = (InvoiceStatus.AUTO_APPROVED, InvoiceStatus.APPROVED, InvoiceStatus.EXPORTED,
             InvoiceStatus.EXPORT_FAILED)  # fmt: skip
 

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}ERP inbox{% endblock %}
+{% block content %}
+<h1>ERP inbox <span class="badge exported">{{ invoices|length }}</span></h1>
+<p class="muted">What the mock ERP received. Every export carries an Idempotency-Key, so a retry
+  never creates a second entry.</p>
+{% if error %}<div class="error">{{ error }}</div>{% endif %}
+<table>
+  <tr><th>ERP id</th><th>Received</th><th>Invoice</th><th>Seller</th><th class="num">Gross</th><th>Approved by</th></tr>
+  {% for e in invoices %}
+  <tr>
+    <td>{{ e.erp_id }}</td>
+    <td class="muted">{{ e.received_at|local_time }}</td>
+    <td><a href="/review/{{ e.invoice.invoice_id }}">{{ e.invoice.invoice.invoice_number }}</a></td>
+    <td>{{ e.invoice.invoice.seller_name }}</td>
+    <td class="num">{{ e.invoice.invoice.gross_total }} {{ e.invoice.invoice.currency }}</td>
+    <td>{{ e.invoice.approval.by }} ({{ e.invoice.approval.status.replace("_", " ") }})</td>
+  </tr>
+  {% else %}
+  <tr><td colspan="6" class="muted">Nothing exported yet.</td></tr>
+  {% endfor %}
+</table>
+{% endblock %}

@@ -6,7 +6,7 @@ from decimal import Decimal
 from pathlib import Path
 from typing import Literal
 
-from pydantic import Field, SecretStr, field_validator
+from pydantic import Field, SecretStr, field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -48,6 +48,31 @@ class Settings(BaseSettings):
 
     # Times are stored in UTC and shown in this zone on the review page.
     display_timezone: str = "Europe/Berlin"
+
+    # Public demo (src/intake/demo.py): no API key, LLM and KoSIT results only from the
+    # committed caches, sample invoices instead of uploads, hourly reset, binds to 0.0.0.0.
+    demo_mode: bool = False
+    demo_data_dir: Path = Path("eval/data/test")
+    kosit_cache_dir: Path = Path("eval/kosit_cache")
+
+    @model_validator(mode="after")
+    def _demo_mode_is_locked_down(self) -> Settings:
+        if not self.demo_mode:
+            return self
+        if self.anthropic_api_key is not None or self.openrouter_api_key is not None:
+            raise ValueError(
+                "INTAKE_DEMO_MODE=1 runs without an API key: unset ANTHROPIC_API_KEY and "
+                "OPENROUTER_API_KEY. The demo only uses the committed caches."
+            )
+        # The configuration the committed LLM cache was filled with (eval, prompt v2).
+        self.llm_provider = "openrouter"
+        self.llm_model = "anthropic/claude-haiku-5.5"
+        self.llm_offline = True
+        self.llm_cache_dir = Path("eval/llm_cache")
+        # Guardrails off, as in the published eval.
+        self.max_auto_amount = None
+        self.review_new_suppliers = False
+        return self
 
     @field_validator("anthropic_api_key", "openrouter_api_key", "max_auto_amount", mode="before")
     @classmethod

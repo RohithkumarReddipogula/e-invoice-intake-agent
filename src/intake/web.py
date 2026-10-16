@@ -15,6 +15,7 @@ from fastapi import APIRouter, Request
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 
+from . import demo as demo_mode
 from .models import FIELD_NAMES
 from .service import EXPORTABLE, IntakeService, InvalidTransition, NotFound, ValidationProblem
 from .status import InvoiceStatus
@@ -61,10 +62,18 @@ def build_web_router(service: IntakeService) -> APIRouter:
     router = APIRouter(include_in_schema=False)
     zone = ZoneInfo(service.settings.display_timezone)
     TEMPLATES.env.filters["local_time"] = lambda iso: local_time(iso, zone)
+    demo = service.settings.demo_mode
 
     def page(request: Request, name: str, context: dict[str, Any], status: int = 200):
-        context = {"reviewer": request.cookies.get("reviewer", ""), **context}
+        reviewer = "Demo visitor" if demo else request.cookies.get("reviewer", "")
+        context = {"reviewer": reviewer, "demo": demo, **context}
+        if demo:
+            context["next_reset"] = local_time(demo_mode.next_reset().isoformat(), zone)
         return TEMPLATES.TemplateResponse(request, name, context, status_code=status)
+
+    def reviewer_of(form) -> str | None:
+        # Demo: no free text from visitors, the name is fixed.
+        return "Demo visitor" if demo else _reviewer(form)
 
     def detail(
         request: Request,
@@ -87,7 +96,7 @@ def build_web_router(service: IntakeService) -> APIRouter:
         if entered is not None:
             field_values, line_rows = entered["fields"], entered["lines"]
         else:
-            field_values, line_rows = _stored_form_values(record, editable)
+            field_values, line_rows = _stored_form_values(record, editable and not demo)
         context = {
             "record": record,
             "labels": LABELS,
@@ -103,6 +112,11 @@ def build_web_router(service: IntakeService) -> APIRouter:
             "can_export": service.erp is not None and record.status in EXPORTABLE,
             "message": DONE_MESSAGES.get(request.query_params.get("done", "")),
             "error": error,
+            # Demo: preset notes, and only amounts and dates can be corrected.
+            "approve_notes": demo_mode.APPROVE_NOTES,
+            "reject_reasons": demo_mode.REJECT_REASONS,
+            "editable_fields": demo_mode.EDITABLE_FIELDS if demo else None,
+            "editable_line_keys": demo_mode.EDITABLE_LINE_KEYS if demo else None,
         }
         if entered is not None and entered["reviewer"]:
             context["reviewer"] = entered["reviewer"]
@@ -110,7 +124,8 @@ def build_web_router(service: IntakeService) -> APIRouter:
 
     def done(invoice_id: str, what: str, reviewer: str) -> RedirectResponse:
         response = RedirectResponse(f"/review/{invoice_id}?done={what}", status_code=303)
-        response.set_cookie("reviewer", reviewer, max_age=30 * 24 * 3600, samesite="strict")
+        if not demo:
+            response.set_cookie("reviewer", reviewer, max_age=30 * 24 * 3600, samesite="strict")
         return response
 
     @router.get("/review", response_class=HTMLResponse)
@@ -131,13 +146,15 @@ def build_web_router(service: IntakeService) -> APIRouter:
     @router.post("/review/{invoice_id}/fields", response_class=HTMLResponse)
     async def correct(request: Request, invoice_id: str):
         form = await request.form()
-        reviewer = _reviewer(form)
+        reviewer = reviewer_of(form)
         entered = _entered_form(form)
         if reviewer is None:
             return detail(request, invoice_id, "Enter your name before saving.", 400, entered)
         changes = _changes_from_form(form)
         try:
             before = service.get(invoice_id)
+            if demo:
+                changes = _demo_changes(changes, before, form)
             after = service.correct_fields(invoice_id, changes, f"web:{reviewer}")
         except NotFound:
             return detail(request, invoice_id)
@@ -153,11 +170,14 @@ def build_web_router(service: IntakeService) -> APIRouter:
     @router.post("/review/{invoice_id}/approve", response_class=HTMLResponse)
     async def approve(request: Request, invoice_id: str):
         form = await request.form()
-        reviewer = _reviewer(form)
+        reviewer = reviewer_of(form)
         if reviewer is None:
             return detail(request, invoice_id, "Enter your name before approving.", 400)
+        note = str(form.get("note", ""))
         try:
-            service.approve(invoice_id, f"web:{reviewer}", str(form.get("note", "")))
+            if demo and note:
+                demo_mode.check_note(note, demo_mode.APPROVE_NOTES)
+            service.approve(invoice_id, f"web:{reviewer}", note)
         except NotFound:
             return detail(request, invoice_id)
         except (ValidationProblem, InvalidTransition) as exc:
@@ -167,7 +187,7 @@ def build_web_router(service: IntakeService) -> APIRouter:
     @router.post("/review/{invoice_id}/export", response_class=HTMLResponse)
     async def export(request: Request, invoice_id: str):
         form = await request.form()
-        reviewer = _reviewer(form)
+        reviewer = reviewer_of(form)
         if reviewer is None:
             return detail(request, invoice_id, "Enter your name before exporting.", 400)
         try:
@@ -181,11 +201,14 @@ def build_web_router(service: IntakeService) -> APIRouter:
     @router.post("/review/{invoice_id}/reject", response_class=HTMLResponse)
     async def reject(request: Request, invoice_id: str):
         form = await request.form()
-        reviewer = _reviewer(form)
+        reviewer = reviewer_of(form)
         if reviewer is None:
             return detail(request, invoice_id, "Enter your name before rejecting.", 400)
+        reason = str(form.get("reason", ""))
         try:
-            service.reject(invoice_id, f"web:{reviewer}", str(form.get("reason", "")))
+            if demo:
+                demo_mode.check_note(reason, demo_mode.REJECT_REASONS)
+            service.reject(invoice_id, f"web:{reviewer}", reason)
         except NotFound:
             return detail(request, invoice_id)
         except (ValidationProblem, InvalidTransition) as exc:
@@ -231,6 +254,24 @@ def _line_count(form) -> int:
         return max(0, min(int(str(form.get("line_count", "0"))), 1000))
     except ValueError:
         return 0
+
+
+def _demo_changes(changes: dict[str, Any], record, form) -> dict[str, Any]:
+    """Demo: keep only amount and date fields; line items keep their stored descriptions and
+    count, only their numbers are read from the form (by row index). Enforced here, not just
+    in the page."""
+    kept = {k: v for k, v in changes.items() if k in demo_mode.EDITABLE_FIELDS}
+    if "line_count" in form and record.data is not None:
+        lines = []
+        for i, stored in enumerate(record.data.line_items):
+            row = {k: _str(getattr(stored, k)) or None for k in LINE_KEYS}
+            for key in demo_mode.EDITABLE_LINE_KEYS:
+                field = f"line-{i}-{key}"
+                if field in form:
+                    row[key] = str(form[field]).strip() or None
+            lines.append(row)
+        kept["line_items"] = lines
+    return kept
 
 
 def _changes_from_form(form) -> dict[str, Any]:
