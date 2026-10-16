@@ -1,0 +1,60 @@
+{
+  "id": "dev-060",
+  "file": "dev-060.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2008",
+    "issue_date": "2026-09-09",
+    "due_date": "2026-11-08",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "10",
+        "unit_price": "649.55",
+        "net_amount": "6495.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "5",
+        "unit_price": "42.94",
+        "net_amount": "214.70",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "6",
+        "unit_price": "1363.48",
+        "net_amount": "8180.88",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "11",
+        "unit_price": "72.07",
+        "net_amount": "792.77",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "9",
+        "unit_price": "127.65",
+        "net_amount": "1148.85",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "16832.70",
+    "vat_total": "3077.31",
+    "gross_total": "19910.01"
+  }
+}

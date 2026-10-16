@@ -1,0 +1,53 @@
+{
+  "id": "test-056",
+  "file": "test-056.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001935",
+    "issue_date": "2026-06-16",
+    "due_date": "2026-08-15",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "4",
+        "unit_price": "68.99",
+        "net_amount": "275.96",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "2.5",
+        "unit_price": "80.43",
+        "net_amount": "201.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "3",
+        "unit_price": "362.32",
+        "net_amount": "1086.96",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "5",
+        "unit_price": "22.55",
+        "net_amount": "112.75",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1701.75",
+    "vat_total": "285.47",
+    "gross_total": "1987.22"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dev-037",
+  "file": "dev-037.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1617",
+    "issue_date": "2026-02-25",
+    "due_date": "2026-03-27",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "1",
+        "unit_price": "423.01",
+        "net_amount": "423.01",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "1",
+        "unit_price": "133.66",
+        "net_amount": "133.66",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "556.67",
+    "vat_total": "105.77",
+    "gross_total": "662.44"
+  }
+}

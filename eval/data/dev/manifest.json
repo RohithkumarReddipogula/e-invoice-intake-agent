@@ -1,0 +1,606 @@
+{
+  "split": "dev",
+  "seed": 2026,
+  "invoices": [
+    {
+      "id": "dev-001",
+      "file": "dev-001.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-002",
+      "file": "dev-002.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-003",
+      "file": "dev-003.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-004",
+      "file": "dev-004.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-005",
+      "file": "dev-005.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-006",
+      "file": "dev-006.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-007",
+      "file": "dev-007.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-008",
+      "file": "dev-008.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-009",
+      "file": "dev-009.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-010",
+      "file": "dev-010.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-011",
+      "file": "dev-011.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-012",
+      "file": "dev-012.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": "lines_sum",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-013",
+      "file": "dev-013.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-014",
+      "file": "dev-014.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-015",
+      "file": "dev-015.pdf",
+      "kind": "zugferd",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-016",
+      "file": "dev-016.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": "vat_id",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-017",
+      "file": "dev-017.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": "vat_id",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-018",
+      "file": "dev-018.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-019",
+      "file": "dev-019.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-020",
+      "file": "dev-020.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": "iban",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-021",
+      "file": "dev-021.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-022",
+      "file": "dev-022.pdf",
+      "kind": "zugferd",
+      "layout": "classic_de",
+      "planted": "vat_id",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-023",
+      "file": "dev-023.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-024",
+      "file": "dev-024.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-025",
+      "file": "dev-025.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-026",
+      "file": "dev-026.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": "iban",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-027",
+      "file": "dev-027.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-028",
+      "file": "dev-028.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-029",
+      "file": "dev-029.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-030",
+      "file": "dev-030.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-031",
+      "file": "dev-031.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-032",
+      "file": "dev-032.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-033",
+      "file": "dev-033.pdf",
+      "kind": "zugferd",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-034",
+      "file": "dev-034.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": "net_vat_gross",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-035",
+      "file": "dev-035.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": "lines_sum",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-036",
+      "file": "dev-036.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": "lines_sum",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-037",
+      "file": "dev-037.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-038",
+      "file": "dev-038.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-039",
+      "file": "dev-039.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": "date",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-040",
+      "file": "dev-040.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": "net_vat_gross",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-041",
+      "file": "dev-041.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-042",
+      "file": "dev-042.pdf",
+      "kind": "zugferd",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-043",
+      "file": "dev-043.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": "date",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-044",
+      "file": "dev-044.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-045",
+      "file": "dev-045.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-046",
+      "file": "dev-046.pdf",
+      "kind": "zugferd",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-047",
+      "file": "dev-047.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": "duplicate",
+      "duplicate_of": "dev-028"
+    },
+    {
+      "id": "dev-048",
+      "file": "dev-048.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-049",
+      "file": "dev-049.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-050",
+      "file": "dev-050.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": "duplicate",
+      "duplicate_of": "dev-046"
+    },
+    {
+      "id": "dev-051",
+      "file": "dev-051.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-052",
+      "file": "dev-052.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": "duplicate",
+      "duplicate_of": "dev-031"
+    },
+    {
+      "id": "dev-053",
+      "file": "dev-053.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-054",
+      "file": "dev-054.pdf",
+      "kind": "zugferd",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-055",
+      "file": "dev-055.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-056",
+      "file": "dev-056.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": "iban",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-057",
+      "file": "dev-057.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-058",
+      "file": "dev-058.pdf",
+      "kind": "zugferd",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-059",
+      "file": "dev-059.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-060",
+      "file": "dev-060.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-061",
+      "file": "dev-061.pdf",
+      "kind": "zugferd",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-062",
+      "file": "dev-062.pdf",
+      "kind": "zugferd",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-063",
+      "file": "dev-063.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-064",
+      "file": "dev-064.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": "net_vat_gross",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-065",
+      "file": "dev-065.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-066",
+      "file": "dev-066.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": "date",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-067",
+      "file": "dev-067.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-068",
+      "file": "dev-068.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-069",
+      "file": "dev-069.pdf",
+      "kind": "zugferd",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-070",
+      "file": "dev-070.pdf",
+      "kind": "plain_pdf",
+      "layout": "classic_de",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-071",
+      "file": "dev-071.pdf",
+      "kind": "plain_pdf",
+      "layout": "modern_en",
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-072",
+      "file": "dev-072.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": "lines_sum",
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-073",
+      "file": "dev-073.xml",
+      "kind": "xml_ubl",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-074",
+      "file": "dev-074.xml",
+      "kind": "xml_cii",
+      "layout": null,
+      "planted": null,
+      "duplicate_of": null
+    },
+    {
+      "id": "dev-075",
+      "file": "dev-075.pdf",
+      "kind": "plain_pdf",
+      "layout": "compact_de",
+      "planted": null,
+      "duplicate_of": null
+    }
+  ]
+}

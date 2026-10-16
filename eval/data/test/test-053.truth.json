@@ -1,0 +1,46 @@
+{
+  "id": "test-053",
+  "file": "test-053.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1891",
+    "issue_date": "2026-09-13",
+    "due_date": "2026-09-27",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "11",
+        "unit_price": "389.60",
+        "net_amount": "4285.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "4",
+        "unit_price": "18.74",
+        "net_amount": "74.96",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "11",
+        "unit_price": "851.35",
+        "net_amount": "9364.85",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "13725.41",
+    "vat_total": "2607.83",
+    "gross_total": "16333.24"
+  }
+}

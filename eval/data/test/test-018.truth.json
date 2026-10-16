@@ -1,0 +1,39 @@
+{
+  "id": "test-018",
+  "file": "test-018.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001297",
+    "issue_date": "2026-05-22",
+    "due_date": "2026-06-21",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "2",
+        "unit_price": "26.14",
+        "net_amount": "52.28",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "9",
+        "unit_price": "73.44",
+        "net_amount": "660.96",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "713.24",
+    "vat_total": "49.93",
+    "gross_total": "763.17"
+  }
+}

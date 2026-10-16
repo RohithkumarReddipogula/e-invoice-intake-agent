@@ -1,0 +1,53 @@
+{
+  "id": "dev-045",
+  "file": "dev-045.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261752",
+    "issue_date": "2026-02-03",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "9",
+        "unit_price": "201.42",
+        "net_amount": "1812.78",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "11",
+        "unit_price": "50.35",
+        "net_amount": "553.85",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "1",
+        "unit_price": "25.23",
+        "net_amount": "25.23",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "12",
+        "unit_price": "137.85",
+        "net_amount": "1654.20",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4046.06",
+    "vat_total": "702.29",
+    "gross_total": "4748.35"
+  }
+}

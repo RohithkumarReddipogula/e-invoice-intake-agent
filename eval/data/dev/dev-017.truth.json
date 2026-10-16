@@ -1,0 +1,53 @@
+{
+  "id": "dev-017",
+  "file": "dev-017.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01274",
+    "issue_date": "2026-01-24",
+    "due_date": "2026-02-07",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE24681357",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "802.87",
+        "net_amount": "1605.74",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "499.58",
+        "net_amount": "4496.22",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "10",
+        "unit_price": "27.85",
+        "net_amount": "278.50",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "12",
+        "unit_price": "332.09",
+        "net_amount": "3985.08",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "5.76",
+    "charge_total": "0",
+    "net_total": "10359.78",
+    "vat_total": "1934.94",
+    "gross_total": "12294.72"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "test-037",
+  "file": "test-037.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01621",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-04-02",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "12",
+        "unit_price": "54.67",
+        "net_amount": "656.04",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "656.04",
+    "vat_total": "45.92",
+    "gross_total": "701.96"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "test-062",
+  "file": "test-062.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/02044",
+    "issue_date": "2026-06-10",
+    "due_date": "2026-08-09",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "11",
+        "unit_price": "757.26",
+        "net_amount": "8329.86",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "8329.86",
+    "vat_total": "1582.67",
+    "gross_total": "9912.53"
+  }
+}

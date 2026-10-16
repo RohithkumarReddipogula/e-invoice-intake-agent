@@ -1,0 +1,46 @@
+{
+  "id": "dev-001",
+  "file": "dev-001.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01000",
+    "issue_date": "2026-01-28",
+    "due_date": "2026-02-27",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "1",
+        "unit_price": "893.19",
+        "net_amount": "893.19",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "2",
+        "unit_price": "194.87",
+        "net_amount": "389.74",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "4",
+        "unit_price": "125.11",
+        "net_amount": "500.44",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1783.37",
+    "vat_total": "338.84",
+    "gross_total": "2122.21"
+  }
+}

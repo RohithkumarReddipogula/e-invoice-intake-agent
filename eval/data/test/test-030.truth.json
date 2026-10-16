@@ -1,0 +1,60 @@
+{
+  "id": "test-030",
+  "file": "test-030.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001495",
+    "issue_date": "2026-10-02",
+    "due_date": "2026-11-01",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "5",
+        "unit_price": "28.36",
+        "net_amount": "141.80",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "7",
+        "unit_price": "60.53",
+        "net_amount": "423.71",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "8",
+        "unit_price": "73.78",
+        "net_amount": "590.24",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "6",
+        "unit_price": "370.86",
+        "net_amount": "2225.16",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "9",
+        "unit_price": "143.34",
+        "net_amount": "1290.06",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4670.97",
+    "vat_total": "765.81",
+    "gross_total": "5436.78"
+  }
+}

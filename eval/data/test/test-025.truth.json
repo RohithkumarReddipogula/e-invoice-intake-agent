@@ -1,0 +1,60 @@
+{
+  "id": "test-025",
+  "file": "test-025.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01414",
+    "issue_date": "2026-03-05",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "4",
+        "unit_price": "324.13",
+        "net_amount": "1296.52",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "1",
+        "unit_price": "12.81",
+        "net_amount": "12.81",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "687.21",
+        "net_amount": "2748.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "48.91",
+        "net_amount": "48.91",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "6",
+        "unit_price": "25.13",
+        "net_amount": "150.78",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4257.86",
+    "vat_total": "785.03",
+    "gross_total": "5042.89"
+  }
+}

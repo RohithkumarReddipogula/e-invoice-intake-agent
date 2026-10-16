@@ -1,0 +1,60 @@
+{
+  "id": "dev-071",
+  "file": "dev-071.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/02198",
+    "issue_date": "2026-06-12",
+    "due_date": "2026-08-11",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "10",
+        "unit_price": "123.32",
+        "net_amount": "1233.20",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "11",
+        "unit_price": "396.69",
+        "net_amount": "4363.59",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "5",
+        "unit_price": "450.79",
+        "net_amount": "2253.95",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "8",
+        "unit_price": "50.30",
+        "net_amount": "402.40",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "8",
+        "unit_price": "1010.98",
+        "net_amount": "8087.84",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "16340.98",
+    "vat_total": "3056.50",
+    "gross_total": "19397.48"
+  }
+}

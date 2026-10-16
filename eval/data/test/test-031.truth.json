@@ -1,0 +1,46 @@
+{
+  "id": "test-031",
+  "file": "test-031.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261512",
+    "issue_date": "2026-06-09",
+    "due_date": "2026-07-09",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "2",
+        "unit_price": "247.67",
+        "net_amount": "495.34",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "2",
+        "unit_price": "72.73",
+        "net_amount": "145.46",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "3",
+        "unit_price": "22.75",
+        "net_amount": "68.25",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "49.76",
+    "charge_total": "0",
+    "net_total": "659.29",
+    "vat_total": "117.08",
+    "gross_total": "777.37"
+  }
+}

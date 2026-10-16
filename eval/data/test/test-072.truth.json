@@ -1,0 +1,39 @@
+{
+  "id": "test-072",
+  "file": "test-072.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-2215",
+    "issue_date": "2026-09-28",
+    "due_date": "2026-10-12",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "4",
+        "unit_price": "454.05",
+        "net_amount": "1816.20",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "2",
+        "unit_price": "281.03",
+        "net_amount": "562.06",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "9.67",
+    "charge_total": "0",
+    "net_total": "2368.59",
+    "vat_total": "450.03",
+    "gross_total": "2818.62"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "dev-005",
+  "file": "dev-005.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01069",
+    "issue_date": "2026-07-01",
+    "due_date": "2026-08-30",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "2",
+        "unit_price": "475.93",
+        "net_amount": "951.86",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "44.82",
+    "charge_total": "0",
+    "net_total": "907.04",
+    "vat_total": "172.34",
+    "gross_total": "1079.38"
+  }
+}

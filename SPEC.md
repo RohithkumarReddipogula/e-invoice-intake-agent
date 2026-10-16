@@ -201,12 +201,15 @@ disk under `data/files/<sha256>`. The schema is created by plain SQL migrations.
 
 ### 8.6 LLM extraction
 
-- Provider: Anthropic Claude (see open question 1), model name in config.
+- Provider: Anthropic Claude by default (Claude API, `messages.parse`), or OpenRouter
+  (`INTAKE_LLM_PROVIDER=openrouter`, OpenAI-compatible chat completions with strict
+  `response_format: json_schema`). OpenRouter reports the cost of every call (`usage.cost`),
+  which is stored in the cache entry; the provider is part of the cache key.
 - The PDF text (from `pypdf`) goes into the prompt. The answer must match the Pydantic
   schema `LlmInvoiceExtraction` (same fields as section 3, each with `value` and
   `confidence`). An answer that does not match the schema counts as an extraction error,
   so the invoice goes to review.
-- **Disk cache:** key = sha256(model, prompt version, schema hash, PDF text). Stored as
+- **Disk cache:** key = sha256(provider, model, prompt version, schema hash, PDF text). Stored as
   JSON under `llm_cache/`. The cache for the eval set is committed to git, so CI and anyone
   cloning the repo can run the eval without a key.
 - **Offline mode:** `LLM_OFFLINE=1` (set in CI). A cache miss then raises an error. The

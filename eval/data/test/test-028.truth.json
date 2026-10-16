@@ -1,0 +1,46 @@
+{
+  "id": "test-028",
+  "file": "test-028.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01464",
+    "issue_date": "2026-06-29",
+    "due_date": "2026-07-13",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "5",
+        "unit_price": "58.65",
+        "net_amount": "293.25",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "8",
+        "unit_price": "26.90",
+        "net_amount": "215.20",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "4",
+        "unit_price": "183.59",
+        "net_amount": "734.36",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1242.81",
+    "vat_total": "200.95",
+    "gross_total": "1443.76"
+  }
+}

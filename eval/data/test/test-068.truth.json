@@ -1,0 +1,60 @@
+{
+  "id": "test-068",
+  "file": "test-068.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-002145",
+    "issue_date": "2026-06-04",
+    "due_date": "2026-08-03",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "1291.88",
+        "net_amount": "2583.76",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "11",
+        "unit_price": "90.99",
+        "net_amount": "1000.89",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "6",
+        "unit_price": "221.50",
+        "net_amount": "1329.00",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "7",
+        "unit_price": "23.82",
+        "net_amount": "166.74",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "3",
+        "unit_price": "247.98",
+        "net_amount": "743.94",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "5824.33",
+    "vat_total": "1086.61",
+    "gross_total": "6910.94"
+  }
+}

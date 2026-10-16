@@ -1,0 +1,46 @@
+{
+  "id": "dev-013",
+  "file": "dev-013.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261206",
+    "issue_date": "2026-06-09",
+    "due_date": "2026-06-23",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "1",
+        "unit_price": "73.11",
+        "net_amount": "73.11",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "9",
+        "unit_price": "18.16",
+        "net_amount": "163.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "11",
+        "unit_price": "54.96",
+        "net_amount": "604.56",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "841.11",
+    "vat_total": "87.26",
+    "gross_total": "928.37"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "test-041",
+  "file": "test-041.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01684",
+    "issue_date": "2026-05-20",
+    "due_date": "2026-06-19",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "10",
+        "unit_price": "42.26",
+        "net_amount": "422.60",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "422.60",
+    "vat_total": "29.58",
+    "gross_total": "452.18"
+  }
+}

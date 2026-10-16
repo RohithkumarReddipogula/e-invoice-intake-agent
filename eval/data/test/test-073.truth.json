@@ -1,0 +1,60 @@
+{
+  "id": "test-073",
+  "file": "test-073.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": "date",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20262229",
+    "issue_date": "2026-10-26",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "1108.95",
+        "net_amount": "4435.80",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "5",
+        "unit_price": "23.78",
+        "net_amount": "118.90",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "12",
+        "unit_price": "16.66",
+        "net_amount": "199.92",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "11",
+        "unit_price": "101.97",
+        "net_amount": "1121.67",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "12",
+        "unit_price": "222.64",
+        "net_amount": "2671.68",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "8547.97",
+    "vat_total": "1609.84",
+    "gross_total": "10157.81"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "test-055",
+  "file": "test-055.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261918",
+    "issue_date": "2026-04-03",
+    "due_date": "2026-06-02",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "7",
+        "unit_price": "277.50",
+        "net_amount": "1942.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "7",
+        "unit_price": "384.11",
+        "net_amount": "2688.77",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "8",
+        "unit_price": "46.93",
+        "net_amount": "375.44",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "131.70",
+        "net_amount": "1580.40",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "6587.11",
+    "vat_total": "1206.50",
+    "gross_total": "7793.61"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "dev-043",
+  "file": "dev-043.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": "date",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1721",
+    "issue_date": "2026-04-12",
+    "due_date": "2026-04-02",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "11",
+        "unit_price": "43.82",
+        "net_amount": "482.02",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "3",
+        "unit_price": "135.76",
+        "net_amount": "407.28",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "9.5",
+        "unit_price": "114.06",
+        "net_amount": "1083.57",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "3",
+        "unit_price": "17.22",
+        "net_amount": "51.66",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2024.53",
+    "vat_total": "326.82",
+    "gross_total": "2351.35"
+  }
+}

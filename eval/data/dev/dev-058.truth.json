@@ -1,0 +1,39 @@
+{
+  "id": "dev-058",
+  "file": "dev-058.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001975",
+    "issue_date": "2026-04-01",
+    "due_date": "2026-04-15",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "1",
+        "unit_price": "19.33",
+        "net_amount": "19.33",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "2",
+        "unit_price": "529.42",
+        "net_amount": "1058.84",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1078.17",
+    "vat_total": "202.53",
+    "gross_total": "1280.70"
+  }
+}

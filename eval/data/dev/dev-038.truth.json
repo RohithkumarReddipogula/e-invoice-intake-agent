@@ -1,0 +1,60 @@
+{
+  "id": "dev-038",
+  "file": "dev-038.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1637",
+    "issue_date": "2026-03-15",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "3",
+        "unit_price": "44.51",
+        "net_amount": "133.53",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "5",
+        "unit_price": "294.79",
+        "net_amount": "1473.95",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "8",
+        "unit_price": "404.47",
+        "net_amount": "3235.76",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "75.34",
+        "net_amount": "904.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "12",
+        "unit_price": "19.33",
+        "net_amount": "231.96",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "5979.28",
+    "vat_total": "1120.04",
+    "gross_total": "7099.32"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "test-033",
+  "file": "test-033.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1550",
+    "issue_date": "2026-06-27",
+    "due_date": "2026-07-11",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "12",
+        "unit_price": "384.12",
+        "net_amount": "4609.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "5",
+        "unit_price": "152.42",
+        "net_amount": "762.10",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "5.5",
+        "unit_price": "115.76",
+        "net_amount": "636.68",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "10",
+        "unit_price": "1177.09",
+        "net_amount": "11770.90",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "12",
+        "unit_price": "301.27",
+        "net_amount": "3615.24",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "21394.36",
+    "vat_total": "4064.93",
+    "gross_total": "25459.29"
+  }
+}

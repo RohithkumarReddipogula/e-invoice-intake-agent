@@ -1,0 +1,53 @@
+{
+  "id": "test-046",
+  "file": "test-046.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "duplicate",
+  "duplicate_of": "test-026",
+  "truth": {
+    "invoice_number": "OC-1432",
+    "issue_date": "2026-08-24",
+    "due_date": "2026-09-23",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "8",
+        "unit_price": "115.10",
+        "net_amount": "920.80",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "5",
+        "unit_price": "116.10",
+        "net_amount": "580.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "3",
+        "unit_price": "214.29",
+        "net_amount": "642.87",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "12",
+        "unit_price": "27.78",
+        "net_amount": "333.36",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2477.53",
+    "vat_total": "430.73",
+    "gross_total": "2908.26"
+  }
+}

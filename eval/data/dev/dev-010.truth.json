@@ -1,0 +1,60 @@
+{
+  "id": "dev-010",
+  "file": "dev-010.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01159",
+    "issue_date": "2026-01-31",
+    "due_date": "2026-04-01",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "10",
+        "unit_price": "53.78",
+        "net_amount": "537.80",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "5",
+        "unit_price": "823.43",
+        "net_amount": "4117.15",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "1",
+        "unit_price": "123.61",
+        "net_amount": "123.61",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "9.5",
+        "unit_price": "105.46",
+        "net_amount": "1001.87",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "9",
+        "unit_price": "160.03",
+        "net_amount": "1440.27",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7220.70",
+    "vat_total": "1307.40",
+    "gross_total": "8528.10"
+  }
+}

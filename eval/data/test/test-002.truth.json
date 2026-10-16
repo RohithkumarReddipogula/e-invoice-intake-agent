@@ -1,0 +1,60 @@
+{
+  "id": "test-002",
+  "file": "test-002.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1023",
+    "issue_date": "2026-04-26",
+    "due_date": "2026-05-26",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "4",
+        "unit_price": "12.56",
+        "net_amount": "50.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "2",
+        "unit_price": "344.27",
+        "net_amount": "688.54",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "4",
+        "unit_price": "66.65",
+        "net_amount": "266.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "10",
+        "unit_price": "343.45",
+        "net_amount": "3434.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "104.36",
+        "net_amount": "417.44",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "6.24",
+    "charge_total": "0",
+    "net_total": "4851.08",
+    "vat_total": "921.71",
+    "gross_total": "5772.79"
+  }
+}

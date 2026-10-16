@@ -1,0 +1,39 @@
+{
+  "id": "dev-062",
+  "file": "dev-062.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20262039",
+    "issue_date": "2026-10-06",
+    "due_date": "2026-10-20",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "11",
+        "unit_price": "74.71",
+        "net_amount": "821.81",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "8",
+        "unit_price": "1271.76",
+        "net_amount": "10174.08",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "10995.89",
+    "vat_total": "2089.22",
+    "gross_total": "13085.11"
+  }
+}

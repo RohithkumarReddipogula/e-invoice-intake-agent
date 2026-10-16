@@ -1,0 +1,60 @@
+{
+  "id": "dev-032",
+  "file": "dev-032.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1527",
+    "issue_date": "2026-05-01",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "2",
+        "unit_price": "50.30",
+        "net_amount": "100.60",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "10",
+        "unit_price": "750.55",
+        "net_amount": "7505.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "4",
+        "unit_price": "29.40",
+        "net_amount": "117.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "909.49",
+        "net_amount": "10913.88",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "7",
+        "unit_price": "23.89",
+        "net_amount": "167.23",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "18804.81",
+    "vat_total": "3540.78",
+    "gross_total": "22345.59"
+  }
+}

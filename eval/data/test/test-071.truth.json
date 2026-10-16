@@ -1,0 +1,60 @@
+{
+  "id": "test-071",
+  "file": "test-071.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-2198",
+    "issue_date": "2026-05-19",
+    "due_date": "2026-06-02",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "9",
+        "unit_price": "26.01",
+        "net_amount": "234.09",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "5",
+        "unit_price": "50.61",
+        "net_amount": "253.05",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "2",
+        "unit_price": "65.95",
+        "net_amount": "131.90",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "4",
+        "unit_price": "89.61",
+        "net_amount": "358.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "11",
+        "unit_price": "57.94",
+        "net_amount": "637.34",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1614.82",
+    "vat_total": "171.87",
+    "gross_total": "1786.69"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dev-027",
+  "file": "dev-027.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001442",
+    "issue_date": "2026-05-15",
+    "due_date": "2026-06-14",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "3.5",
+        "unit_price": "69.02",
+        "net_amount": "241.57",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "12",
+        "unit_price": "29.65",
+        "net_amount": "355.80",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "9",
+        "unit_price": "22.11",
+        "net_amount": "198.99",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "796.36",
+    "vat_total": "84.74",
+    "gross_total": "881.10"
+  }
+}

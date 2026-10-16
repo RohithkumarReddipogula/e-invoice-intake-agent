@@ -1,0 +1,53 @@
+{
+  "id": "dev-066",
+  "file": "dev-066.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": "date",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-2113",
+    "issue_date": "2026-06-20",
+    "due_date": "2026-06-10",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "11",
+        "unit_price": "534.41",
+        "net_amount": "5878.51",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "9",
+        "unit_price": "26.89",
+        "net_amount": "242.01",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "11",
+        "unit_price": "371.58",
+        "net_amount": "4087.38",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "7",
+        "unit_price": "126.41",
+        "net_amount": "884.87",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "11092.77",
+    "vat_total": "2078.58",
+    "gross_total": "13171.35"
+  }
+}

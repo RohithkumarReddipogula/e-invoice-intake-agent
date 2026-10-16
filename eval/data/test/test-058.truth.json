@@ -1,0 +1,39 @@
+{
+  "id": "test-058",
+  "file": "test-058.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1978",
+    "issue_date": "2026-04-15",
+    "due_date": "2026-05-15",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "7",
+        "unit_price": "706.18",
+        "net_amount": "4943.26",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "11",
+        "unit_price": "13.66",
+        "net_amount": "150.26",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "5093.52",
+    "vat_total": "967.77",
+    "gross_total": "6061.29"
+  }
+}

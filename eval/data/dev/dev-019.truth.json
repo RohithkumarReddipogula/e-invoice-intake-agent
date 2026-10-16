@@ -1,0 +1,53 @@
+{
+  "id": "dev-019",
+  "file": "dev-019.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1311",
+    "issue_date": "2026-03-30",
+    "due_date": "2026-04-13",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "7",
+        "unit_price": "1306.34",
+        "net_amount": "9144.38",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "7",
+        "unit_price": "279.11",
+        "net_amount": "1953.77",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "11",
+        "unit_price": "112.60",
+        "net_amount": "1238.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "10",
+        "unit_price": "72.26",
+        "net_amount": "722.60",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "13059.35",
+    "vat_total": "2394.56",
+    "gross_total": "15453.91"
+  }
+}

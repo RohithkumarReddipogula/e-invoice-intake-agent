@@ -17,8 +17,10 @@ python3 -m venv .venv
 .venv/bin/pytest
 ```
 
-Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` only if you want live LLM calls.
-Tests and CI never call the LLM API.
+Copy `.env.example` to `.env` and set a key only if you want live LLM calls: either
+`ANTHROPIC_API_KEY` (default provider), or `OPENROUTER_API_KEY` with
+`INTAKE_LLM_PROVIDER=openrouter` and an OpenRouter model ID such as
+`INTAKE_LLM_MODEL=anthropic/claude-sonnet-5.5`. Tests and CI never call the LLM API.
 
 ## MCP server
 

@@ -1,0 +1,32 @@
+{
+  "id": "dev-052",
+  "file": "dev-052.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "duplicate",
+  "duplicate_of": "dev-031",
+  "truth": {
+    "invoice_number": "EB-20261513",
+    "issue_date": "2026-03-25",
+    "due_date": "2026-05-24",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "1394.20",
+        "net_amount": "16730.40",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "29.37",
+    "charge_total": "0",
+    "net_total": "16701.03",
+    "vat_total": "3173.20",
+    "gross_total": "19874.23"
+  }
+}

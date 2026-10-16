@@ -1,0 +1,60 @@
+{
+  "id": "test-007",
+  "file": "test-007.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001102",
+    "issue_date": "2026-06-17",
+    "due_date": "2026-07-01",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "9",
+        "unit_price": "58.57",
+        "net_amount": "527.13",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "12",
+        "unit_price": "113.71",
+        "net_amount": "1364.52",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "11",
+        "unit_price": "161.44",
+        "net_amount": "1775.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "10",
+        "unit_price": "1090.36",
+        "net_amount": "10903.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "12",
+        "unit_price": "310.99",
+        "net_amount": "3731.88",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "45.02",
+    "charge_total": "0",
+    "net_total": "18257.95",
+    "vat_total": "3405.76",
+    "gross_total": "21663.71"
+  }
+}

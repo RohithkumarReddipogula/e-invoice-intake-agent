@@ -1,0 +1,46 @@
+{
+  "id": "test-067",
+  "file": "test-067.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2130",
+    "issue_date": "2026-06-25",
+    "due_date": "2026-08-24",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "20.39",
+        "net_amount": "142.73",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "3",
+        "unit_price": "139.14",
+        "net_amount": "417.42",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "1",
+        "unit_price": "168.35",
+        "net_amount": "168.35",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "728.50",
+    "vat_total": "138.42",
+    "gross_total": "866.92"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "test-019",
+  "file": "test-019.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01315",
+    "issue_date": "2026-07-12",
+    "due_date": "2026-08-11",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "12",
+        "unit_price": "44.03",
+        "net_amount": "528.36",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "1",
+        "unit_price": "290.21",
+        "net_amount": "290.21",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "2",
+        "unit_price": "285.55",
+        "net_amount": "571.10",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1389.67",
+    "vat_total": "200.64",
+    "gross_total": "1590.31"
+  }
+}

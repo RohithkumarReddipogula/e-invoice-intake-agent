@@ -1,0 +1,32 @@
+{
+  "id": "dev-070",
+  "file": "dev-070.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2175",
+    "issue_date": "2026-07-04",
+    "due_date": "2026-08-03",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "3",
+        "unit_price": "50.64",
+        "net_amount": "151.92",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "151.92",
+    "vat_total": "10.63",
+    "gross_total": "162.55"
+  }
+}

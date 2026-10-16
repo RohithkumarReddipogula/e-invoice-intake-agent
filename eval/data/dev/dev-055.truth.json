@@ -1,0 +1,32 @@
+{
+  "id": "dev-055",
+  "file": "dev-055.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1921",
+    "issue_date": "2026-06-09",
+    "due_date": "2026-07-09",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "708.56",
+        "net_amount": "1417.12",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1417.12",
+    "vat_total": "269.25",
+    "gross_total": "1686.37"
+  }
+}

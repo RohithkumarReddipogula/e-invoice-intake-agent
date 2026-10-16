@@ -1,0 +1,32 @@
+{
+  "id": "dev-054",
+  "file": "dev-054.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001903",
+    "issue_date": "2026-07-08",
+    "due_date": "2026-08-07",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "12",
+        "unit_price": "22.72",
+        "net_amount": "272.64",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "272.64",
+    "vat_total": "51.80",
+    "gross_total": "324.44"
+  }
+}

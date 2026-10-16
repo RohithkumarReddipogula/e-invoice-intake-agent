@@ -1,0 +1,22 @@
+{
+  "file": "dev-015.pdf",
+  "status": "valid",
+  "reason": "Accepted by the KoSIT validator (scenario: EN16931 XRechnung (CII)).",
+  "container": "pdf",
+  "syntax": "UN/CEFACT CII",
+  "profile": "XRECHNUNG",
+  "profile_id": "urn:cen.eu:en16931:2017#compliant#urn:xeinkauf.de:kosit:xrechnung_3.0",
+  "embedded_filename": "factur-x.xml",
+  "scenario": "EN16931 XRechnung (CII)",
+  "validator": "KoSIT validator 1.6.3, XRechnung configuration 2026-08-31",
+  "findings": [
+    {
+      "rule_id": "BR-DE-TMP-32",
+      "severity": "info",
+      "location": "/rsm:CrossIndustryInvoice[1]/rsm:SupplyChainTradeTransaction[1]",
+      "message": "[BR-DE-TMP-32] Eine Rechnung sollte zur Angabe des Liefer-/Leistungsdatums entweder BT-72 \"Actual delivery date\", BG-14 \"Invoicing period\" oder in jeder Rechnungsposition BG-26 \"Invoice line period\" enthalten."
+    }
+  ],
+  "warnings": [],
+  "notes": []
+}

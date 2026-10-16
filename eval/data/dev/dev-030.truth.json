@@ -1,0 +1,32 @@
+{
+  "id": "dev-030",
+  "file": "dev-030.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01498",
+    "issue_date": "2026-02-07",
+    "due_date": "2026-03-09",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "684.49",
+        "net_amount": "2737.96",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2737.96",
+    "vat_total": "520.21",
+    "gross_total": "3258.17"
+  }
+}

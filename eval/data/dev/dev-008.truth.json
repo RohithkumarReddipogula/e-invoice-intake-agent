@@ -1,0 +1,60 @@
+{
+  "id": "dev-008",
+  "file": "dev-008.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001120",
+    "issue_date": "2026-10-03",
+    "due_date": "2026-11-02",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "8",
+        "unit_price": "1178.58",
+        "net_amount": "9428.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "11",
+        "unit_price": "95.80",
+        "net_amount": "1053.80",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "9",
+        "unit_price": "65.00",
+        "net_amount": "585.00",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "12",
+        "unit_price": "34.02",
+        "net_amount": "408.24",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "11",
+        "unit_price": "94.91",
+        "net_amount": "1044.01",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "12519.69",
+    "vat_total": "2329.76",
+    "gross_total": "14849.45"
+  }
+}

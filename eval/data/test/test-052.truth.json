@@ -1,0 +1,60 @@
+{
+  "id": "test-052",
+  "file": "test-052.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01871",
+    "issue_date": "2026-03-27",
+    "due_date": "2026-05-26",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "6",
+        "unit_price": "475.21",
+        "net_amount": "2851.26",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "90.44",
+        "net_amount": "633.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "12",
+        "unit_price": "141.14",
+        "net_amount": "1693.68",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "57.24",
+        "net_amount": "57.24",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "6",
+        "unit_price": "906.64",
+        "net_amount": "5439.84",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "10675.10",
+    "vat_total": "2021.40",
+    "gross_total": "12696.50"
+  }
+}

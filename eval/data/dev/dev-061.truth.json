@@ -1,0 +1,60 @@
+{
+  "id": "dev-061",
+  "file": "dev-061.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2025",
+    "issue_date": "2026-07-10",
+    "due_date": "2026-08-09",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "11",
+        "unit_price": "64.71",
+        "net_amount": "711.81",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "8",
+        "unit_price": "41.37",
+        "net_amount": "330.96",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "3",
+        "unit_price": "607.31",
+        "net_amount": "1821.93",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "7",
+        "unit_price": "278.47",
+        "net_amount": "1949.29",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "2",
+        "unit_price": "45.40",
+        "net_amount": "90.80",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4904.79",
+    "vat_total": "795.88",
+    "gross_total": "5700.67"
+  }
+}

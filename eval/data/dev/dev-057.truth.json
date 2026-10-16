@@ -1,0 +1,46 @@
+{
+  "id": "dev-057",
+  "file": "dev-057.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1953",
+    "issue_date": "2026-01-23",
+    "due_date": "2026-02-22",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "4.5",
+        "unit_price": "70.36",
+        "net_amount": "316.62",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "6",
+        "unit_price": "604.49",
+        "net_amount": "3626.94",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "1",
+        "unit_price": "545.04",
+        "net_amount": "545.04",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4488.60",
+    "vat_total": "852.83",
+    "gross_total": "5341.43"
+  }
+}

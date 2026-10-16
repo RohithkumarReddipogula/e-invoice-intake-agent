@@ -1,0 +1,60 @@
+{
+  "id": "test-006",
+  "file": "test-006.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01085",
+    "issue_date": "2026-06-05",
+    "due_date": "2026-08-04",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "1386.31",
+        "net_amount": "16635.72",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "4",
+        "unit_price": "59.39",
+        "net_amount": "237.56",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "5",
+        "unit_price": "74.52",
+        "net_amount": "372.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "218.32",
+        "net_amount": "218.32",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "5",
+        "unit_price": "33.69",
+        "net_amount": "168.45",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "17632.65",
+    "vat_total": "3301.48",
+    "gross_total": "20934.13"
+  }
+}

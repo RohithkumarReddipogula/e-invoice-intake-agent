@@ -1,0 +1,39 @@
+{
+  "id": "test-070",
+  "file": "test-070.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2179",
+    "issue_date": "2026-07-10",
+    "due_date": "2026-08-09",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "69.64",
+        "net_amount": "69.64",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "12",
+        "unit_price": "639.47",
+        "net_amount": "7673.64",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7743.28",
+    "vat_total": "1462.86",
+    "gross_total": "9206.14"
+  }
+}

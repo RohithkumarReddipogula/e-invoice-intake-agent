@@ -1,0 +1,32 @@
+{
+  "id": "dev-069",
+  "file": "dev-069.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-2162",
+    "issue_date": "2026-03-31",
+    "due_date": "2026-05-30",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "3",
+        "unit_price": "178.83",
+        "net_amount": "536.49",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "536.49",
+    "vat_total": "101.93",
+    "gross_total": "638.42"
+  }
+}

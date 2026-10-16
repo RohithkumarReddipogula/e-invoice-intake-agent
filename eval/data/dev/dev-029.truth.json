@@ -1,0 +1,46 @@
+{
+  "id": "dev-029",
+  "file": "dev-029.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261482",
+    "issue_date": "2026-06-26",
+    "due_date": "2026-08-25",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "11",
+        "unit_price": "79.95",
+        "net_amount": "879.45",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "5",
+        "unit_price": "274.30",
+        "net_amount": "1371.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "7",
+        "unit_price": "26.67",
+        "net_amount": "186.69",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2437.64",
+    "vat_total": "440.75",
+    "gross_total": "2878.39"
+  }
+}

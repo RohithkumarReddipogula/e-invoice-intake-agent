@@ -1,0 +1,53 @@
+{
+  "id": "dev-009",
+  "file": "dev-009.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1142",
+    "issue_date": "2026-09-26",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "3",
+        "unit_price": "30.80",
+        "net_amount": "92.40",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "5",
+        "unit_price": "473.87",
+        "net_amount": "2369.35",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "12",
+        "unit_price": "198.28",
+        "net_amount": "2379.36",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "6",
+        "unit_price": "30.98",
+        "net_amount": "185.88",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "5026.99",
+    "vat_total": "932.82",
+    "gross_total": "5959.81"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "test-014",
+  "file": "test-014.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1229",
+    "issue_date": "2026-07-25",
+    "due_date": "2026-08-08",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "7",
+        "unit_price": "266.35",
+        "net_amount": "1864.45",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "3",
+        "unit_price": "695.38",
+        "net_amount": "2086.14",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "4.5",
+        "unit_price": "81.79",
+        "net_amount": "368.06",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "1",
+        "unit_price": "157.66",
+        "net_amount": "157.66",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "10",
+        "unit_price": "699.25",
+        "net_amount": "6992.50",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "11468.81",
+    "vat_total": "2179.07",
+    "gross_total": "13648.88"
+  }
+}

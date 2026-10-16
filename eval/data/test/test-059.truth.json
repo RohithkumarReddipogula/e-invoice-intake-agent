@@ -1,0 +1,60 @@
+{
+  "id": "test-059",
+  "file": "test-059.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01993",
+    "issue_date": "2026-05-14",
+    "due_date": "2026-05-28",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "60.63",
+        "net_amount": "60.63",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "11",
+        "unit_price": "29.51",
+        "net_amount": "324.61",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "12",
+        "unit_price": "121.78",
+        "net_amount": "1461.36",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "7",
+        "unit_price": "299.47",
+        "net_amount": "2096.29",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "6",
+        "unit_price": "21.04",
+        "net_amount": "126.24",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "11.52",
+    "charge_total": "0",
+    "net_total": "4057.61",
+    "vat_total": "709.56",
+    "gross_total": "4767.17"
+  }
+}

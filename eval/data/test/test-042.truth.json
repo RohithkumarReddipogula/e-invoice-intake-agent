@@ -1,0 +1,46 @@
+{
+  "id": "test-042",
+  "file": "test-042.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001702",
+    "issue_date": "2026-07-05",
+    "due_date": "2026-08-04",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "3",
+        "unit_price": "41.92",
+        "net_amount": "125.76",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "1328.48",
+        "net_amount": "5313.92",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "7",
+        "unit_price": "307.34",
+        "net_amount": "2151.38",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7591.06",
+    "vat_total": "1427.21",
+    "gross_total": "9018.27"
+  }
+}

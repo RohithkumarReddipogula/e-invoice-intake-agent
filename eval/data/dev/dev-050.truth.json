@@ -1,0 +1,39 @@
+{
+  "id": "dev-050",
+  "file": "dev-050.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "duplicate",
+  "duplicate_of": "dev-046",
+  "truth": {
+    "invoice_number": "SW/2026/01772",
+    "issue_date": "2026-06-07",
+    "due_date": "2026-07-07",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "51.24",
+        "net_amount": "51.24",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "3",
+        "unit_price": "336.82",
+        "net_amount": "1010.46",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "29.22",
+    "charge_total": "0",
+    "net_total": "1032.48",
+    "vat_total": "190.03",
+    "gross_total": "1222.51"
+  }
+}

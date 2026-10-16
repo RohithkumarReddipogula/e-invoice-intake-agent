@@ -1,0 +1,53 @@
+{
+  "id": "test-045",
+  "file": "test-045.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01753",
+    "issue_date": "2026-05-06",
+    "due_date": "2026-07-05",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE19283746",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "11",
+        "unit_price": "23.85",
+        "net_amount": "262.35",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "5",
+        "unit_price": "104.00",
+        "net_amount": "520.00",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "10",
+        "unit_price": "38.43",
+        "net_amount": "384.30",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "28.08",
+        "net_amount": "196.56",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1363.21",
+    "vat_total": "181.42",
+    "gross_total": "1544.63"
+  }
+}

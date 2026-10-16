@@ -1,0 +1,46 @@
+{
+  "id": "dev-053",
+  "file": "dev-053.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1886",
+    "issue_date": "2026-04-23",
+    "due_date": "2026-05-23",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "1",
+        "unit_price": "720.55",
+        "net_amount": "720.55",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "8",
+        "unit_price": "57.42",
+        "net_amount": "459.36",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "1",
+        "unit_price": "30.58",
+        "net_amount": "30.58",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "15.13",
+    "charge_total": "0",
+    "net_total": "1195.36",
+    "vat_total": "168.33",
+    "gross_total": "1363.69"
+  }
+}

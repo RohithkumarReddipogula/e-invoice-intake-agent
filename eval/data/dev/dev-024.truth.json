@@ -1,0 +1,46 @@
+{
+  "id": "dev-024",
+  "file": "dev-024.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1397",
+    "issue_date": "2026-07-22",
+    "due_date": "2026-08-21",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "2",
+        "unit_price": "44.11",
+        "net_amount": "88.22",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "6",
+        "unit_price": "196.61",
+        "net_amount": "1179.66",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "6",
+        "unit_price": "241.70",
+        "net_amount": "1450.20",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2718.08",
+    "vat_total": "505.85",
+    "gross_total": "3223.93"
+  }
+}

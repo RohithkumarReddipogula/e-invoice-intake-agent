@@ -1,0 +1,46 @@
+{
+  "id": "test-016",
+  "file": "test-016.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01261",
+    "issue_date": "2026-04-20",
+    "due_date": "2026-05-20",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "3",
+        "unit_price": "357.25",
+        "net_amount": "1071.75",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "5",
+        "unit_price": "104.17",
+        "net_amount": "520.85",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "2",
+        "unit_price": "278.05",
+        "net_amount": "556.10",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2148.70",
+    "vat_total": "408.25",
+    "gross_total": "2556.95"
+  }
+}

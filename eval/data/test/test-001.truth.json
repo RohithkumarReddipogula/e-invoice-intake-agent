@@ -1,0 +1,39 @@
+{
+  "id": "test-001",
+  "file": "test-001.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1002",
+    "issue_date": "2026-06-29",
+    "due_date": "2026-08-28",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "9",
+        "unit_price": "71.53",
+        "net_amount": "643.77",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "10",
+        "unit_price": "269.83",
+        "net_amount": "2698.30",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3342.07",
+    "vat_total": "557.74",
+    "gross_total": "3899.81"
+  }
+}

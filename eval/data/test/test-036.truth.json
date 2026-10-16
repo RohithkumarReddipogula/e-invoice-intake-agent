@@ -1,0 +1,32 @@
+{
+  "id": "test-036",
+  "file": "test-036.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1596",
+    "issue_date": "2026-09-10",
+    "due_date": "2026-09-24",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "6",
+        "unit_price": "810.15",
+        "net_amount": "4860.90",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4860.90",
+    "vat_total": "923.57",
+    "gross_total": "5784.47"
+  }
+}

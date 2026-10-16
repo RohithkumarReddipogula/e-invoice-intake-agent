@@ -1,0 +1,46 @@
+{
+  "id": "dev-012",
+  "file": "dev-012.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1189",
+    "issue_date": "2026-08-26",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "8",
+        "unit_price": "274.08",
+        "net_amount": "2192.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "4",
+        "unit_price": "50.24",
+        "net_amount": "200.96",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "23.41",
+        "net_amount": "163.87",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "26.88",
+    "charge_total": "0",
+    "net_total": "2555.59",
+    "vat_total": "456.70",
+    "gross_total": "3012.29"
+  }
+}

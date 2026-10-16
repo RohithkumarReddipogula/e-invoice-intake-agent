@@ -1,0 +1,60 @@
+{
+  "id": "test-050",
+  "file": "test-050.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1838",
+    "issue_date": "2026-10-10",
+    "due_date": "2026-10-24",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "12",
+        "unit_price": "408.97",
+        "net_amount": "4907.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "925.16",
+        "net_amount": "11101.92",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "5",
+        "unit_price": "28.83",
+        "net_amount": "144.15",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "2",
+        "unit_price": "42.32",
+        "net_amount": "84.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "3",
+        "unit_price": "167.61",
+        "net_amount": "502.83",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "49.15",
+    "charge_total": "0",
+    "net_total": "16742.03",
+    "vat_total": "3154.19",
+    "gross_total": "19896.22"
+  }
+}

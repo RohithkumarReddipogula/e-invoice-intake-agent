@@ -1,0 +1,53 @@
+{
+  "id": "dev-042",
+  "file": "dev-042.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1706",
+    "issue_date": "2026-06-23",
+    "due_date": "2026-07-07",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "4",
+        "unit_price": "14.37",
+        "net_amount": "57.48",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "8",
+        "unit_price": "199.11",
+        "net_amount": "1592.88",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "6",
+        "unit_price": "21.60",
+        "net_amount": "129.60",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "5",
+        "unit_price": "104.71",
+        "net_amount": "523.55",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "9.80",
+    "charge_total": "0",
+    "net_total": "2293.71",
+    "vat_total": "420.25",
+    "gross_total": "2713.96"
+  }
+}

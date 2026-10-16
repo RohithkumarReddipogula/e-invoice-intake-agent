@@ -1,0 +1,53 @@
+{
+  "id": "dev-022",
+  "file": "dev-022.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001363",
+    "issue_date": "2026-05-10",
+    "due_date": "2026-06-09",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE97531864",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "6.5",
+        "unit_price": "134.96",
+        "net_amount": "877.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "9",
+        "unit_price": "82.29",
+        "net_amount": "740.61",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "2",
+        "unit_price": "322.23",
+        "net_amount": "644.46",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "29.16",
+        "net_amount": "204.12",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2466.43",
+    "vat_total": "468.62",
+    "gross_total": "2935.05"
+  }
+}

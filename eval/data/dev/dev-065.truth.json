@@ -1,0 +1,46 @@
+{
+  "id": "dev-065",
+  "file": "dev-065.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2096",
+    "issue_date": "2026-05-14",
+    "due_date": "2026-06-13",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "12",
+        "unit_price": "49.52",
+        "net_amount": "594.24",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "9",
+        "unit_price": "31.19",
+        "net_amount": "280.71",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "10",
+        "unit_price": "150.47",
+        "net_amount": "1504.70",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2379.65",
+    "vat_total": "380.83",
+    "gross_total": "2760.48"
+  }
+}

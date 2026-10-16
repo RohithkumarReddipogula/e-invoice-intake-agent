@@ -1,0 +1,32 @@
+{
+  "id": "dev-028",
+  "file": "dev-028.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1459",
+    "issue_date": "2026-05-27",
+    "due_date": "2026-06-26",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "10",
+        "unit_price": "175.47",
+        "net_amount": "1754.70",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1754.70",
+    "vat_total": "333.39",
+    "gross_total": "2088.09"
+  }
+}

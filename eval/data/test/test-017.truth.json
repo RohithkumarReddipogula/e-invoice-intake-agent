@@ -1,0 +1,32 @@
+{
+  "id": "test-017",
+  "file": "test-017.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1276",
+    "issue_date": "2026-02-08",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE12345678",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "2",
+        "unit_price": "29.16",
+        "net_amount": "58.32",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "58.32",
+    "vat_total": "4.08",
+    "gross_total": "62.40"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "test-061",
+  "file": "test-061.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": "iban",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-02029",
+    "issue_date": "2026-09-22",
+    "due_date": "2026-10-22",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023457",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "9",
+        "unit_price": "39.65",
+        "net_amount": "356.85",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "1118.12",
+        "net_amount": "2236.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "63.13",
+        "net_amount": "757.56",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3350.65",
+    "vat_total": "593.80",
+    "gross_total": "3944.45"
+  }
+}

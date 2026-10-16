@@ -1,0 +1,32 @@
+{
+  "id": "dev-035",
+  "file": "dev-035.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1586",
+    "issue_date": "2026-05-27",
+    "due_date": "2026-07-26",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "6",
+        "unit_price": "263.21",
+        "net_amount": "1579.26",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1679.26",
+    "vat_total": "300.06",
+    "gross_total": "1979.32"
+  }
+}

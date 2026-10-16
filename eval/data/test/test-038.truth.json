@@ -1,0 +1,46 @@
+{
+  "id": "test-038",
+  "file": "test-038.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01637",
+    "issue_date": "2026-03-04",
+    "due_date": "2026-03-18",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "7",
+        "unit_price": "85.79",
+        "net_amount": "600.53",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "7",
+        "unit_price": "49.97",
+        "net_amount": "349.79",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "2",
+        "unit_price": "353.07",
+        "net_amount": "706.14",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1656.46",
+    "vat_total": "272.76",
+    "gross_total": "1929.22"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dev-015",
+  "file": "dev-015.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1242",
+    "issue_date": "2026-05-27",
+    "due_date": "2026-06-10",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "10",
+        "unit_price": "254.32",
+        "net_amount": "2543.20",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "3",
+        "unit_price": "128.16",
+        "net_amount": "384.48",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "8",
+        "unit_price": "125.01",
+        "net_amount": "1000.08",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3927.76",
+    "vat_total": "746.27",
+    "gross_total": "4674.03"
+  }
+}

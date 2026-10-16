@@ -1,0 +1,46 @@
+{
+  "id": "test-060",
+  "file": "test-060.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2004",
+    "issue_date": "2026-03-29",
+    "due_date": "2026-04-28",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "2",
+        "unit_price": "83.59",
+        "net_amount": "167.18",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "133.87",
+        "net_amount": "1606.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "11",
+        "unit_price": "92.73",
+        "net_amount": "1020.03",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2793.65",
+    "vat_total": "510.73",
+    "gross_total": "3304.38"
+  }
+}

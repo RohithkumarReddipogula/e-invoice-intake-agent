@@ -1,0 +1,53 @@
+{
+  "id": "test-003",
+  "file": "test-003.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01035",
+    "issue_date": "2026-06-11",
+    "due_date": "2026-06-25",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "3",
+        "unit_price": "71.66",
+        "net_amount": "214.98",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "178.11",
+        "net_amount": "1246.77",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "1",
+        "unit_price": "30.51",
+        "net_amount": "30.51",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "8",
+        "unit_price": "81.74",
+        "net_amount": "653.92",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2146.18",
+    "vat_total": "299.85",
+    "gross_total": "2446.03"
+  }
+}

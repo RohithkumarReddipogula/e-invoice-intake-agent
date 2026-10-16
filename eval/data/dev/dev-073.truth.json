@@ -1,0 +1,53 @@
+{
+  "id": "dev-073",
+  "file": "dev-073.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2224",
+    "issue_date": "2026-04-30",
+    "due_date": "2026-05-30",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "9",
+        "unit_price": "47.85",
+        "net_amount": "430.65",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "8",
+        "unit_price": "63.33",
+        "net_amount": "506.64",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "7",
+        "unit_price": "27.89",
+        "net_amount": "195.23",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "5",
+        "unit_price": "128.10",
+        "net_amount": "640.50",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1773.02",
+    "vat_total": "200.98",
+    "gross_total": "1974.00"
+  }
+}

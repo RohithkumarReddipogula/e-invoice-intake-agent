@@ -1,0 +1,39 @@
+{
+  "id": "test-015",
+  "file": "test-015.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1242",
+    "issue_date": "2026-02-22",
+    "due_date": "2026-03-24",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Specialist book",
+        "quantity": "8",
+        "unit_price": "76.67",
+        "net_amount": "613.36",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "11",
+        "unit_price": "12.56",
+        "net_amount": "138.16",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "751.52",
+    "vat_total": "69.19",
+    "gross_total": "820.71"
+  }
+}

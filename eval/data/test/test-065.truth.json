@@ -1,0 +1,53 @@
+{
+  "id": "test-065",
+  "file": "test-065.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/02089",
+    "issue_date": "2026-04-02",
+    "due_date": "2026-06-01",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "2",
+        "unit_price": "219.49",
+        "net_amount": "438.98",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "158.45",
+        "net_amount": "1901.40",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "6",
+        "unit_price": "38.63",
+        "net_amount": "231.78",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "6",
+        "unit_price": "218.54",
+        "net_amount": "1311.24",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3883.40",
+    "vat_total": "710.03",
+    "gross_total": "4593.43"
+  }
+}

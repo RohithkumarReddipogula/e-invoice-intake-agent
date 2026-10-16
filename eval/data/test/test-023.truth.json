@@ -1,0 +1,32 @@
+{
+  "id": "test-023",
+  "file": "test-023.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1375",
+    "issue_date": "2026-06-17",
+    "due_date": "2026-08-16",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "5",
+        "unit_price": "1047.40",
+        "net_amount": "5237.00",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "5237.00",
+    "vat_total": "995.03",
+    "gross_total": "6232.03"
+  }
+}

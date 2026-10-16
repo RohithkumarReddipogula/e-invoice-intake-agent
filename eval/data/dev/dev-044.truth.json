@@ -1,0 +1,39 @@
+{
+  "id": "dev-044",
+  "file": "dev-044.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261732",
+    "issue_date": "2026-09-08",
+    "due_date": "2026-09-22",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "129.24",
+        "net_amount": "129.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "10",
+        "unit_price": "257.48",
+        "net_amount": "2574.80",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2704.04",
+    "vat_total": "513.77",
+    "gross_total": "3217.81"
+  }
+}

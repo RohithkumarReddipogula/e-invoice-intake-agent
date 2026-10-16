@@ -1,0 +1,60 @@
+{
+  "id": "dev-074",
+  "file": "dev-074.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2243",
+    "issue_date": "2026-02-18",
+    "due_date": "2026-04-19",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "11",
+        "unit_price": "90.50",
+        "net_amount": "995.50",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "1",
+        "unit_price": "191.28",
+        "net_amount": "191.28",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "3",
+        "unit_price": "71.17",
+        "net_amount": "213.51",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "944.82",
+        "net_amount": "11337.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "647.60",
+        "net_amount": "5828.40",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "18566.53",
+    "vat_total": "3527.64",
+    "gross_total": "22094.17"
+  }
+}

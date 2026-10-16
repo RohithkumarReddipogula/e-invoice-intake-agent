@@ -1,0 +1,32 @@
+{
+  "id": "dev-075",
+  "file": "dev-075.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-2259",
+    "issue_date": "2026-07-12",
+    "due_date": "2026-08-11",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "849.84",
+        "net_amount": "7648.56",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7648.56",
+    "vat_total": "1453.23",
+    "gross_total": "9101.79"
+  }
+}

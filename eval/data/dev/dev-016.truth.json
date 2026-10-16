@@ -1,0 +1,53 @@
+{
+  "id": "dev-016",
+  "file": "dev-016.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1255",
+    "issue_date": "2026-03-27",
+    "due_date": "2026-04-26",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE13579246",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "1",
+        "unit_price": "51.45",
+        "net_amount": "51.45",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "153.01",
+        "net_amount": "153.01",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "11",
+        "unit_price": "1151.01",
+        "net_amount": "12661.11",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "5",
+        "unit_price": "237.35",
+        "net_amount": "1186.75",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "14052.32",
+    "vat_total": "2663.77",
+    "gross_total": "16716.09"
+  }
+}

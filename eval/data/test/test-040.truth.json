@@ -1,0 +1,60 @@
+{
+  "id": "test-040",
+  "file": "test-040.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1672",
+    "issue_date": "2026-03-07",
+    "due_date": "2026-05-06",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "6",
+        "unit_price": "185.69",
+        "net_amount": "1114.14",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "9",
+        "unit_price": "887.42",
+        "net_amount": "7986.78",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "2",
+        "unit_price": "47.81",
+        "net_amount": "95.62",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "9",
+        "unit_price": "41.74",
+        "net_amount": "375.66",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "8.5",
+        "unit_price": "127.10",
+        "net_amount": "1080.35",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "10652.55",
+    "vat_total": "1967.43",
+    "gross_total": "12619.98"
+  }
+}

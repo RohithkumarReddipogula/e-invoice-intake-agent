@@ -1,0 +1,32 @@
+{
+  "id": "dev-040",
+  "file": "dev-040.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1665",
+    "issue_date": "2026-02-06",
+    "due_date": "2026-03-08",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "369.02",
+        "net_amount": "3321.18",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3321.18",
+    "vat_total": "631.02",
+    "gross_total": "3953.20"
+  }
+}

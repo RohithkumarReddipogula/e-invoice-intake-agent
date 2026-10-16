@@ -1,0 +1,46 @@
+{
+  "id": "test-049",
+  "file": "test-049.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001820",
+    "issue_date": "2026-09-29",
+    "due_date": "2026-10-29",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "1313.85",
+        "net_amount": "2627.70",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "30.08",
+        "net_amount": "210.56",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "6",
+        "unit_price": "37.74",
+        "net_amount": "226.44",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3064.70",
+    "vat_total": "555.12",
+    "gross_total": "3619.82"
+  }
+}

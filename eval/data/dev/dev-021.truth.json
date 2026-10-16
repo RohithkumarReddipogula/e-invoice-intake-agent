@@ -1,0 +1,39 @@
+{
+  "id": "dev-021",
+  "file": "dev-021.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01340",
+    "issue_date": "2026-07-31",
+    "due_date": "2026-09-29",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "8",
+        "unit_price": "195.15",
+        "net_amount": "1561.20",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "108.49",
+        "net_amount": "759.43",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2320.63",
+    "vat_total": "440.92",
+    "gross_total": "2761.55"
+  }
+}

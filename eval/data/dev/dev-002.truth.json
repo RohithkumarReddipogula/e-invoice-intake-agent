@@ -1,0 +1,53 @@
+{
+  "id": "dev-002",
+  "file": "dev-002.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1021",
+    "issue_date": "2026-06-12",
+    "due_date": "2026-08-11",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "5",
+        "unit_price": "1292.27",
+        "net_amount": "6461.35",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "652.71",
+        "net_amount": "5874.39",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "11",
+        "unit_price": "87.26",
+        "net_amount": "959.86",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "12",
+        "unit_price": "165.52",
+        "net_amount": "1986.24",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "9.77",
+    "charge_total": "0",
+    "net_total": "15272.07",
+    "vat_total": "2901.69",
+    "gross_total": "18173.76"
+  }
+}

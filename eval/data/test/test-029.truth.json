@@ -1,0 +1,53 @@
+{
+  "id": "test-029",
+  "file": "test-029.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1481",
+    "issue_date": "2026-10-08",
+    "due_date": "2026-10-22",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "9",
+        "unit_price": "580.54",
+        "net_amount": "5224.86",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "6",
+        "unit_price": "606.07",
+        "net_amount": "3636.42",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "5",
+        "unit_price": "28.95",
+        "net_amount": "144.75",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "8",
+        "unit_price": "132.04",
+        "net_amount": "1056.32",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "10087.35",
+    "vat_total": "1911.85",
+    "gross_total": "11999.20"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "test-048",
+  "file": "test-048.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01804",
+    "issue_date": "2026-08-22",
+    "due_date": "2026-10-21",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "213.19",
+        "net_amount": "1492.33",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "10",
+        "unit_price": "191.55",
+        "net_amount": "1915.50",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3407.83",
+    "vat_total": "647.49",
+    "gross_total": "4055.32"
+  }
+}

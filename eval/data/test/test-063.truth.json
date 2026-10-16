@@ -1,0 +1,60 @@
+{
+  "id": "test-063",
+  "file": "test-063.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2059",
+    "issue_date": "2026-07-22",
+    "due_date": "2026-08-21",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "4",
+        "unit_price": "39.13",
+        "net_amount": "156.52",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "7",
+        "unit_price": "20.19",
+        "net_amount": "141.33",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "8",
+        "unit_price": "68.43",
+        "net_amount": "547.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "3",
+        "unit_price": "88.65",
+        "net_amount": "265.95",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "8",
+        "unit_price": "171.55",
+        "net_amount": "1372.40",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2483.64",
+    "vat_total": "436.15",
+    "gross_total": "2919.79"
+  }
+}

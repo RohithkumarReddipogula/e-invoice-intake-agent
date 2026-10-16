@@ -1,0 +1,46 @@
+{
+  "id": "dev-034",
+  "file": "dev-034.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1569",
+    "issue_date": "2026-05-02",
+    "due_date": "2026-07-01",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "9",
+        "unit_price": "74.81",
+        "net_amount": "673.29",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "7",
+        "unit_price": "58.39",
+        "net_amount": "408.73",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "12",
+        "unit_price": "521.27",
+        "net_amount": "6255.24",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7337.26",
+    "vat_total": "1345.03",
+    "gross_total": "8683.29"
+  }
+}

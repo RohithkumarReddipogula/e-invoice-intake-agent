@@ -1,0 +1,32 @@
+{
+  "id": "dev-068",
+  "file": "dev-068.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2139",
+    "issue_date": "2026-04-17",
+    "due_date": "2026-06-16",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "204.49",
+        "net_amount": "817.96",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "817.96",
+    "vat_total": "155.41",
+    "gross_total": "973.37"
+  }
+}

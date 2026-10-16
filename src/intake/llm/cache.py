@@ -15,9 +15,15 @@ def schema_hash(schema: dict[str, Any]) -> str:
     return hashlib.sha256(json.dumps(schema, sort_keys=True).encode()).hexdigest()
 
 
-def cache_key(*, model: str, prompt_version: str, schema_sha: str, text: str) -> str:
+def cache_key(*, provider: str, model: str, prompt_version: str, schema_sha: str, text: str) -> str:
     payload = json.dumps(
-        {"model": model, "prompt_version": prompt_version, "schema": schema_sha, "text": text},
+        {
+            "provider": provider,
+            "model": model,
+            "prompt_version": prompt_version,
+            "schema": schema_sha,
+            "text": text,
+        },
         sort_keys=True,
         ensure_ascii=False,
     )

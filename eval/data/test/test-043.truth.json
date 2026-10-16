@@ -1,0 +1,46 @@
+{
+  "id": "test-043",
+  "file": "test-043.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1718",
+    "issue_date": "2026-06-11",
+    "due_date": "2026-06-25",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "11",
+        "unit_price": "1376.18",
+        "net_amount": "15137.98",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "5",
+        "unit_price": "21.40",
+        "net_amount": "107.00",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "8",
+        "unit_price": "189.76",
+        "net_amount": "1518.08",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "16763.06",
+    "vat_total": "3172.14",
+    "gross_total": "19935.20"
+  }
+}

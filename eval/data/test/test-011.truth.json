@@ -1,0 +1,32 @@
+{
+  "id": "test-011",
+  "file": "test-011.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001179",
+    "issue_date": "2026-04-25",
+    "due_date": "2026-06-24",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "12",
+        "unit_price": "1178.28",
+        "net_amount": "14139.36",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "14139.36",
+    "vat_total": "2686.48",
+    "gross_total": "16825.84"
+  }
+}

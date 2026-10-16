@@ -1,0 +1,60 @@
+{
+  "id": "dev-039",
+  "file": "dev-039.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": "date",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1654",
+    "issue_date": "2026-09-25",
+    "due_date": "2026-09-15",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "10",
+        "unit_price": "196.44",
+        "net_amount": "1964.40",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "1",
+        "unit_price": "30.03",
+        "net_amount": "30.03",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "11",
+        "unit_price": "586.68",
+        "net_amount": "6453.48",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "11",
+        "unit_price": "100.04",
+        "net_amount": "1100.44",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "787.64",
+        "net_amount": "3150.56",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "12698.91",
+    "vat_total": "2409.19",
+    "gross_total": "15108.10"
+  }
+}

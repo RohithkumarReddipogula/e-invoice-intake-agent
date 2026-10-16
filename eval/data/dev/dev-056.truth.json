@@ -1,0 +1,32 @@
+{
+  "id": "dev-056",
+  "file": "dev-056.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "iban",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1938",
+    "issue_date": "2026-06-18",
+    "due_date": "2026-07-02",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988777",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "11",
+        "unit_price": "574.02",
+        "net_amount": "6314.22",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "6314.22",
+    "vat_total": "1199.70",
+    "gross_total": "7513.92"
+  }
+}

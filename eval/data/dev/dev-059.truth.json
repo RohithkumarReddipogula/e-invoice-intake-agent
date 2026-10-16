@@ -1,0 +1,60 @@
+{
+  "id": "dev-059",
+  "file": "dev-059.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1991",
+    "issue_date": "2026-05-03",
+    "due_date": "2026-07-02",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "30.32",
+        "net_amount": "212.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "2",
+        "unit_price": "189.94",
+        "net_amount": "379.88",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "4",
+        "unit_price": "78.24",
+        "net_amount": "312.96",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "8",
+        "unit_price": "35.13",
+        "net_amount": "281.04",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "12",
+        "unit_price": "36.28",
+        "net_amount": "435.36",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1621.48",
+    "vat_total": "184.56",
+    "gross_total": "1806.04"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dev-064",
+  "file": "dev-064.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2073",
+    "issue_date": "2026-02-28",
+    "due_date": "2026-04-29",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "2",
+        "unit_price": "77.35",
+        "net_amount": "154.70",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "3",
+        "unit_price": "219.83",
+        "net_amount": "659.49",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "814.19",
+    "vat_total": "136.13",
+    "gross_total": "951.32"
+  }
+}

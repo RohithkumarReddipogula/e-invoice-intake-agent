@@ -1,0 +1,46 @@
+{
+  "id": "test-075",
+  "file": "test-075.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/2267",
+    "issue_date": "2026-02-06",
+    "due_date": "2026-04-07",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202051",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "5",
+        "unit_price": "201.38",
+        "net_amount": "1006.90",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "7",
+        "unit_price": "55.98",
+        "net_amount": "391.86",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "8",
+        "unit_price": "71.64",
+        "net_amount": "573.12",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1971.88",
+    "vat_total": "327.63",
+    "gross_total": "2299.51"
+  }
+}

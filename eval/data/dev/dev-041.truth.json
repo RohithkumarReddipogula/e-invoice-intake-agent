@@ -1,0 +1,53 @@
+{
+  "id": "dev-041",
+  "file": "dev-041.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01686",
+    "issue_date": "2026-09-14",
+    "due_date": "2026-11-13",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "8",
+        "unit_price": "30.23",
+        "net_amount": "241.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "962.42",
+        "net_amount": "1924.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "12",
+        "unit_price": "73.34",
+        "net_amount": "880.08",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "3",
+        "unit_price": "34.59",
+        "net_amount": "103.77",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3150.53",
+    "vat_total": "480.54",
+    "gross_total": "3631.07"
+  }
+}

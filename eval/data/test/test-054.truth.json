@@ -1,0 +1,53 @@
+{
+  "id": "test-054",
+  "file": "test-054.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001906",
+    "issue_date": "2026-02-24",
+    "due_date": "2026-03-26",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "8",
+        "unit_price": "332.84",
+        "net_amount": "2662.72",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "0.5",
+        "unit_price": "80.27",
+        "net_amount": "40.14",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "8",
+        "unit_price": "1239.04",
+        "net_amount": "9912.32",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "3",
+        "unit_price": "47.64",
+        "net_amount": "142.92",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "12758.10",
+    "vat_total": "2406.88",
+    "gross_total": "15164.98"
+  }
+}

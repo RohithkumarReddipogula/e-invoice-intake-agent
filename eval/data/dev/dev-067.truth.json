@@ -1,0 +1,53 @@
+{
+  "id": "dev-067",
+  "file": "dev-067.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/02125",
+    "issue_date": "2026-08-01",
+    "due_date": "2026-08-31",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "7",
+        "unit_price": "84.79",
+        "net_amount": "593.53",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "5",
+        "unit_price": "25.08",
+        "net_amount": "125.40",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "10",
+        "unit_price": "33.73",
+        "net_amount": "337.30",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "2",
+        "unit_price": "1063.31",
+        "net_amount": "2126.62",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3182.85",
+    "vat_total": "478.00",
+    "gross_total": "3660.85"
+  }
+}

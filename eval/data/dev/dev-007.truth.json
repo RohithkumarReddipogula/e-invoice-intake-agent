@@ -1,0 +1,46 @@
+{
+  "id": "dev-007",
+  "file": "dev-007.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261109",
+    "issue_date": "2026-06-13",
+    "due_date": "2026-08-12",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "1",
+        "unit_price": "86.51",
+        "net_amount": "86.51",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "7",
+        "unit_price": "28.28",
+        "net_amount": "197.96",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "1",
+        "unit_price": "209.58",
+        "net_amount": "209.58",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "494.05",
+    "vat_total": "59.73",
+    "gross_total": "553.78"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "test-044",
+  "file": "test-044.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "AB-01735",
+    "issue_date": "2026-02-21",
+    "due_date": "2026-03-23",
+    "currency": "EUR",
+    "seller_name": "Alpenblick IT-Service KG",
+    "seller_vat_id": "DE246813579",
+    "seller_iban": "DE52701500000001023456",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "7",
+        "unit_price": "398.72",
+        "net_amount": "2791.04",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "2791.04",
+    "vat_total": "530.30",
+    "gross_total": "3321.34"
+  }
+}

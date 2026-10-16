@@ -1,0 +1,32 @@
+{
+  "id": "test-009",
+  "file": "test-009.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1140",
+    "issue_date": "2026-08-02",
+    "due_date": "2026-09-01",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "2",
+        "unit_price": "261.62",
+        "net_amount": "523.24",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "523.24",
+    "vat_total": "99.42",
+    "gross_total": "622.66"
+  }
+}

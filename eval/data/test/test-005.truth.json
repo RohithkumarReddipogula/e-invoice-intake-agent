@@ -1,0 +1,39 @@
+{
+  "id": "test-005",
+  "file": "test-005.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1073",
+    "issue_date": "2026-05-23",
+    "due_date": "2026-06-06",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "9",
+        "unit_price": "119.07",
+        "net_amount": "1071.63",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "7",
+        "unit_price": "718.83",
+        "net_amount": "5031.81",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "6103.44",
+    "vat_total": "1159.65",
+    "gross_total": "7263.09"
+  }
+}

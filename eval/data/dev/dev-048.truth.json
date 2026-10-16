@@ -1,0 +1,39 @@
+{
+  "id": "dev-048",
+  "file": "dev-048.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-1808",
+    "issue_date": "2026-06-28",
+    "due_date": "2026-07-12",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "12",
+        "unit_price": "296.47",
+        "net_amount": "3557.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "11",
+        "unit_price": "29.23",
+        "net_amount": "321.53",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3879.17",
+    "vat_total": "737.04",
+    "gross_total": "4616.21"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "dev-018",
+  "file": "dev-018.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1289",
+    "issue_date": "2026-07-22",
+    "due_date": "2026-08-05",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "12",
+        "unit_price": "27.10",
+        "net_amount": "325.20",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "11",
+        "unit_price": "68.81",
+        "net_amount": "756.91",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1082.11",
+    "vat_total": "75.75",
+    "gross_total": "1157.86"
+  }
+}

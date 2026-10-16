@@ -1,0 +1,46 @@
+{
+  "id": "test-074",
+  "file": "test-074.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": "date",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-002250",
+    "issue_date": "2026-10-29",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Office chair",
+        "quantity": "9",
+        "unit_price": "281.33",
+        "net_amount": "2531.97",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "9.5",
+        "unit_price": "130.84",
+        "net_amount": "1242.98",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "6",
+        "unit_price": "51.10",
+        "net_amount": "306.60",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "4081.55",
+    "vat_total": "738.70",
+    "gross_total": "4820.25"
+  }
+}

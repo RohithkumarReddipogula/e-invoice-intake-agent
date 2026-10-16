@@ -1,0 +1,60 @@
+{
+  "id": "dev-033",
+  "file": "dev-033.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01544",
+    "issue_date": "2026-07-11",
+    "due_date": "2026-09-09",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "9",
+        "unit_price": "618.96",
+        "net_amount": "5570.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "2",
+        "unit_price": "227.99",
+        "net_amount": "455.98",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "8",
+        "unit_price": "879.23",
+        "net_amount": "7033.84",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "7.5",
+        "unit_price": "93.74",
+        "net_amount": "703.05",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Catering per person",
+        "quantity": "4",
+        "unit_price": "21.93",
+        "net_amount": "87.72",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "13851.23",
+    "vat_total": "2621.21",
+    "gross_total": "16472.44"
+  }
+}

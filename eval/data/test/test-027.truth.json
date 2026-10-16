@@ -1,0 +1,60 @@
+{
+  "id": "test-027",
+  "file": "test-027.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1443",
+    "issue_date": "2026-02-04",
+    "due_date": "2026-03-06",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "8",
+        "unit_price": "224.26",
+        "net_amount": "1794.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "7",
+        "unit_price": "789.57",
+        "net_amount": "5526.99",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "6",
+        "unit_price": "41.83",
+        "net_amount": "250.98",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "12",
+        "unit_price": "104.88",
+        "net_amount": "1258.56",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "1",
+        "unit_price": "31.61",
+        "net_amount": "31.61",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "8862.22",
+    "vat_total": "1653.71",
+    "gross_total": "10515.93"
+  }
+}

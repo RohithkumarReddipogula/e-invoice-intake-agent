@@ -1,0 +1,39 @@
+{
+  "id": "test-039",
+  "file": "test-039.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261654",
+    "issue_date": "2026-03-19",
+    "due_date": "2026-04-18",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "9",
+        "unit_price": "394.07",
+        "net_amount": "3546.63",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Brochure printing",
+        "quantity": "5",
+        "unit_price": "84.63",
+        "net_amount": "423.15",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3969.78",
+    "vat_total": "703.48",
+    "gross_total": "4673.26"
+  }
+}

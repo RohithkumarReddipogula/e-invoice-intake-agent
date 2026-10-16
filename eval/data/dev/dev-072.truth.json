@@ -1,0 +1,39 @@
+{
+  "id": "dev-072",
+  "file": "dev-072.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-2212",
+    "issue_date": "2026-05-13",
+    "due_date": "2026-06-12",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Support hours",
+        "quantity": "5",
+        "unit_price": "120.42",
+        "net_amount": "602.10",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "8",
+        "unit_price": "849.02",
+        "net_amount": "6792.16",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7494.26",
+    "vat_total": "1404.91",
+    "gross_total": "8899.17"
+  }
+}

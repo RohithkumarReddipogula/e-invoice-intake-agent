@@ -1,0 +1,32 @@
+{
+  "id": "dev-011",
+  "file": "dev-011.pdf",
+  "kind": "plain_pdf",
+  "layout": "modern_en",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261179",
+    "issue_date": "2026-06-26",
+    "due_date": null,
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Kanzlei Recht & Ordnung",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "8",
+        "unit_price": "888.73",
+        "net_amount": "7109.84",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "7109.84",
+    "vat_total": "1350.87",
+    "gross_total": "8460.71"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "test-069",
+  "file": "test-069.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20262158",
+    "issue_date": "2026-09-21",
+    "due_date": "2026-10-21",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Consulting day",
+        "quantity": "4",
+        "unit_price": "1255.27",
+        "net_amount": "5021.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "7",
+        "unit_price": "435.32",
+        "net_amount": "3047.24",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "12",
+        "unit_price": "393.04",
+        "net_amount": "4716.48",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "116.90",
+        "net_amount": "818.30",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "13603.10",
+    "vat_total": "2584.59",
+    "gross_total": "16187.69"
+  }
+}

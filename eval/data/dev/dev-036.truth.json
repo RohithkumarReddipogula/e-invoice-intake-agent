@@ -1,0 +1,53 @@
+{
+  "id": "dev-036",
+  "file": "dev-036.xml",
+  "kind": "xml_ubl",
+  "layout": null,
+  "planted": "lines_sum",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1595",
+    "issue_date": "2026-01-26",
+    "due_date": "2026-03-27",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "3",
+        "unit_price": "302.95",
+        "net_amount": "908.85",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "6",
+        "unit_price": "341.89",
+        "net_amount": "2051.34",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "3",
+        "unit_price": "114.25",
+        "net_amount": "342.75",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "180.94",
+        "net_amount": "180.94",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3583.88",
+    "vat_total": "661.94",
+    "gross_total": "4245.82"
+  }
+}

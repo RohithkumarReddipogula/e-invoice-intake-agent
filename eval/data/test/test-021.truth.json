@@ -1,0 +1,39 @@
+{
+  "id": "test-021",
+  "file": "test-021.pdf",
+  "kind": "zugferd",
+  "layout": "compact_de",
+  "planted": "iban",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "2026/INV/1348",
+    "issue_date": "2026-02-13",
+    "due_date": "2026-02-27",
+    "currency": "EUR",
+    "seller_name": "Nordlicht Druck GmbH",
+    "seller_vat_id": "DE987654321",
+    "seller_iban": "DE02120300000000202052",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "248.15",
+        "net_amount": "248.15",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "5",
+        "unit_price": "134.65",
+        "net_amount": "673.25",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "38.17",
+    "charge_total": "0",
+    "net_total": "883.23",
+    "vat_total": "167.81",
+    "gross_total": "1051.04"
+  }
+}

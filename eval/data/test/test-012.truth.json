@@ -1,0 +1,39 @@
+{
+  "id": "test-012",
+  "file": "test-012.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": "net_vat_gross",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1195",
+    "issue_date": "2026-03-29",
+    "due_date": "2026-04-28",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Milling cutter set",
+        "quantity": "7",
+        "unit_price": "181.44",
+        "net_amount": "1270.08",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "9",
+        "unit_price": "16.34",
+        "net_amount": "147.06",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1417.14",
+    "vat_total": "269.26",
+    "gross_total": "1687.40"
+  }
+}

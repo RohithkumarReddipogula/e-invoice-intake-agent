@@ -1,0 +1,60 @@
+{
+  "id": "test-064",
+  "file": "test-064.pdf",
+  "kind": "zugferd",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RL2026-2080",
+    "issue_date": "2026-02-25",
+    "due_date": "2026-04-26",
+    "currency": "EUR",
+    "seller_name": "Rheinufer Logistik GmbH",
+    "seller_vat_id": "DE135792468",
+    "seller_iban": "DE55370501980009988776",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Pallet storage per month",
+        "quantity": "2",
+        "unit_price": "18.15",
+        "net_amount": "36.30",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "12",
+        "unit_price": "211.70",
+        "net_amount": "2540.40",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "9",
+        "unit_price": "597.27",
+        "net_amount": "5375.43",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "6",
+        "unit_price": "136.07",
+        "net_amount": "816.42",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "1",
+        "unit_price": "234.39",
+        "net_amount": "234.39",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "9002.94",
+    "vat_total": "1710.56",
+    "gross_total": "10713.50"
+  }
+}

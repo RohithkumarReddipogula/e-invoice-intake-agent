@@ -1,0 +1,46 @@
+{
+  "id": "dev-006",
+  "file": "dev-006.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "HCP-001091",
+    "issue_date": "2026-06-11",
+    "due_date": "2026-07-11",
+    "currency": "EUR",
+    "seller_name": "Hanse Consulting Partners GmbH",
+    "seller_vat_id": "DE975318642",
+    "seller_iban": "DE34200505501234567890",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Catering per person",
+        "quantity": "5",
+        "unit_price": "43.09",
+        "net_amount": "215.45",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "7",
+        "unit_price": "13.52",
+        "net_amount": "94.64",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "199.72",
+        "net_amount": "798.88",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1108.97",
+    "vat_total": "184.85",
+    "gross_total": "1293.82"
+  }
+}

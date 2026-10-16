@@ -1,0 +1,46 @@
+{
+  "id": "test-020",
+  "file": "test-020.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "EB-20261331",
+    "issue_date": "2026-06-18",
+    "due_date": "2026-08-17",
+    "currency": "EUR",
+    "seller_name": "Elbtal Büroservice e.K.",
+    "seller_vat_id": "DE864209753",
+    "seller_iban": "DE20850503003120045678",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Flyer A5, 1000 pcs",
+        "quantity": "12",
+        "unit_price": "160.01",
+        "net_amount": "1920.12",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Pallet storage per month",
+        "quantity": "9",
+        "unit_price": "31.64",
+        "net_amount": "284.76",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "12",
+        "unit_price": "79.41",
+        "net_amount": "952.92",
+        "vat_rate": "7"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "3157.80",
+    "vat_total": "485.63",
+    "gross_total": "3643.43"
+  }
+}

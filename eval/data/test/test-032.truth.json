@@ -1,0 +1,53 @@
+{
+  "id": "test-032",
+  "file": "test-032.pdf",
+  "kind": "zugferd",
+  "layout": "modern_en",
+  "planted": "vat_id",
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-1529",
+    "issue_date": "2026-09-14",
+    "due_date": "2026-10-14",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE56473829",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Probe Maschinenbau AG",
+    "line_items": [
+      {
+        "description": "Brochure printing",
+        "quantity": "3",
+        "unit_price": "64.21",
+        "net_amount": "192.63",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "5",
+        "unit_price": "92.52",
+        "net_amount": "462.60",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Milling cutter set",
+        "quantity": "12",
+        "unit_price": "213.04",
+        "net_amount": "2556.48",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Office chair",
+        "quantity": "10",
+        "unit_price": "327.35",
+        "net_amount": "3273.50",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "6485.21",
+    "vat_total": "1209.07",
+    "gross_total": "7694.28"
+  }
+}

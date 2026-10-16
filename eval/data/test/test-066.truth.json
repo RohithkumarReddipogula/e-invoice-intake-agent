@@ -1,0 +1,60 @@
+{
+  "id": "test-066",
+  "file": "test-066.pdf",
+  "kind": "plain_pdf",
+  "layout": "compact_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "OC-2110",
+    "issue_date": "2026-03-18",
+    "due_date": "2026-04-17",
+    "currency": "EUR",
+    "seller_name": "Ostsee Catering UG",
+    "seller_vat_id": "DE564738291",
+    "seller_iban": "DE78130500000201234567",
+    "buyer_name": "Stadtwerke Musterstadt GmbH",
+    "line_items": [
+      {
+        "description": "Freight Hamburg-Munich",
+        "quantity": "7",
+        "unit_price": "588.81",
+        "net_amount": "4121.67",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Software license, annual",
+        "quantity": "3",
+        "unit_price": "238.14",
+        "net_amount": "714.42",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Specialist book",
+        "quantity": "2",
+        "unit_price": "79.50",
+        "net_amount": "159.00",
+        "vat_rate": "7"
+      },
+      {
+        "description": "Consulting day",
+        "quantity": "1",
+        "unit_price": "944.42",
+        "net_amount": "944.42",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "5",
+        "unit_price": "100.42",
+        "net_amount": "502.10",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "6441.61",
+    "vat_total": "1204.83",
+    "gross_total": "7646.44"
+  }
+}

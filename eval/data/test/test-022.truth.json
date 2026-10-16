@@ -1,0 +1,32 @@
+{
+  "id": "test-022",
+  "file": "test-022.pdf",
+  "kind": "plain_pdf",
+  "layout": "classic_de",
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "SW/2026/01361",
+    "issue_date": "2026-04-23",
+    "due_date": "2026-05-07",
+    "currency": "EUR",
+    "seller_name": "Schwarzwald Werkzeugbau GmbH",
+    "seller_vat_id": "DE192837465",
+    "seller_iban": "DE67680501010012345678",
+    "buyer_name": "Beispiel Handels AG",
+    "line_items": [
+      {
+        "description": "Software license, annual",
+        "quantity": "2",
+        "unit_price": "696.94",
+        "net_amount": "1393.88",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "0",
+    "charge_total": "0",
+    "net_total": "1393.88",
+    "vat_total": "264.84",
+    "gross_total": "1658.72"
+  }
+}

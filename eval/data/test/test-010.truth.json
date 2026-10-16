@@ -1,0 +1,39 @@
+{
+  "id": "test-010",
+  "file": "test-010.xml",
+  "kind": "xml_cii",
+  "layout": null,
+  "planted": null,
+  "duplicate_of": null,
+  "truth": {
+    "invoice_number": "RE-2026-1157",
+    "issue_date": "2026-06-23",
+    "due_date": "2026-07-23",
+    "currency": "EUR",
+    "seller_name": "Muster Software GmbH",
+    "seller_vat_id": "DE123456789",
+    "seller_iban": "DE89370400440532013000",
+    "buyer_name": "Grünfeld Bio Markt eG",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "6",
+        "unit_price": "259.55",
+        "net_amount": "1557.30",
+        "vat_rate": "19"
+      },
+      {
+        "description": "Support hours",
+        "quantity": "2",
+        "unit_price": "101.04",
+        "net_amount": "202.08",
+        "vat_rate": "19"
+      }
+    ],
+    "allowance_total": "9.07",
+    "charge_total": "0",
+    "net_total": "1750.31",
+    "vat_total": "332.56",
+    "gross_total": "2082.87"
+  }
+}
