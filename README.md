@@ -1,5 +1,7 @@
 # e-invoice-intake-agent
 
+**[Live demo](https://e-invoice-intake-agent-production.up.railway.app)**: Try it live: 11 sample invoices, cached results, no sign-up, resets hourly.
+
 [![CI](https://github.com/RohithkumarReddipogula/e-invoice-intake-agent/actions/workflows/ci.yml/badge.svg)](https://github.com/RohithkumarReddipogula/e-invoice-intake-agent/actions/workflows/ci.yml)
 
 **What it does:** reads incoming invoices (XRechnung XML, ZUGFeRD PDF, plain PDF), checks
