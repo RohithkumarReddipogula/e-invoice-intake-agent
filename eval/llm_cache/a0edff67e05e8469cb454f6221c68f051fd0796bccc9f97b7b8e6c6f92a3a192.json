@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-06-21"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "763.17"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-001297"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-05-22"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "52.28",
+          "quantity": "2",
+          "unit_price": "26.14",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "660.96",
+          "quantity": "9",
+          "unit_price": "73.44",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "713.24"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE34 2005 0550 1234 5678 90"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "49.93"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142350-q0Is5BjBAgWT4uHN1vPS",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007455,
+    "input_tokens": 3120,
+    "output_tokens": 867,
+    "reasoning_tokens": 400
+  }
+}

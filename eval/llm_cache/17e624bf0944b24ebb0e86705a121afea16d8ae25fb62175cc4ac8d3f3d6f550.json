@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.8,
+      "value": "11.52"
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-05-28"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "4767.17"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "SW/2026/01993"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-05-14"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "60.63",
+          "quantity": "1",
+          "unit_price": "60.63",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "324.61",
+          "quantity": "11",
+          "unit_price": "29.51",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "1461.36",
+          "quantity": "12",
+          "unit_price": "121.78",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "2096.29",
+          "quantity": "7",
+          "unit_price": "299.47",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "126.24",
+          "quantity": "6",
+          "unit_price": "21.04",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "4057.61"
+    },
+    "seller_iban": {
+      "confidence": 0.94,
+      "value": "DE67680501010012345678"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "709.56"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142445-X4klUoPalQvEIuUQANr3",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009935,
+    "input_tokens": 3230,
+    "output_tokens": 1341,
+    "reasoning_tokens": 729
+  }
+}

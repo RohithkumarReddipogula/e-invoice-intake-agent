@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.6,
+      "value": "49.15"
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-10-24"
+    },
+    "gross_total": {
+      "confidence": 0.8,
+      "value": "19896.22"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-1838"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-10-10"
+    },
+    "line_items": {
+      "confidence": 0.85,
+      "value": [
+        {
+          "description": "Office chair",
+          "net_amount": "4907.64",
+          "quantity": "12",
+          "unit_price": "408.97",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "11101.92",
+          "quantity": "12",
+          "unit_price": "925.16",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "144.15",
+          "quantity": "5",
+          "unit_price": "28.83",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "84.64",
+          "quantity": "2",
+          "unit_price": "42.32",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "502.83",
+          "quantity": "3",
+          "unit_price": "167.61",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.6,
+      "value": "16742.03"
+    },
+    "seller_iban": {
+      "confidence": 0.94,
+      "value": "DE78130500000201234567"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.85,
+      "value": "3154.19"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142411-J6waxsbi6OSrZUY0Jz6p",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009285,
+    "input_tokens": 3220,
+    "output_tokens": 1213,
+    "reasoning_tokens": 608
+  }
+}

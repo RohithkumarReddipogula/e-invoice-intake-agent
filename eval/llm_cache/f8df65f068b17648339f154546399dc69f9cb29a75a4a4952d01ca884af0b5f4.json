@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.9,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.93,
+      "value": "2026-03-06"
+    },
+    "gross_total": {
+      "confidence": 0.95,
+      "value": "10515.93"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-1443"
+    },
+    "issue_date": {
+      "confidence": 0.93,
+      "value": "2026-02-04"
+    },
+    "line_items": {
+      "confidence": 0.92,
+      "value": [
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1794.08",
+          "quantity": "8",
+          "unit_price": "224.26",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "5526.99",
+          "quantity": "7",
+          "unit_price": "789.57",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "250.98",
+          "quantity": "6",
+          "unit_price": "41.83",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "1258.56",
+          "quantity": "12",
+          "unit_price": "104.88",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "31.61",
+          "quantity": "1",
+          "unit_price": "31.61",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.95,
+      "value": "8862.22"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.94,
+      "value": "1653.71"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142363-Vll2Lb127QqWYN4YciY0",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008681,
+    "input_tokens": 3246,
+    "output_tokens": 1087,
+    "reasoning_tokens": 471
+  }
+}

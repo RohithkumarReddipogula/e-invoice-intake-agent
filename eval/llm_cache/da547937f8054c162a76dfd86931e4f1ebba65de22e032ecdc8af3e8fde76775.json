@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-08-04"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "9018.27"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-001702"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-07-05"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "125.76",
+          "quantity": "3",
+          "unit_price": "41.92",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "5313.92",
+          "quantity": "4",
+          "unit_price": "1328.48",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "2151.38",
+          "quantity": "7",
+          "unit_price": "307.34",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "7591.06"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE34 2005 0550 1234 5678 90"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "1427.21"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142386-SlfCV4U2lXKllXDOwsVb",
+  "served_by": "Anthropic",
+  "usage": {
+    "cost_usd": 0.000874,
+    "input_tokens": 3180,
+    "output_tokens": 1112,
+    "reasoning_tokens": 591
+  }
+}

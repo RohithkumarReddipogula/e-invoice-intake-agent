@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-06-06"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "7263.09"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1073"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-05-23"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1071.63",
+          "quantity": "9",
+          "unit_price": "119.07",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "5031.81",
+          "quantity": "7",
+          "unit_price": "718.83",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "6103.44"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55370501980009988776"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1159.65"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142302-YwhC6eFUbXYn5vLWIj14",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007679,
+    "input_tokens": 3139,
+    "output_tokens": 908,
+    "reasoning_tokens": 440
+  }
+}

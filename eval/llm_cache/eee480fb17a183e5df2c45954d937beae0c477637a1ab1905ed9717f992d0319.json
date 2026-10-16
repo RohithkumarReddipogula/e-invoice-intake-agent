@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.92,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-07-17"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "309.40"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "2026/INV/1051"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-07-03"
+    },
+    "line_items": {
+      "confidence": 0.94,
+      "value": [
+        {
+          "description": "Cloud hosting",
+          "net_amount": "260.00",
+          "quantity": "2",
+          "unit_price": "130.00",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "260.00"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE02 1203 0000 0000 2020 51"
+    },
+    "seller_name": {
+      "confidence": 0.93,
+      "value": "Nordlicht Druck GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE987654321"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "49.40"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142297-Z4yMdRb6AxEFKC5IcF6h",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007343,
+    "input_tokens": 3168,
+    "output_tokens": 835,
+    "reasoning_tokens": 415
+  }
+}

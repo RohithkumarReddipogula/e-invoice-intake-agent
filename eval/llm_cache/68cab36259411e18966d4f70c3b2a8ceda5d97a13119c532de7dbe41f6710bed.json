@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-03-18"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "1929.22"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "AB-01637"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-03-04"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Support hours",
+          "net_amount": "600.53",
+          "quantity": "7",
+          "unit_price": "85.79",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "349.79",
+          "quantity": "7",
+          "unit_price": "49.97",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "706.14",
+          "quantity": "2",
+          "unit_price": "353.07",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "1656.46"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE52701500000001023456"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Alpenblick IT-Service KG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE246813579"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "272.76"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142382-C4iQh6MrJZF7gsSovdu8",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007349,
+    "input_tokens": 3144,
+    "output_tokens": 841,
+    "reasoning_tokens": 342
+  }
+}

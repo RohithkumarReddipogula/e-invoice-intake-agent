@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.93,
+      "value": "2026-03-26"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "15164.98"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-001906"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-02-24"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Office chair",
+          "net_amount": "2662.72",
+          "quantity": "8",
+          "unit_price": "332.84",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "40.14",
+          "quantity": "0.5",
+          "unit_price": "80.27",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "9912.32",
+          "quantity": "8",
+          "unit_price": "1239.04",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "142.92",
+          "quantity": "3",
+          "unit_price": "47.64",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "12758.10"
+    },
+    "seller_iban": {
+      "confidence": 0.94,
+      "value": "DE34200505501234567890"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "2406.88"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142427-20SxpIAkhCKq5Qqph4cf",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008614,
+    "input_tokens": 3214,
+    "output_tokens": 1080,
+    "reasoning_tokens": 521
+  }
+}

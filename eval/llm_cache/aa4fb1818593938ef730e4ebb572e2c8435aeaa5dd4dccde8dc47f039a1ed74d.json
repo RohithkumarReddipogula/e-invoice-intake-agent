@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "4820.25"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-002250"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-10-29"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Office chair",
+          "net_amount": "2531.97",
+          "quantity": "9",
+          "unit_price": "281.33",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "1242.98",
+          "quantity": "9.5",
+          "unit_price": "130.84",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "306.60",
+          "quantity": "6",
+          "unit_price": "51.10",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "4081.55"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE34200505501234567890"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "738.70"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142467-euROiaShgIDAZ16Nmjon",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007509,
+    "input_tokens": 3149,
+    "output_tokens": 872,
+    "reasoning_tokens": 366
+  }
+}

@@ -8,7 +8,7 @@ import pytest
 from eval.generate import write_split
 from eval.kosit_cache import KositCache, KositCacheMiss, from_json, to_json
 from eval.metrics import FIELD_NAMES
-from eval.run import BudgetExceeded, markdown, report, run_split
+from eval.run import BudgetExceeded, LlmCacheMiss, markdown, report, run_split
 from intake.config import Settings
 from intake.llm.schema import LlmInvoiceExtraction
 
@@ -131,3 +131,8 @@ def test_kosit_cache_roundtrip_and_miss(tmp_path, split_dir):
     assert again.status == result.status
     assert [f.rule_id for f in again.findings] == [f.rule_id for f in result.findings]
     assert from_json(to_json(result)).reason == result.reason
+
+
+def test_require_cached_fails_on_a_cache_miss(split_dir, tmp_path):
+    with pytest.raises(LlmCacheMiss, match="No cached LLM answer"):
+        run_split(split_dir, settings(tmp_path), valid, live=False, require_cached=True)

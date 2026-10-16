@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.98,
+      "value": "2026-10-29"
+    },
+    "gross_total": {
+      "confidence": 0.98,
+      "value": "3619.82"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "HCP-001820"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-09-29"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Consulting day",
+          "net_amount": "2627.70",
+          "quantity": "2",
+          "unit_price": "1313.85",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "210.56",
+          "quantity": "7",
+          "unit_price": "30.08",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "226.44",
+          "quantity": "6",
+          "unit_price": "37.74",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.98,
+      "value": "3064.70"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE34200505501234567890"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.97,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.98,
+      "value": "555.12"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142406-cViPsb0gltNBYqEotbfY",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007804,
+    "input_tokens": 3269,
+    "output_tokens": 907,
+    "reasoning_tokens": 393
+  }
+}

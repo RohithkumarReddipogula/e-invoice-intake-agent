@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-06-25"
+    },
+    "gross_total": {
+      "confidence": 0.98,
+      "value": "19935.20"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "RL2026-1718"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-06-11"
+    },
+    "line_items": {
+      "confidence": 0.95,
+      "value": [
+        {
+          "description": "Consulting day",
+          "net_amount": "15137.98",
+          "quantity": "11",
+          "unit_price": "1376.18",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "107.00",
+          "quantity": "5",
+          "unit_price": "21.40",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1518.08",
+          "quantity": "8",
+          "unit_price": "189.76",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.98,
+      "value": "16763.06"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55 3705 0198 0009 9887 76"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.98,
+      "value": "3172.14"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142391-fBBddhkovXpkDvDN8N88",
+  "served_by": "Anthropic",
+  "usage": {
+    "cost_usd": 0.0008122,
+    "input_tokens": 3267,
+    "output_tokens": 971,
+    "reasoning_tokens": 452
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-06-06"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "13134.95"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RL2026-1858"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-05-07"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Support hours",
+          "net_amount": "458.01",
+          "quantity": "7",
+          "unit_price": "65.43",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "763.63",
+          "quantity": "7",
+          "unit_price": "109.09",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "9475.08",
+          "quantity": "12",
+          "unit_price": "789.59",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "379.30",
+          "quantity": "10",
+          "unit_price": "37.93",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "11076.02"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55 3705 0198 0009 9887 76"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "2058.93"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142417-I16au2Zzq9U7ycB0LmIk",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009465,
+    "input_tokens": 3215,
+    "output_tokens": 1250,
+    "reasoning_tokens": 676
+  }
+}

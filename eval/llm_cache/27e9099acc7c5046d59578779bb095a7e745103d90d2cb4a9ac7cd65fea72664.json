@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-05-07"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "1658.72"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "SW/2026/01361"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-04-23"
+    },
+    "line_items": {
+      "confidence": 0.94,
+      "value": [
+        {
+          "description": "Software license, annual",
+          "net_amount": "1393.88",
+          "quantity": "2",
+          "unit_price": "696.94",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "1393.88"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE67 6805 0101 0012 3456 78"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "264.84"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142354-cBh9yeY7fF84fzFUxdVk",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0006969,
+    "input_tokens": 3179,
+    "output_tokens": 758,
+    "reasoning_tokens": 334
+  }
+}

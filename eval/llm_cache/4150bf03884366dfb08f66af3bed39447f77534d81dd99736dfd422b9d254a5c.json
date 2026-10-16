@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-11-01"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "5436.78"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "HCP-001495"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-10-02"
+    },
+    "line_items": {
+      "confidence": 0.9,
+      "value": [
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "141.80",
+          "quantity": "5",
+          "unit_price": "28.36",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "423.71",
+          "quantity": "7",
+          "unit_price": "60.53",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "590.24",
+          "quantity": "8",
+          "unit_price": "73.78",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "2225.16",
+          "quantity": "6",
+          "unit_price": "370.86",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1290.06",
+          "quantity": "9",
+          "unit_price": "143.34",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "4670.97"
+    },
+    "seller_iban": {
+      "confidence": 0.94,
+      "value": "DE34 2005 0550 1234 5678 90"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "765.81"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142368-4rIcktf93dNvUcxdC6t1",
+  "served_by": "Anthropic",
+  "usage": {
+    "cost_usd": 0.0009039,
+    "input_tokens": 3249,
+    "output_tokens": 1158,
+    "reasoning_tokens": 532
+  }
+}

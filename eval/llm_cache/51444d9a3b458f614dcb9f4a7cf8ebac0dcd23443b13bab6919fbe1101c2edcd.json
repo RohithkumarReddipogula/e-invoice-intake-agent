@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-06-02"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "7793.61"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "EB-20261918"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-04-03"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "1942.50",
+          "quantity": "7",
+          "unit_price": "277.50",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "2688.77",
+          "quantity": "7",
+          "unit_price": "384.11",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "375.44",
+          "quantity": "8",
+          "unit_price": "46.93",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1580.40",
+          "quantity": "12",
+          "unit_price": "131.70",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "6587.11"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE20 8505 0300 3120 0456 78"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Elbtal Büroservice e.K."
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE864209753"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1206.50"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142432-kvxckF7Kr6gOmlSU05UM",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.000897,
+    "input_tokens": 3335,
+    "output_tokens": 1127,
+    "reasoning_tokens": 539
+  }
+}

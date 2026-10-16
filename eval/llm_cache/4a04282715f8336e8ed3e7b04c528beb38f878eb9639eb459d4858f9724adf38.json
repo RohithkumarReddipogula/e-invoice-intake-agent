@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-04-17"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "7646.44"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-2110"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-03-18"
+    },
+    "line_items": {
+      "confidence": 0.94,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "4121.67",
+          "quantity": "7",
+          "unit_price": "588.81",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "714.42",
+          "quantity": "3",
+          "unit_price": "238.14",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Specialist book",
+          "net_amount": "159.00",
+          "quantity": "2",
+          "unit_price": "79.50",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "944.42",
+          "quantity": "1",
+          "unit_price": "944.42",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "502.10",
+          "quantity": "5",
+          "unit_price": "100.42",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "6441.61"
+    },
+    "seller_iban": {
+      "confidence": 0.94,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1204.83"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142451-hGf6WR6Si874UyOgTY3n",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008915,
+    "input_tokens": 3245,
+    "output_tokens": 1134,
+    "reasoning_tokens": 513
+  }
+}

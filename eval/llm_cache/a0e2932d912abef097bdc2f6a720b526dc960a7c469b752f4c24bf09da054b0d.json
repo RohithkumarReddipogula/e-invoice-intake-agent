@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-09-23"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "2908.26"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "OC-1432"
+    },
+    "issue_date": {
+      "confidence": 0.98,
+      "value": "2026-08-24"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "920.80",
+          "quantity": "8",
+          "unit_price": "115.10",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "580.50",
+          "quantity": "5",
+          "unit_price": "116.10",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "642.87",
+          "quantity": "3",
+          "unit_price": "214.29",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "333.36",
+          "quantity": "12",
+          "unit_price": "27.78",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "2477.53"
+    },
+    "seller_iban": {
+      "confidence": 0.96,
+      "value": "DE78 1305 0000 0201 2345 67"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "430.73"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142395-Bhfw839qKapnKP76QSiv",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009893,
+    "input_tokens": 3313,
+    "output_tokens": 1316,
+    "reasoning_tokens": 742
+  }
+}

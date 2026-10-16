@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.95,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-05-20"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "2556.95"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "SW/2026/01261"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-04-20"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "1071.75",
+          "quantity": "3",
+          "unit_price": "357.25",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "520.85",
+          "quantity": "5",
+          "unit_price": "104.17",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "556.10",
+          "quantity": "2",
+          "unit_price": "278.05",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "2148.70"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE67680501010012345678"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Schwarzwald Werkzeugbau GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE192837465"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "408.25"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142342-XubRTdXk78ZZ914fOIWI",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007792,
+    "input_tokens": 3237,
+    "output_tokens": 911,
+    "reasoning_tokens": 388
+  }
+}

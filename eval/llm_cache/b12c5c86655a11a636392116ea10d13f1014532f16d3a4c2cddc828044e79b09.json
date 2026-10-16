@@ -1,0 +1,93 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.97,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-09-27"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "16333.24"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RL2026-1891"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-09-13"
+    },
+    "line_items": {
+      "confidence": 0.85,
+      "value": [
+        {
+          "description": "Office chair",
+          "net_amount": "4285.60",
+          "quantity": "11",
+          "unit_price": "389.60",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "74.96",
+          "quantity": "4",
+          "unit_price": "18.74",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "9364.85",
+          "quantity": "11",
+          "unit_price": "851.35",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "13725.41"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE55370501980009988776"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "2607.83"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142423-gBPm5HnobguYqeQAVctC",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008037,
+    "input_tokens": 3162,
+    "output_tokens": 975,
+    "reasoning_tokens": 462
+  }
+}

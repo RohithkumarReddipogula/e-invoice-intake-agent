@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.93,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.93,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "gross_total": {
+      "confidence": 0.92,
+      "value": "9091.10"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RE-2026-1961"
+    },
+    "issue_date": {
+      "confidence": 0.95,
+      "value": "2026-08-07"
+    },
+    "line_items": {
+      "confidence": 0.8,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "528.72",
+          "quantity": "6",
+          "unit_price": "88.12",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "3617.76",
+          "quantity": "4",
+          "unit_price": "904.44",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "901.62",
+          "quantity": "9",
+          "unit_price": "100.18",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "1891.32",
+          "quantity": "12",
+          "unit_price": "157.61",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "711.46",
+          "quantity": "9.5",
+          "unit_price": "74.89",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.5,
+      "value": "7700.88"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE89 3704 0044 0532 0130 00"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Muster Software GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE123456789"
+    },
+    "vat_total": {
+      "confidence": 0.92,
+      "value": "1390.22"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142438-dtc8rJRKGcfuOKJFmKOD",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0011695,
+    "input_tokens": 3240,
+    "output_tokens": 1691,
+    "reasoning_tokens": 1071
+  }
+}

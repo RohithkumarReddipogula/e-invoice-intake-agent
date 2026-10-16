@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Beispiel Handels AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-04-28"
+    },
+    "gross_total": {
+      "confidence": 0.5,
+      "value": "1687.40"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RE-2026-1195"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-03-29"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Milling cutter set",
+          "net_amount": "1270.08",
+          "quantity": "7",
+          "unit_price": "181.44",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "147.06",
+          "quantity": "9",
+          "unit_price": "16.34",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "1417.14"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE89 3704 0044 0532 0130 00"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Muster Software GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE123456789"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "269.26"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142322-u8HGvKBImz5TmSQ4CeuA",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007902,
+    "input_tokens": 3117,
+    "output_tokens": 957,
+    "reasoning_tokens": 491
+  }
+}

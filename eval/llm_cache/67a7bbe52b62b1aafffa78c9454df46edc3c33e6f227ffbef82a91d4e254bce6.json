@@ -1,0 +1,86 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Kanzlei Recht & Ordnung"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-03-24"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "820.71"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "OC-1242"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-02-22"
+    },
+    "line_items": {
+      "confidence": 0.92,
+      "value": [
+        {
+          "description": "Specialist book",
+          "net_amount": "613.36",
+          "quantity": "8",
+          "unit_price": "76.67",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "138.16",
+          "quantity": "11",
+          "unit_price": "12.56",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "751.52"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE78130500000201234567"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Ostsee Catering UG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.94,
+      "value": "DE564738291"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "69.19"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142337-30VXbbWcQwcZEOEOVJq5",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0007486,
+    "input_tokens": 3131,
+    "output_tokens": 871,
+    "reasoning_tokens": 415
+  }
+}

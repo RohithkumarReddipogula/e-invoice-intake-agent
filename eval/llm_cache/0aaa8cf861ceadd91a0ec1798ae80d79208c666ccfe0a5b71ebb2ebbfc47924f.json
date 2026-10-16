@@ -1,0 +1,79 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.93,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-04-02"
+    },
+    "gross_total": {
+      "confidence": 0.96,
+      "value": "701.96"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "AB-01621"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-03-03"
+    },
+    "line_items": {
+      "confidence": 0.9,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "656.04",
+          "quantity": "12",
+          "unit_price": "54.67",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "656.04"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE52 7015 0000 0001 0234 56"
+    },
+    "seller_name": {
+      "confidence": 0.95,
+      "value": "Alpenblick IT-Service KG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.94,
+      "value": "DE246813579"
+    },
+    "vat_total": {
+      "confidence": 0.95,
+      "value": "45.92"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142378-MA8Q4c7Mm58ogj4yMBNu",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0006728,
+    "input_tokens": 3158,
+    "output_tokens": 714,
+    "reasoning_tokens": 298
+  }
+}

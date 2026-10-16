@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": "44.98"
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.95,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.95,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.97,
+      "value": "2026-07-02"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "10210.98"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "RL2026-1212"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-06-02"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "820.20",
+          "quantity": "4",
+          "unit_price": "205.05",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Brochure printing",
+          "net_amount": "271.70",
+          "quantity": "11",
+          "unit_price": "24.70",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "6971.93",
+          "quantity": "7",
+          "unit_price": "995.99",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Flyer A5, 1000 pcs",
+          "net_amount": "448.91",
+          "quantity": "7",
+          "unit_price": "64.13",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Catering per person",
+          "net_amount": "156.03",
+          "quantity": "7",
+          "unit_price": "22.29",
+          "vat_rate": "7"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "8623.79"
+    },
+    "seller_iban": {
+      "confidence": 0.92,
+      "value": "DE55370501980009988776"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Rheinufer Logistik GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE135792468"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "1587.19"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142327-evinrOmH9WvpMu2A520o",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0009843,
+    "input_tokens": 3368,
+    "output_tokens": 1295,
+    "reasoning_tokens": 672
+  }
+}

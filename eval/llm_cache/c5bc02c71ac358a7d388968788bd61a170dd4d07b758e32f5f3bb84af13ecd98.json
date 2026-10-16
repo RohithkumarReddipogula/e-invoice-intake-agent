@@ -1,0 +1,107 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.8,
+      "value": "45.02"
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Stadtwerke Musterstadt GmbH"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.9,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.96,
+      "value": "2026-07-01"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "21663.71"
+    },
+    "invoice_number": {
+      "confidence": 0.98,
+      "value": "HCP-001102"
+    },
+    "issue_date": {
+      "confidence": 0.97,
+      "value": "2026-06-17"
+    },
+    "line_items": {
+      "confidence": 0.93,
+      "value": [
+        {
+          "description": "Brochure printing",
+          "net_amount": "527.13",
+          "quantity": "9",
+          "unit_price": "58.57",
+          "vat_rate": "7"
+        },
+        {
+          "description": "Support hours",
+          "net_amount": "1364.52",
+          "quantity": "12",
+          "unit_price": "113.71",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "1775.84",
+          "quantity": "11",
+          "unit_price": "161.44",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Consulting day",
+          "net_amount": "10903.60",
+          "quantity": "10",
+          "unit_price": "1090.36",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "3731.88",
+          "quantity": "12",
+          "unit_price": "310.99",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "18257.95"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE34 2005 0550 1234 5678 90"
+    },
+    "seller_name": {
+      "confidence": 0.97,
+      "value": "Hanse Consulting Partners GmbH"
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE975318642"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "3405.76"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142306-mlSFaCTyqeRjvT9jYZTm",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0010052,
+    "input_tokens": 3362,
+    "output_tokens": 1338,
+    "reasoning_tokens": 714
+  }
+}

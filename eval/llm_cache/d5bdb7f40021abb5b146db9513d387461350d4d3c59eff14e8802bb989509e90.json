@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Grünfeld Bio Markt eG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.98,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.95,
+      "value": "2026-10-21"
+    },
+    "gross_total": {
+      "confidence": 0.97,
+      "value": "16187.69"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "EB-20262158"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-09-21"
+    },
+    "line_items": {
+      "confidence": 0.92,
+      "value": [
+        {
+          "description": "Consulting day",
+          "net_amount": "5021.08",
+          "quantity": "4",
+          "unit_price": "1255.27",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Software license, annual",
+          "net_amount": "3047.24",
+          "quantity": "7",
+          "unit_price": "435.32",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Office chair",
+          "net_amount": "4716.48",
+          "quantity": "12",
+          "unit_price": "393.04",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "818.30",
+          "quantity": "7",
+          "unit_price": "116.90",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.97,
+      "value": "13603.10"
+    },
+    "seller_iban": {
+      "confidence": 0.93,
+      "value": "DE20 8505 0300 3120 0456 78"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Elbtal Büroservice e.K."
+    },
+    "seller_vat_id": {
+      "confidence": 0.95,
+      "value": "DE864209753"
+    },
+    "vat_total": {
+      "confidence": 0.97,
+      "value": "2584.59"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142462-R6RMDhn630aUxJ2mOJLF",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008152,
+    "input_tokens": 3197,
+    "output_tokens": 991,
+    "reasoning_tokens": 421
+  }
+}

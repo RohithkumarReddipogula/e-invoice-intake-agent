@@ -53,6 +53,10 @@ class BudgetExceeded(Exception):
     pass
 
 
+class LlmCacheMiss(Exception):
+    """--require-cached: a plain PDF has no cached answer (e.g. pypdf extracts other text)."""
+
+
 def load_manifest(split_dir: Path) -> list[dict[str, Any]]:
     return json.loads((split_dir / "manifest.json").read_text())["invoices"]
 
@@ -66,6 +70,7 @@ def run_split(
     budget: float = BUDGET_USD,
     client_factory: Callable[[Settings], Any] = default_client_factory,
     progress: Callable[[str], None] = lambda s: None,
+    require_cached: bool = False,
 ) -> list[Row]:
     rows = []
     with tempfile.TemporaryDirectory(prefix="intake-eval-") as tmp:
@@ -91,6 +96,13 @@ def run_split(
             content = (split_dir / entry["file"]).read_bytes()
             if live and entry["kind"] == "plain_pdf":
                 _check_budget(llm, content, run_settings, budget)
+            cached = entry["kind"] != "plain_pdf" or llm.cache.get(llm.key_for(pdf_text(content)))
+            if require_cached and not cached:
+                raise LlmCacheMiss(
+                    f"No cached LLM answer for {entry['id']}: the cache does not match "
+                    "this pypdf version, model or prompt. An offline run would only "
+                    "send every plain PDF to review and prove nothing."
+                )
             record = service.ingest(content, entry["file"])
             truth_doc = json.loads((split_dir / f"{entry['id']}.truth.json").read_text())
             truth = InvoiceData.model_validate(truth_doc["truth"])
@@ -257,6 +269,9 @@ def main() -> None:
     parser.add_argument("--fill-kosit", action="store_true", help="validate with Docker, then exit")
     parser.add_argument("--out", type=Path, default=Path("eval/results"))
     parser.add_argument("--max-escaped", type=int, help="exit 1 if more escaped errors (for CI)")
+    parser.add_argument(
+        "--require-cached", action="store_true", help="fail on any LLM cache miss (for CI)"
+    )
     args = parser.parse_args()
 
     kosit = KositCache()
@@ -282,10 +297,11 @@ def main() -> None:
             settings,
             kosit,
             live=args.live,
+            require_cached=args.require_cached,
             budget=args.budget,
             progress=lambda s: print(s, file=sys.stderr),
         )
-    except (BudgetExceeded, KositCacheMiss) as exc:
+    except (BudgetExceeded, KositCacheMiss, LlmCacheMiss) as exc:
         sys.exit(str(exc))
 
     threshold = args.threshold

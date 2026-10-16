@@ -1,0 +1,100 @@
+{
+  "model": "anthropic/claude-haiku-5.5",
+  "output": {
+    "allowance_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "buyer_name": {
+      "confidence": 0.96,
+      "value": "Probe Maschinenbau AG"
+    },
+    "charge_total": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "currency": {
+      "confidence": 0.97,
+      "value": "EUR"
+    },
+    "due_date": {
+      "confidence": 0.9,
+      "value": null
+    },
+    "gross_total": {
+      "confidence": 0.96,
+      "value": "4941.12"
+    },
+    "invoice_number": {
+      "confidence": 0.97,
+      "value": "AB-01788"
+    },
+    "issue_date": {
+      "confidence": 0.96,
+      "value": "2026-05-01"
+    },
+    "line_items": {
+      "confidence": 0.9,
+      "value": [
+        {
+          "description": "Freight Hamburg-Munich",
+          "net_amount": "2281.20",
+          "quantity": "10",
+          "unit_price": "228.12",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Milling cutter set",
+          "net_amount": "145.03",
+          "quantity": "1",
+          "unit_price": "145.03",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Cloud hosting",
+          "net_amount": "1516.77",
+          "quantity": "9",
+          "unit_price": "168.53",
+          "vat_rate": "19"
+        },
+        {
+          "description": "Pallet storage per month",
+          "net_amount": "209.20",
+          "quantity": "8",
+          "unit_price": "26.15",
+          "vat_rate": "19"
+        }
+      ]
+    },
+    "net_total": {
+      "confidence": 0.96,
+      "value": "4152.20"
+    },
+    "seller_iban": {
+      "confidence": 0.95,
+      "value": "DE52701500000001023457"
+    },
+    "seller_name": {
+      "confidence": 0.96,
+      "value": "Alpenblick IT-Service KG"
+    },
+    "seller_vat_id": {
+      "confidence": 0.96,
+      "value": "DE246813579"
+    },
+    "vat_total": {
+      "confidence": 0.96,
+      "value": "788.92"
+    }
+  },
+  "prompt_version": "v2",
+  "provider": "openrouter",
+  "request_id": "gen-1792142401-OAt4NfqnrfjoS30NGpfk",
+  "served_by": "Azure",
+  "usage": {
+    "cost_usd": 0.0008397,
+    "input_tokens": 3182,
+    "output_tokens": 1043,
+    "reasoning_tokens": 481
+  }
+}
