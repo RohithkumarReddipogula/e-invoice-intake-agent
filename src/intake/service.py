@@ -128,7 +128,16 @@ class IntakeService:
             )
             return _get(conn, invoice_id)
 
-    def approve(self, invoice_id: str, actor: str, note: str | None = None) -> InvoiceRecord:
+    def approve(
+        self,
+        invoice_id: str,
+        actor: str,
+        note: str | None = None,
+        *,
+        confidence_only: bool = False,
+    ) -> InvoiceRecord:
+        """`confidence_only=True` (MCP): refuse unless the invoice is in review only because of
+        low confidence. Checked in the same transaction as the approval (SPEC decision 4)."""
         note = (note or "").strip() or None
         with self.database.connect() as conn:
             record = _get(conn, invoice_id)
@@ -138,6 +147,11 @@ class IntakeService:
             problems = [r.rule_id for r in record.failed_rules] + (
                 ["blocking problem"] if record.blocking else []
             )
+            if confidence_only and not record.held_for_confidence_only:
+                raise ValidationProblem(
+                    f"This invoice has failed checks ({', '.join(problems)}). Only invoices held "
+                    "for low confidence can be approved here; use the review page."
+                )
             if problems and note is None:
                 raise ValidationProblem(
                     "A note is required to approve an invoice with failed checks "

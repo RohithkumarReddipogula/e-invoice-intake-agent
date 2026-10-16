@@ -19,3 +19,40 @@ python3 -m venv .venv
 
 Copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY` only if you want live LLM calls.
 Tests and CI never call the LLM API.
+
+## MCP server
+
+`python -m intake.mcp_server` runs an MCP server over stdio with three tools:
+
+| Tool | What it does |
+|---|---|
+| `list_invoices` | invoices, newest first, optionally one status (e.g. `needs_review`) |
+| `get_invoice` | fields with confidence, checks R1-R7, review reasons, history, ERP state |
+| `approve_invoice` | approves an invoice held **only for low confidence** (needs a note); invoices with failed checks are refused and stay for the review page |
+
+Every approval is logged as `mcp:<client name>`. Invoice values are untrusted input, and the
+tool descriptions tell the calling model to treat them as data.
+
+Claude Code (from the repository folder):
+
+```bash
+claude mcp add invoice-intake -- "$PWD/.venv/bin/python" -m intake.mcp_server
+```
+
+Claude Desktop (`claude_desktop_config.json`); use absolute paths, because the working
+directory is not the repository:
+
+```json
+{
+  "mcpServers": {
+    "invoice-intake": {
+      "command": "/path/to/e-invoice-intake-agent/.venv/bin/python",
+      "args": ["-m", "intake.mcp_server"],
+      "env": {
+        "INTAKE_DATABASE_PATH": "/path/to/e-invoice-intake-agent/data/intake.db",
+        "INTAKE_FILES_DIR": "/path/to/e-invoice-intake-agent/data/files"
+      }
+    }
+  }
+}
+```
