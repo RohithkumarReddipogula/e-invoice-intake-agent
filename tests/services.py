@@ -20,7 +20,7 @@ UBL_VAT_BLOCK = (
 
 
 def make_service(
-    tmp_path, *, check="valid", llm_output=None, offline=False, erp=None
+    tmp_path, *, check="valid", llm_output=None, offline=False, erp=None, **overrides
 ) -> IntakeService:
     """`erp`: an ErpClient, or None for no export (approved invoices stay approved)."""
     settings = Settings(
@@ -29,6 +29,7 @@ def make_service(
         files_dir=tmp_path / "files",
         llm_cache_dir=tmp_path / "llm_cache",
         llm_offline=offline,
+        **overrides,
     )
     llm = LlmExtractor(settings, client_factory=lambda s: FakeClient(llm_output))
     pipeline = Pipeline(

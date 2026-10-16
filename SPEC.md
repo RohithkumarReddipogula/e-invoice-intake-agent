@@ -122,6 +122,11 @@ The review reason lists every problem in plain language, for example:
 - "R2 net_vat_gross failed: 100.00 + 19.00 = 119.00, but gross is 120.00."
 - "R7 structured_validation: rejected by the KoSIT validator, BR-DE-15: Buyer reference is missing."
 
+Optional guardrails (off by default, see `src/intake/guardrails.py`):
+`INTAKE_MAX_AUTO_AMOUNT` holds invoices above a gross amount, `INTAKE_REVIEW_NEW_SUPPLIERS`
+holds invoices from sellers without an accepted invoice or with a new IBAN. A triggered
+guardrail is a blocking reason: approval needs a note and MCP cannot approve it.
+
 ## 7. Invoice lifecycle
 
 ```

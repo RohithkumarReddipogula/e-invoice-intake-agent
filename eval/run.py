@@ -80,6 +80,10 @@ def run_split(
                 "files_dir": Path(tmp) / "files",
                 "llm_offline": not live,
                 "erp_base_url": None,
+                # The published numbers were measured without guardrails: keep them off,
+                # whatever .env says.
+                "max_auto_amount": None,
+                "review_new_suppliers": False,
             }
         )
         llm = LlmExtractor(run_settings, client_factory)

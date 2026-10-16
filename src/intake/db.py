@@ -13,6 +13,7 @@ from pathlib import Path
 from .models import Extraction, InvoiceData
 from .records import Event, ExportAttempt, InvoiceRecord, InvoiceSummary
 from .rules import DuplicateKey, RuleResult, RuleStatus
+from .rules.identifiers import normalize_iban
 from .status import InvoiceStatus
 
 
@@ -191,6 +192,35 @@ def existing_duplicate_keys(conn: sqlite3.Connection, exclude_id: str) -> set[Du
         (InvoiceStatus.REJECTED, exclude_id),
     )
     return {(r["seller_key"], r["invoice_number"]) for r in rows}
+
+
+ACCEPTED = (InvoiceStatus.AUTO_APPROVED, InvoiceStatus.APPROVED, InvoiceStatus.EXPORTED,
+            InvoiceStatus.EXPORT_FAILED)  # fmt: skip
+
+
+def accepted_seller_ibans(
+    conn: sqlite3.Connection, seller_keys: set[str], exclude_id: str
+) -> set[str] | None:
+    """Normalised IBANs on this seller's accepted invoices; None if there is none at all.
+    The seller is matched by either key (VAT ID or name), as in R6."""
+    if not seller_keys:
+        return None
+    marks = ",".join("?" * len(seller_keys))
+    states = ",".join("?" * len(ACCEPTED))
+    rows = conn.execute(
+        "SELECT DISTINCT i.id, i.data_json FROM duplicate_keys k JOIN invoices i"
+        f" ON i.id = k.invoice_id WHERE k.seller_key IN ({marks}) AND i.status IN ({states})"
+        " AND i.id != ?",
+        (*sorted(seller_keys), *ACCEPTED, exclude_id),
+    ).fetchall()
+    if not rows:
+        return None
+    ibans = set()
+    for row in rows:
+        iban = InvoiceData.model_validate_json(row["data_json"]).seller_iban
+        if iban:
+            ibans.add(normalize_iban(iban))
+    return ibans
 
 
 def get_invoice(conn: sqlite3.Connection, invoice_id: str) -> InvoiceRecord | None:

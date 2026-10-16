@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from decimal import Decimal
 from pathlib import Path
 from typing import Literal
 
@@ -40,10 +41,15 @@ class Settings(BaseSettings):
     # Mock ERP from `python -m mock_erp`. Empty: no export, approved invoices stay approved.
     erp_base_url: str | None = "http://127.0.0.1:8001"
 
+    # Guardrails for production use, OFF by default (the eval numbers were measured without
+    # them). Turn on in the pilot, see docs/rollout-plan.md and src/intake/guardrails.py.
+    max_auto_amount: Decimal | None = Field(default=None, gt=0)
+    review_new_suppliers: bool = False
+
     # Times are stored in UTC and shown in this zone on the review page.
     display_timezone: str = "Europe/Berlin"
 
-    @field_validator("anthropic_api_key", "openrouter_api_key", mode="before")
+    @field_validator("anthropic_api_key", "openrouter_api_key", "max_auto_amount", mode="before")
     @classmethod
     def _empty_key_is_no_key(cls, value: object) -> object:
         # `ANTHROPIC_API_KEY=` copied unchanged from .env.example means "no key".

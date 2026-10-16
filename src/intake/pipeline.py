@@ -15,10 +15,12 @@ from . import db
 from .config import Settings
 from .decision import decide
 from .detect import Detected, InputKind, UnsupportedDocument, detect
+from .guardrails import guardrail_reasons
 from .llm import LlmError, LlmExtractor, NoTextLayer, extract_llm
 from .models import Extraction
 from .records import InvoiceRecord
 from .rules import duplicate_keys, run_rules
+from .rules.duplicate import seller_keys
 from .status import InvoiceStatus
 from .structured import StructuredValidator, check_structured, kosit_validator
 from .xml_extract import extract_xml
@@ -79,6 +81,12 @@ class Pipeline:
                 existing = db.existing_duplicate_keys(conn, exclude_id=invoice_id)
                 rules = run_rules(extraction.data, today=self.today(), existing=existing)
                 db.save_duplicate_keys(conn, invoice_id, duplicate_keys(extraction.data))
+                ibans = None
+                if self.settings.review_new_suppliers:
+                    ibans = db.accepted_seller_ibans(
+                        conn, seller_keys(extraction.data), exclude_id=invoice_id
+                    )
+                blocking += guardrail_reasons(extraction.data, self.settings, ibans)
             rules.append(structured)
             db.save_rules(conn, invoice_id, rules)
 
